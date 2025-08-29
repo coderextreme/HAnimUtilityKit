@@ -29,4 +29,4 @@ interpolators_mapped.x3d -- final file
 
 python runwalkingman.py
 
-Then pickup your files in the wherever you put them
+Then pickup your files in the wherever you put them, relative to the current folder
