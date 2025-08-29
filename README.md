@@ -8,10 +8,10 @@ Suggestions on naming interpolators is also welcome
 
 No scaling is done, yet
 
-# Input file -- configure in runwalkingmap.py
+# Input file -- configure in runwalkingman.py
 walking_man_cc_test.new.python.x3d
 
-# Output files -- configure in runwalkingmap.py
+# Output files -- configure in runwalkingman.py
 joints_mapped.x3d  -- intermediate file
 interpolators_mapped.x3d -- final file
 
