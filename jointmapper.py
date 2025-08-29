@@ -28,10 +28,13 @@ def map_joints(INPUT_PREFIX, INPUT_FILE, skeleton_map_list, OUTPUT_PREFIX, OUTPU
             def_joint_name = def_joint.get("DEF")
             if def_joint_name == cc_name:
                 def_joint.set("DEF", prepended_joint)
+            # ROUTEs don't have USE
             rotation_joint_routes = root.findall(".//ROUTE[@toNode='"+def_joint_name+"'][@toField='set_rotation']")
             for rotation_joint_route in rotation_joint_routes:
                 rotation_joint_route.set("toNode", prepended_joint)
-            # ROUTEs don't have USE
+            translation_joint_routes = root.findall(".//ROUTE[@toNode='"+def_joint_name+"'][@toField='set_translation']")
+            for translation_joint_route in translation_joint_routes:
+                translation_joint_route.set("toNode", prepended_joint)
 
         use_joints = root.findall(".//HAnimJoint[@USE='"+cc_name+"']")
         for use_joint in use_joints:
