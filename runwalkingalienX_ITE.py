@@ -4,7 +4,7 @@ from rename_interpolators import rename_interpolators
 
 INPUT_PREFIX = ""
 INPUT_FILE = "WalkingAlienX_ITE.x3d"
-OUTPUT_PREFIX = "WA_"
+OUTPUT_PREFIX = "hanim_"
 OUTPUT_FILE = "WalkingAlienJointsMappedX_ITE.x3d"
 map_joints(INPUT_PREFIX, INPUT_FILE, skeleton_map_list, OUTPUT_PREFIX, OUTPUT_FILE)
 
