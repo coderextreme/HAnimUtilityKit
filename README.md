@@ -17,12 +17,12 @@ interpolators_mapped.x3d -- final file
 
 # Filenames, Prefixes and TimeSensors are configured by editing runwalkingman.py
 
-INPUT_PREFIX  -- HAnim prefix found in input file
-INPUT_FILE    -- Input file
-OUTPUT_PREFIX -- HAnim prefix set during mapping
-OUTPUT_FILE   -- Intermediate file
-FINAL_FILE    -- Final result file
-TIME_SENSORS  -- array of TimeSensors to rename OrientationInterpolators
+* INPUT_PREFIX  -- HAnim prefix found in input file
+* INPUT_FILE    -- Input file
+* OUTPUT_PREFIX -- HAnim prefix set during mapping
+* OUTPUT_FILE   -- Intermediate file
+* FINAL_FILE    -- Final result file
+* TIME_SENSORS  -- array of TimeSensors to rename OrientationInterpolators
 
 
 # running
