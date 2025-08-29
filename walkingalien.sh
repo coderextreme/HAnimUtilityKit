@@ -11,4 +11,11 @@ npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlienX_ITE.x3d
 npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlienX_ITE.x3dv
 python runwalkingalienX_ITE.py
 npx x3d-tidy@latest -i WalkingAlienFinalOutputX_ITE.x3d -o WalkingAlienFinalOutputX_ITE.x3dv
+(echo '%s/PROFILE Interchange/PROFILE Immersive/'; echo g/colorSpaceConversion/d;  echo wq;) > ex1.cmds
+ex WalkingAlienFinalOutputX_ITE.x3dv < ex1.cmds
+cat Animations.x3dv >> WalkingAlienFinalOutputX_ITE.x3dv
+~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate WalkingAlienFinalOutputX_ITE.x3dv
+(~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate WalkingAlienFinalOutputX_ITE.x3dv 2>&1 |grep "not found"|sed 's/" not found//'| sed 's/.*Route destination node name "//'|sort -u| sed 's/\(.*\)/%s\/^\\(.*\1.*\\)\/# \\1\//'; echo wq) > ex2.cmds
+ex WalkingAlienFinalOutputX_ITE.x3dv < ex2.cmds
 npx sunrize@latest WalkingAlienFinalOutputX_ITE.x3dv
+rm .WalkingAlienFinalOutputX_ITE.x3dv.swp
