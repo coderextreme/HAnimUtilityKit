@@ -36,6 +36,6 @@ WalkingAlienFinalOutputX_ITE.x3dv -- WalkingAlien.gltf conversion
 
 # running
 
-batcheverything.sh
+bash batcheverything.sh
 
 Then pickup your output files.
