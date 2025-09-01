@@ -9,5 +9,5 @@ OUTPUT_FILE = "walking_man_cc_test_joints_mapped.x3d"
 map_joints(INPUT_PREFIX, INPUT_FILE, skeleton_map_list, OUTPUT_PREFIX, OUTPUT_FILE)
 
 FINAL_FILE = "walking_man_cc_test_interpolators_mapped.x3d"
-TIME_SENSORS = [ "WalkTimer" ]
+TIME_SENSORS = [ "JohnWalkTimer" ]
 rename_interpolators(OUTPUT_FILE, TIME_SENSORS, FINAL_FILE)
