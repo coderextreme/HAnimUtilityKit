@@ -8,22 +8,27 @@
 
 Not all joints or the humanoid are mapped yet.  WIP.
 
-Feedback on joint mapping in cc2v2.py and alienmap.py is welcome, should be self-explanatory.
+Feedback on joint mappings in
+```
+cc2v2.py
+alienmap.py
+conanmap.py
+joemap.py
+jointmapper.py
+```
+is welcome, should be self-explanatory.
 
 Suggestions on naming interpolators is also welcome.
 
 No scaling is done, yet.
 
-# Input files -- configure in runwalkingman.py
-walking_man_cc_test.new.python.x3d
-WalkingAlien.gltf, scene.bin (downloaded)
-textures/* (downloaded)
-
 # Output files -- configure in runwalkingman.py runwalkingalienX_ITE.py and batcheverything.sh
 
-walking_man_cc_test_joints_mapped.x3d  -- intermediate file
-walking_man_cc_test_interpolators_mapped.x3d -- final file
-WalkingAlienFinalOutputX_ITE.x3dv -- WalkingAlien.gltf conversion
+JoeDemo5JoeSkin5_Final.x3dv
+JoeHAnimKick1a_Final.x3dv
+WalkingAlienFinalOutputX_ITE.x3dv
+conan_23_Aug2025_Final.x3dv
+walking_man_cc_test_Final.x3dv
 
 # Filenames, Prefixes and TimeSensors are configured by editing runwalkingman.py
 
