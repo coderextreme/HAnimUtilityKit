@@ -28,6 +28,7 @@ def map_joints(INPUT_PREFIX, INPUT_FILE, skeleton_map_list, OUTPUT_PREFIX, OUTPU
             def_joint_name = def_joint.get("DEF")
             if def_joint_name == cc_name:
                 def_joint.set("DEF", prepended_joint)
+                def_joint.set("name", v2_name)
             # ROUTEs don't have USE
             rotation_joint_routes = root.findall(".//ROUTE[@toNode='"+def_joint_name+"'][@toField='set_rotation']")
             for rotation_joint_route in rotation_joint_routes:
