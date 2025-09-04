@@ -22,10 +22,7 @@ def swap_translation_center(parent_joint, parent_translation):
         child_joint.set("rotation", "0 1 0 0")
         swap_translation_center(child_joint, summed_translation)
 
-def translation_to_center(INPUT_FILE, OUTPUT_FILE):
-
-    X3D = xml.etree.ElementTree.parse(INPUT_FILE)
-    root = X3D.getroot()
+def translation_to_center(root):
 
     parent_joints = root.findall(".//HAnimHumanoid/HAnimJoint")
     for parent_joint in parent_joints:
@@ -36,11 +33,3 @@ def translation_to_center(INPUT_FILE, OUTPUT_FILE):
             parent_joint.set("translation", "0 0 0")
             parent_joint.set("rotation", "0 1 0 0")
             swap_translation_center(parent_joint, joint_translation)
-
-    header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">'
-    xmlstr = xml.etree.ElementTree.tostring(root, encoding='unicode')
-
-    xmlString = f"{header}{xmlstr}"
-    file_output = os.path.join("./",os.path.basename(OUTPUT_FILE))
-    with open(file_output, "w") as output_file:
-        output_file.write(xmlString)
