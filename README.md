@@ -26,7 +26,7 @@ No scaling is done, yet.
 
 JoeDemo5JoeSkin5_Final.x3dv
 JoeHAnimKick1a_Final.x3dv
-WalkingAlienFinalOutputX_ITE.x3dv
+WalkingAlienTruncated_Final.x3dv
 conan_23_Aug2025_Final.x3dv
 walking_man_cc_test_Final.x3dv
 
@@ -42,5 +42,6 @@ walking_man_cc_test_Final.x3dv
 # running
 
 bash batcheverything.sh
+bash batchtruncated.sh
 
 Then pickup your output files.
