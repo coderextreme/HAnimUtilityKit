@@ -7,7 +7,7 @@ COMPONENT HAnim : 1
 META "title" "JoeDemo5JoeSkin5.x3d"
 META "description" "joe kick into std anims"
 META "generator" "x3d-tidy V2.1.25, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Tue, 02 Sep 2025 00:55:43 GMT"
+META "modified" "Thu, 04 Sep 2025 20:11:34 GMT"
 
 WorldInfo {
   title "JoeDemo5JoeSkin.x3d, Only Skin"
@@ -165,7 +165,6 @@ DEF Joe_Humanoid Group {
           children [
             DEF hanim_l_hip HAnimJoint {
               name "l_hip"
-              rotation 1 0 0 0.404825672280895
               center 0.1 0.92 0
               skinCoordIndex [
                 89,
@@ -185,7 +184,6 @@ DEF Joe_Humanoid Group {
               ]
               children DEF hanim_l_knee HAnimJoint {
                 name "l_knee"
-                rotation 0.523575813273334 0 0.851979088801577 0.321205950804213
                 center 0.115 0.466 0
                 skinCoordIndex [
                   334,
@@ -285,7 +283,6 @@ DEF Joe_Humanoid Group {
             }
             DEF hanim_r_hip HAnimJoint {
               name "r_hip"
-              rotation -0.999999999999997 0 0 0.371581554412843
               center -0.1 0.92 0
               skinCoordIndex [
                 91,
@@ -309,7 +306,6 @@ DEF Joe_Humanoid Group {
               ]
               children DEF hanim_r_knee HAnimJoint {
                 name "r_knee"
-                rotation 1 0 0 0.685790777206421
                 center -0.05 0.466 0
                 skinCoordIndex [
                   362,
@@ -530,7 +526,6 @@ DEF Joe_Humanoid Group {
                                                   center 0 1.552 -0.035
                                                   children DEF hanim_vc4 HAnimJoint {
                                                     name "vc4"
-                                                    rotation 0.999845468162422 0 0.0175795277258727 0.736210351153587
                                                     center 0 1.5675 -0.0256
                                                     children DEF hanim_vc3 HAnimJoint {
                                                       name "vc3"
@@ -597,7 +592,6 @@ DEF Joe_Humanoid Group {
                                                   skinCoordWeight 1
                                                   children DEF hanim_l_shoulder HAnimJoint {
                                                     name "l_shoulder"
-                                                    rotation -0.0301346714642057 0 0.999545847660699 1.49744276615991
                                                     center 0.2 1.44 -0.04
                                                     skinCoordIndex [
                                                       41,
@@ -621,7 +615,6 @@ DEF Joe_Humanoid Group {
                                                     ]
                                                     children DEF hanim_l_elbow HAnimJoint {
                                                       name "l_elbow"
-                                                      rotation -1 0 0 1.10348537564278
                                                       center 0.2 1.1388 -0.04
                                                       skinCoordIndex [
                                                         45,
@@ -1048,7 +1041,6 @@ DEF Joe_Humanoid Group {
                                                   ]
                                                   children DEF hanim_r_shoulder HAnimJoint {
                                                     name "r_shoulder"
-                                                    rotation 0 0 -1 1.65710461139679
                                                     center -0.2 1.44 -0.04
                                                     skinCoordIndex [
                                                       29,
@@ -1076,7 +1068,6 @@ DEF Joe_Humanoid Group {
                                                     ]
                                                     children DEF hanim_r_elbow HAnimJoint {
                                                       name "r_elbow"
-                                                      rotation -1 0 0 1.10348537564278
                                                       center -0.2 1.1388 -0.04
                                                       skinCoordIndex [
                                                         33,
@@ -4792,282 +4783,9 @@ DEF Joe_Humanoid Group {
   }
 }
 
-DEF Ex_Time TimeSensor {
-  cycleInterval 3.73
-  loop TRUE
-}
-
-DEF Joe_r_ankleRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.25,
-    0.5,
-    0.75,
-    1
-  ]
-  keyValue [
-    -1 0 0 1,
-    0 0 1 0,
-    1 0 0 1,
-    1 0 0 1,
-    1 0 0 0.5
-  ]
-}
-
-DEF hanim_r_kneeRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.25,
-    0.5,
-    0.75,
-    1
-  ]
-  keyValue [
-    1 0 0 0.1,
-    0 0 1 0,
-    1 0 0 1,
-    1 0 0 1,
-    1 0 0 1.5
-  ]
-}
-
-DEF hanim_r_hipRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.25,
-    0.5,
-    0.75,
-    1
-  ]
-  keyValue [
-    1 0 0 1,
-    1 0 0 1,
-    -1 0 0 1,
-    -1 0 0 1,
-    -1 0 0 1
-  ]
-}
-
-DEF Joe_l_ankleRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.25,
-    1
-  ]
-  keyValue [
-    -1 0 0 1,
-    0 0 1 0,
-    1 0 0 1
-  ]
-}
-
-DEF hanim_l_kneeRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.2,
-    0.35,
-    0.5,
-    1
-  ]
-  keyValue [
-    1 0 0 1,
-    0 0 1 0,
-    0 0 1 0.2,
-    1 0 1 0.5,
-    1 0 0 1.4
-  ]
-}
-
-DEF hanim_l_hipRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.1,
-    0.3,
-    0.45,
-    1
-  ]
-  keyValue [
-    -1 0 0 1.5,
-    -1 0 0 1,
-    0 0 1 0,
-    1 0 0 0.5,
-    1 0 0 1
-  ]
-}
-
-DEF Joe_r_wristRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.5,
-    0.7,
-    1
-  ]
-  keyValue [
-    0 1 0 0.3,
-    0 0 1 0,
-    0 0 -1 1,
-    0 -1 0 0.3
-  ]
-}
-
-DEF hanim_r_elbowRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.5,
-    1
-  ]
-  keyValue [
-    -1 0 0 3,
-    -1 0 0 0.75,
-    -1 -1 0 0.5
-  ]
-}
-
-DEF hanim_r_shoulderRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.5,
-    1
-  ]
-  keyValue [
-    0 0 -1 2.5,
-    0 0 -1 1.5,
-    0 0 -1 1.75
-  ]
-}
-
-DEF Joe_l_wristRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.4,
-    0.8,
-    1
-  ]
-  keyValue [
-    0 0 1 0,
-    0 1 0 1.3,
-    0 -0.5 1 1.3,
-    0 0 1 0
-  ]
-}
-
-DEF hanim_l_elbowRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.5,
-    1
-  ]
-  keyValue [
-    -1 0 0 3,
-    -1 0 0 0.75,
-    -1 -1 0 0.5
-  ]
-}
-
-DEF hanim_l_shoulderRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.4,
-    1
-  ]
-  keyValue [
-    0 0 1 0,
-    0 0 1 1.5,
-    -1 0 1 1.75
-  ]
-}
-
-DEF hanim_skullbaseRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.2,
-    0.75,
-    1
-  ]
-  keyValue [
-    0 -1 0 0.5,
-    0 0 1 0,
-    0 0 1 0,
-    0 1 0 0.35
-  ]
-}
-
-DEF hanim_vc4Rotation0 OrientationInterpolator {
-  key [
-    0,
-    0.3,
-    0.4,
-    1
-  ]
-  keyValue [
-    1 0 1 0.25,
-    -1 0 -1 0.35,
-    1 0 0 0.75,
-    1 0 1 0.5
-  ]
-}
-
-DEF Joe_sacroiliacRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.5,
-    1
-  ]
-  keyValue [
-    0 0 1 0,
-    0 0 1 0,
-    0 0 1 0
-  ]
-}
-
-DEF hanim_vl1Rotation0 OrientationInterpolator {
-  key [
-    0,
-    0.5,
-    1
-  ]
-  keyValue [
-    0 0 1 0,
-    0 0 1 0,
-    0 0 1 0
-  ]
-}
-
-DEF Joe_HumanoidRootRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.1,
-    0.4,
-    0.6,
-    1
-  ]
-  keyValue [
-    1 0 0 0.5,
-    1 0 0 0.5,
-    -1 0 0 0.1,
-    -1 0 0 0.5,
-    -1 0 0 0.5
-  ]
-}
-
-DEF Joe_HumanoidRootTranslation0 PositionInterpolator {
-  key [
-    0,
-    0.2,
-    0.6,
-    1
-  ]
-  keyValue [
-    1 0.3 -1,
-    0.4 -0.04 -0.4,
-    -0.18 0.1 0,
-    -0.2 0.15 0.15
-  ]
-}
-
 DEF SBall Transform {
-  translation 0.09107104 0.1429846 0.2595676
-  rotation -0.584707730558961 0.562346636558963 -0.584707730558961 3.33701029473101
+  translation -0.42091 0.2089 -0.42091
+  rotation -0.70711 0 -0.70711 0.67654
   scale 0.23 0.23 0.23
   children [
     Shape {
@@ -5638,38 +5356,6 @@ DEF SBall Transform {
   ]
 }
 
-DEF SBallTranslation0 PositionInterpolator {
-  key [
-    0,
-    0.4,
-    0.409,
-    1
-  ]
-  keyValue [
-    -1 0.4 -1,
-    0 0.07 0,
-    0.05 0.06 0.05,
-    2 4 10
-  ]
-}
-
-DEF SBallRotation0 OrientationInterpolator {
-  key [
-    0,
-    0.4,
-    0.41,
-    0.71,
-    1
-  ]
-  keyValue [
-    1 0 1 0.25,
-    -1 0 -1 1.35,
-    -1 1 -1 3.35,
-    -1 0.2 -1 3,
-    -1 0.2 -1 3
-  ]
-}
-
 DEF scenecordsys Transform {
   scale 0.275 0.275 0.275
   children Inline {
@@ -5846,41 +5532,6 @@ DEF Circle2 Transform {
     geometry USE Orbit1
   }
 }
-
-ROUTE Ex_Time.fraction_changed TO Joe_r_ankleRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_r_kneeRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_r_hipRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO Joe_l_ankleRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_l_kneeRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_l_hipRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO Joe_sacroiliacRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO Joe_r_wristRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_r_elbowRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_r_shoulderRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO Joe_l_wristRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_l_elbowRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_l_shoulderRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_skullbaseRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_vc4Rotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO hanim_vl1Rotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO Joe_HumanoidRootRotation0.set_fraction
-ROUTE Ex_Time.fraction_changed TO Joe_HumanoidRootTranslation0.set_fraction
-ROUTE hanim_r_kneeRotation0.value_changed TO hanim_r_knee.set_rotation
-ROUTE hanim_r_hipRotation0.value_changed TO hanim_r_hip.set_rotation
-ROUTE hanim_l_kneeRotation0.value_changed TO hanim_l_knee.set_rotation
-ROUTE hanim_l_hipRotation0.value_changed TO hanim_l_hip.set_rotation
-ROUTE Joe_sacroiliacRotation0.value_changed TO Joe_sacroiliac.set_rotation
-ROUTE hanim_r_elbowRotation0.value_changed TO hanim_r_elbow.set_rotation
-ROUTE hanim_r_shoulderRotation0.value_changed TO hanim_r_shoulder.set_rotation
-ROUTE hanim_l_elbowRotation0.value_changed TO hanim_l_elbow.set_rotation
-ROUTE hanim_l_shoulderRotation0.value_changed TO hanim_l_shoulder.set_rotation
-ROUTE hanim_skullbaseRotation0.value_changed TO hanim_skullbase.set_rotation
-ROUTE hanim_vc4Rotation0.value_changed TO hanim_vc4.set_rotation
-ROUTE hanim_vl1Rotation0.value_changed TO hanim_vl1.set_rotation
-ROUTE Ex_Time.fraction_changed TO SBallTranslation0.set_fraction
-ROUTE SBallTranslation0.value_changed TO SBall.set_translation
-ROUTE Ex_Time.fraction_changed TO SBallRotation0.set_fraction
-ROUTE SBallRotation0.value_changed TO SBall.set_rotation
 DEF AnimationSelectMenu Group {
 	children [
 		DEF HudProx ProximitySensor {
@@ -5909,7 +5560,7 @@ DEF AnimationSelectMenu Group {
 								}
 								geometry Text {
 									string [
-										"WalkingManCCS",
+										"Transportable",
 										"Animations",
 									]
 									fontStyle DEF LabelTextFont FontStyle {
