@@ -1,5 +1,6 @@
 from alienmap import skeleton_map_list
 from rootmapper import map_joints
+from animation_remove import animation_remove
 from translation_to_center import translation_to_center
 from joint_binding_remove import joint_binding_remove
 from tangent_remove import tangent_remove
@@ -11,6 +12,7 @@ INPUT_FILE = "WalkingAlienTruncated.x3d"
 OUTPUT_PREFIX = "hanim_"
 FINAL_FILE = "WalkingAlienTruncated_Final.x3d"
 root = readXML(INPUT_FILE)
+animation_remove(root)
 map_joints(root, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
 joint_binding_remove(root)
 tangent_remove(root)

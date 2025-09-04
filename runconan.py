@@ -1,14 +1,18 @@
 from conanmap import skeleton_map_list
-from jointmapper import map_joints
-from rename_interpolators import rename_interpolators
+from rootmapper import map_joints
+from root_rename_interpolators import rename_interpolators
+from animation_remove import animation_remove
+from readXML import readXML
+from writeXML import writeXML
 
 INPUT_PREFIX = "GameSkeleton_"
 INPUT_FILE = "conan_23_Aug2025.x3d"
-
 OUTPUT_PREFIX = "hanim_"
-OUTPUT_FILE = "conan_23_Aug2025_joints_mapped.x3d"
-map_joints(INPUT_PREFIX, INPUT_FILE, skeleton_map_list, OUTPUT_PREFIX, OUTPUT_FILE)
-
-FINAL_FILE = "conan_23_Aug2025_interpolators_mapped.x3d"
+FINAL_FILE = "conan_23_Aug2025_Final.x3d"
 TIME_SENSORS = [ "JohnJumpTimer" ]
-rename_interpolators(OUTPUT_FILE, TIME_SENSORS, FINAL_FILE)
+
+root = readXML(INPUT_FILE)
+animation_remove(root)
+map_joints(root, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+# rename_interpolators(root, TIME_SENSORS)
+writeXML(root, FINAL_FILE)
