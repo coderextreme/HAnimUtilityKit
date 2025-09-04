@@ -19,6 +19,7 @@ def swap_translation_center(parent_joint, parent_translation):
         summed_translation = ' '.join(map(str, sum_translation))
         child_joint.set("center", summed_translation)
         child_joint.set("translation", "0 0 0")
+        child_joint.set("rotation", "0 1 0 0")
         swap_translation_center(child_joint, summed_translation)
 
 def translation_to_center(INPUT_FILE, OUTPUT_FILE):
@@ -33,6 +34,7 @@ def translation_to_center(INPUT_FILE, OUTPUT_FILE):
             print(f"joint {parent_joint.get('DEF')} {joint_translation}")
             parent_joint.set("center", joint_translation)
             parent_joint.set("translation", "0 0 0")
+            parent_joint.set("rotation", "0 1 0 0")
             swap_translation_center(parent_joint, joint_translation)
 
     header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">'
