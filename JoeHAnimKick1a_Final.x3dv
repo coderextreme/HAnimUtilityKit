@@ -6,7 +6,7 @@ COMPONENT HAnim : 1
 
 META "Joe" "No Reservations 20121221 20040109 x3d/hanim"
 META "generator" "x3d-tidy V2.1.25, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Thu, 04 Sep 2025 20:10:23 GMT"
+META "modified" "Thu, 04 Sep 2025 20:50:46 GMT"
 
 WorldInfo {
   title "HANIM 2 LOA3 Skeleton and Skin sites and feature points for Joe_ by Joe"
@@ -59,7 +59,7 @@ DEF Joe_Humanoid Group {
     version ""
     skeleton DEF hanim_humanoid_root HAnimJoint {
       name "humanoid_root"
-      translation -0.18744 0.1186 0.055798
+      translation -0.18743 0.11857 0.055697
       rotation -1 0 0 0.5
       center 0 0.875 0
       children [
@@ -114,7 +114,7 @@ DEF Joe_Humanoid Group {
           children [
             DEF hanim_l_hip HAnimJoint {
               name "l_hip"
-              rotation 1 0 0 0.77163
+              rotation 1 0 0 0.77139
               center 0.1 0.92 0
               skinCoordIndex [
                 89,
@@ -134,7 +134,7 @@ DEF Joe_Humanoid Group {
               ]
               children DEF hanim_l_knee HAnimJoint {
                 name "l_knee"
-                rotation 0.97763 0 0.21033 0.89783
+                rotation 0.97756 0 0.21066 0.89732
                 center 0.115 0.466 0
                 skinCoordIndex [
                   334,
@@ -158,7 +158,7 @@ DEF Joe_Humanoid Group {
                 ]
                 children DEF hanim_l_talocrural HAnimJoint {
                   name "l_talocrural"
-                  rotation 1 0 0 0.66506
+                  rotation 1 0 0 0.6647
                   center 0.115 0.069 0
                   skinCoordIndex [
                     342,
@@ -481,7 +481,7 @@ DEF Joe_Humanoid Group {
                                                   center 0 1.552 -0.035
                                                   children DEF hanim_vc4 HAnimJoint {
                                                     name "vc4"
-                                                    rotation 0.92902 0 0.37002 0.56124
+                                                    rotation 0.92916 0 0.36967 0.56135
                                                     center 0 1.5675 -0.0256
                                                     children DEF hanim_vc3 HAnimJoint {
                                                       name "vc3"
@@ -548,7 +548,7 @@ DEF Joe_Humanoid Group {
                                                   skinCoordWeight 1
                                                   children DEF hanim_l_shoulder HAnimJoint {
                                                     name "l_shoulder"
-                                                    rotation -0.46331 0 0.8862 1.5697
+                                                    rotation -0.463 0 0.88636 1.5695
                                                     center 0.2 1.44 -0.04
                                                     skinCoordIndex [
                                                       41,
@@ -572,7 +572,7 @@ DEF Joe_Humanoid Group {
                                                     ]
                                                     children DEF hanim_l_elbow HAnimJoint {
                                                       name "l_elbow"
-                                                      rotation -0.95211 -0.30576 0 0.58256
+                                                      rotation -0.95224 -0.30536 0 0.5827
                                                       center 0.2 1.1388 -0.04
                                                       skinCoordIndex [
                                                         45,
@@ -607,7 +607,7 @@ DEF Joe_Humanoid Group {
                                                       ]
                                                       children DEF hanim_l_radiocarpal HAnimJoint {
                                                         name "l_radiocarpal"
-                                                        rotation 0 -0.29554 0.95533 1.0926
+                                                        rotation 0 -0.29458 0.95563 1.0916
                                                         center 0.2 0.87 -0.04
                                                         skinCoordIndex [
                                                           119,
@@ -1000,7 +1000,7 @@ DEF Joe_Humanoid Group {
                                                   ]
                                                   children DEF hanim_r_shoulder HAnimJoint {
                                                     name "r_shoulder"
-                                                    rotation 0 0 -1 1.6244
+                                                    rotation 0 0 -1 1.6243
                                                     center -0.2 1.44 -0.04
                                                     skinCoordIndex [
                                                       29,
@@ -1028,7 +1028,7 @@ DEF Joe_Humanoid Group {
                                                     ]
                                                     children DEF hanim_r_elbow HAnimJoint {
                                                       name "r_elbow"
-                                                      rotation -0.95211 -0.30576 0 0.58256
+                                                      rotation -0.95224 -0.30536 0 0.5827
                                                       center -0.2 1.1388 -0.04
                                                       skinCoordIndex [
                                                         33,
@@ -1060,7 +1060,7 @@ DEF Joe_Humanoid Group {
                                                       ]
                                                       children DEF hanim_r_radiocarpal HAnimJoint {
                                                         name "r_radiocarpal"
-                                                        rotation 0 -0.062306 -0.99806 0.84003
+                                                        rotation 0 -0.061904 -0.99808 0.8409
                                                         center -0.2 0.89 -0.04
                                                         skinCoordIndex [
                                                           235,
@@ -4651,7 +4651,7 @@ DEF Joe_Humanoid Group {
 }
 
 DEF SBall Transform {
-  translation 1.1711 2.3253 5.7707
+  translation 1.1703 2.3235 5.7662
   rotation -0.70014 0.14003 -0.70014 3
   scale 0.23 0.23 0.23
   children [

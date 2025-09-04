@@ -24,6 +24,7 @@ python runjoedemo5.py
 for X3D in WalkingAlienX_ITE_Final.x3d conan_23_Aug2025_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d 
 do
 	X3DV="${X3D}v"
+	X3DOM=`basename "${X3D}" Final.x3d`x3dom.x3d
 	echo "Converting Final Output from .x3d to .x3dv..."
 	npx x3d-tidy@latest -i "${X3D}" -o "${X3DV}"
 	if [ "${X3DV}" = "WalkingAlienX_ITE_Final.x3dv" ]
@@ -44,5 +45,7 @@ do
 
 	npx sunrize@latest "${X3DV}"
 	~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-viewer.exe "${X3DV}"
+	echo npx x3d-tidy@latest -i "${X3DV}" -o "${X3DOM}"
+	npx x3d-tidy@latest -i "${X3DV}" -o "${X3DOM}"
 	rm -f ."${X3DV}".swp
 done
