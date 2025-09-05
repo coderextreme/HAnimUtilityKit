@@ -21,9 +21,9 @@ Suggestions on naming interpolators is also welcome.
 
 No scaling is done, yet.
 
-# Output files -- configure in runwalkingman.py runwalkingalienX_ITE.py and batcheverything.sh
+# Output files
 
-# preferred
+### Preferred
 ```
 JoeDemo5JoeSkin5_Final.x3dv
 JoeHAnimKick1a_Final.x3dv
@@ -33,7 +33,7 @@ conan_23_Aug2025_Final.x3dv
 walking_man_cc_test_Final.x3dv
 ```
 
-# deprecated
+### Deprecated
 ```
 JoeDemo5JoeSkin5_x3dom.x3d
 JoeHAnimKick1a_x3dom.x3d
@@ -43,7 +43,7 @@ conan_23_Aug2025_x3dom.x3d
 walking_man_cc_test_x3dom.x3d
 ```
 
-# Filenames, Prefixes and TimeSensors
+### Filenames, Prefixes and TimeSensors
 
 * INPUT_PREFIX  -- HAnim prefix found in input file (current ignored)
 * INPUT_FILE    -- Input file
@@ -51,7 +51,7 @@ walking_man_cc_test_x3dom.x3d
 * FINAL_FILE    -- Final result file
 * TIME_SENSORS  -- array of TimeSensors to rename OrientationInterpolators and PositionInterpolators
 
-The above are configured in:
+## The above are configured in:
 ```
 runconan.py
 runjoe.py
