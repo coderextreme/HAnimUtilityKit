@@ -47,4 +47,5 @@ do
 	echo npx x3d-tidy@latest -i "${X3DV}" -o "${X3DOM}"
 	npx x3d-tidy@latest -i "${X3DV}" -o "${X3DOM}"
 	rm -f ."${X3DV}".swp
+	rm -f "${X3DV}".cmds
 done
