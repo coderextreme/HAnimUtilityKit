@@ -1,4 +1,4 @@
-from cc2v2 import skeleton_map_list
+from manmap import skeleton_map_list
 from HAnimUtility import HAnimUtility
 
 INPUT_PREFIX = "CC_"

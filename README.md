@@ -10,7 +10,7 @@ Not all joints or the humanoid are mapped yet.  WIP.
 
 Feedback on joint mappings in
 ```
-cc2v2.py
+manmap.py
 alienmap.py
 conanmap.py
 joemap.py
