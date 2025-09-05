@@ -75,6 +75,12 @@ class HAnimUtility:
             for tangent in tangent_parent.findall('Tangent'):
                 tangent_parent.remove(tangent)
 
+    # group_remove.py
+    def group_remove(self):
+        for group_parent in self.root.findall(".//Group[@DEF='AnimationSelectMenu']/.."):
+            for group in group_parent.findall("Group[@DEF='AnimationSelectMenu']"):
+                group_parent.remove(group)
+
     # translation_to_center.py
     def swap_translation_center(self, parent_joint, parent_translation):
         child_joints = parent_joint.findall('HAnimJoint')
@@ -145,6 +151,15 @@ class HAnimUtility:
     def standard_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
         self.animation_remove()
+        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+        # We removed animations, above.
+        # self.rename_interpolators(TIME_SENSORS)
+        self.writeXML(FINAL_FILE)
+
+    def standard_rename_with_group(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+        self.readXML(INPUT_FILE)
+        self.animation_remove()
+        self.group_remove()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
         # We removed animations, above.
         # self.rename_interpolators(TIME_SENSORS)
