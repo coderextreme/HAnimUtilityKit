@@ -43,7 +43,7 @@ conan_23_Aug2025_x3dom.x3d
 walking_man_cc_test_x3dom.x3d
 ```
 
-# Filenames, Prefixes and TimeSensors are configured by editing runwalkingman.py
+# Filenames, Prefixes and TimeSensors
 
 * INPUT_PREFIX  -- HAnim prefix found in input file (current ignored)
 * INPUT_FILE    -- Input file
@@ -51,7 +51,17 @@ walking_man_cc_test_x3dom.x3d
 * FINAL_FILE    -- Final result file
 * TIME_SENSORS  -- array of TimeSensors to rename OrientationInterpolators and PositionInterpolators
 
-# running
+The above are configured in:
+```
+runconan.py
+runjoe.py
+runjoedemo5.py
+runwalkingalienTruncated.py
+runwalkingalienX_ITE.py
+runwalkingman.py
+```
+
+# Running
 
 ```bash
 bash batcheverything.sh
