@@ -24,20 +24,24 @@ No scaling is done, yet.
 # Output files -- configure in runwalkingman.py runwalkingalienX_ITE.py and batcheverything.sh
 
 # preferred
+```
 JoeDemo5JoeSkin5_Final.x3dv
 JoeHAnimKick1a_Final.x3dv
 WalkingAlienTruncated_Final.x3dv
 WalkingAlienX_ITE_Final.x3dv
 conan_23_Aug2025_Final.x3dv
 walking_man_cc_test_Final.x3dv
+```
 
 # deprecated
+```
 JoeDemo5JoeSkin5_x3dom.x3d
 JoeHAnimKick1a_x3dom.x3d
 WalkingAlienTruncated_x3dom.x3d
 WalkingAlienX_ITE_x3dom.x3d
 conan_23_Aug2025_x3dom.x3d
 walking_man_cc_test_x3dom.x3d
+```
 
 # Filenames, Prefixes and TimeSensors are configured by editing runwalkingman.py
 
@@ -49,6 +53,8 @@ walking_man_cc_test_x3dom.x3d
 
 # running
 
+```bash
 bash batcheverything.sh
+```
 
 Then pickup your output files.
