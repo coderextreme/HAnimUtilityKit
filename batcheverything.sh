@@ -9,20 +9,19 @@ curl https://create3000.github.io/media/glTF/Walking%20Alien/scene.bin --output 
 curl https://create3000.github.io/media/glTF/Walking%20Alien/Walking%20Alien.gltf --output WalkingAlien.gltf 
 
 echo "Converting Walking Alien from .gltf/.bin to .x3d and .x3dv..."
-npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlienX_ITE.x3d
-npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlienX_ITE.x3dv
+npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3d
+npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3dv
 npx x3d-tidy@latest -f 5 -d 5 -i JoeHAnimKick1a.x3dv -o JoeHAnimKick1a.x3d
 
 
 echo "Mapping joints and interpolators..."
-python runwalkingalienX_ITE.py
-python runwalkingalienTruncated.py
+python runwalkingalien.py
 python runwalkingman.py
 python runconan.py
 python runjoe.py
 python runjoedemo5.py
 
-for X3D in WalkingAlienX_ITE_Final.x3d WalkingAlienTruncated_Final.x3d conan_23_Aug2025_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d 
+for X3D in WalkingAlien_Final.x3d conan_23_Aug2025_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d 
 do
 	X3DV="${X3D}v"
 	X3DOM=`basename "${X3D}" Final.x3d`x3dom.x3d

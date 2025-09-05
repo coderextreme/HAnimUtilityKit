@@ -27,8 +27,7 @@ No scaling is done, yet.
 ```
 JoeDemo5JoeSkin5_Final.x3dv
 JoeHAnimKick1a_Final.x3dv
-WalkingAlienTruncated_Final.x3dv
-WalkingAlienX_ITE_Final.x3dv
+WalkingAlien_Final.x3dv
 conan_23_Aug2025_Final.x3dv
 walking_man_cc_test_Final.x3dv
 ```
@@ -37,8 +36,7 @@ walking_man_cc_test_Final.x3dv
 ```
 JoeDemo5JoeSkin5_x3dom.x3d
 JoeHAnimKick1a_x3dom.x3d
-WalkingAlienTruncated_x3dom.x3d
-WalkingAlienX_ITE_x3dom.x3d
+WalkingAlien_x3dom.x3d
 conan_23_Aug2025_x3dom.x3d
 walking_man_cc_test_x3dom.x3d
 ```
@@ -56,8 +54,7 @@ walking_man_cc_test_x3dom.x3d
 runconan.py
 runjoe.py
 runjoedemo5.py
-runwalkingalienTruncated.py
-runwalkingalienX_ITE.py
+runwalkingalien.py
 runwalkingman.py
 ```
 
