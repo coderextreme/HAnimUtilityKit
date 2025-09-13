@@ -5,15 +5,15 @@
     <component name='HAnim' level='1'/>
     <meta name='title' content='JoeDemo5JoeSkin5.x3d'/>
     <meta name='description' content='joe kick into std anims'/>
-    <meta name='generator' content='x3d-tidy V2.1.25, https://www.npmjs.com/package/x3d-tidy'/>
-    <meta name='modified' content='Fri, 05 Sep 2025 18:04:43 GMT'/>
+    <meta name='generator' content='x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy'/>
+    <meta name='modified' content='Sat, 13 Sep 2025 03:34:55 GMT'/>
   </head>
   <Scene>
     <WorldInfo
         title='JoeDemo5JoeSkin.x3d, Only Skin'/>
     <NavigationInfo
         headlight='false'/>
-    <Background DEF='Background1'
+    <Background DEF='Background1_1'
         skyColor='0.4 0.4 0.4'
         groundColor='0.5 0.5 0.5'/>
     <DirectionalLight
@@ -25,7 +25,7 @@
     <DirectionalLight
         global='true'
         direction='0 0 1'/>
-    <Group DEF='SceneViewpoints'>
+    <Group DEF='SceneViewpoints_1'>
       <Viewpoint
           description='JinLOA4'
           position='0 1 3'
@@ -72,19 +72,19 @@
           orientation='1 0 0 -1.5708'
           centerOfRotation='0 0.9 0.0016'/>
     </Group>
-    <Transform DEF='HostCoordSys'
+    <Transform DEF='HostCoordSys_1'
         scale='0.17 0.17 0.17'>
       <Inline
           url='"JointCoordinateAxes.x3dv"'/>
-      <Viewpoint DEF='HostCoordSysView'
+      <Viewpoint DEF='HostCoordSysView_1'
           description='Host 0 0 0 View'/>
     </Transform>
     <Group DEF='Joe_Humanoid'>
       <HAnimHumanoid DEF='JoeHuman'>
         <HAnimJoint DEF='hanim_humanoid_root' containerField='skeleton'
             name='humanoid_root'
-            translation='0.6258181 0.08796358 -0.6258181'
-            rotation='1 0 0 0.450545386216858'
+            translation='0.7687272 0.1689454 -0.7687272'
+            rotation='0.999999999999999 0 0 0.5'
             center='0 0.875 0'>
           <HAnimSite DEF='Joe_RootView1'
               name='RootFront'>
@@ -103,13 +103,13 @@
               skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.35, 0.35, 1'>
             <HAnimJoint DEF='hanim_l_hip'
                 name='l_hip'
-                rotation='-1 0 0 0.876363470147965'
+                rotation='-1 0 0 1.11454541065476'
                 center='0.1 0.92 0'
                 skinCoordIndex='89, 90, 94, 95, 96, 97'
                 skinCoordWeight='0.65, 1, 1, 1, 1, 1'>
               <HAnimJoint DEF='hanim_l_knee'
                   name='l_knee'
-                  rotation='1 0 0 0.376363465542145'
+                  rotation='1 0 0 0.614545410654762'
                   center='0.115 0.466 0'
                   skinCoordIndex='334, 335, 336, 337, 338, 339, 340, 341'
                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
@@ -146,13 +146,13 @@
                 skinCoordWeight='0.65, 1, 0.8, 1, 1, 1, 0.4, 0.8'>
               <HAnimJoint DEF='hanim_r_knee'
                   name='r_knee'
-                  rotation='0.999999999999932 0 0 0.0501090764999424'
+                  rotation='1.0000000000001 0 0 0.0691636323928761'
                   center='-0.05 0.466 0'
                   skinCoordIndex='362, 363, 364, 365, 366, 367, 368, 369, 98'
                   skinCoordWeight='0.6, 0.2, 1, 1, 1, 1, 1, 1, 0.2'>
                 <HAnimJoint DEF='hanim_r_talocrural'
                     name='r_talocrural'
-                    rotation='-1 0 0 0.501090764999389'
+                    rotation='-1 0 0 0.691636323928832'
                     center='-0.115 0.069 0'
                     skinCoordIndex='370, 371, 372, 373'
                     skinCoordWeight='1, 1, 1, 1'>
@@ -179,13 +179,13 @@
           </HAnimJoint>
           <HAnimJoint DEF='hanim_vl5'
               name='vl5'
-              rotation='0.999999999999934 0 0 0.103939419828286'
+              rotation='0.999999999999899 0 0 0.0642424299620681'
               center='0 1.045 -0.095'
               skinCoordIndex='28, 76'
               skinCoordWeight='1, 1'>
             <HAnimJoint DEF='hanim_vl4'
                 name='vl4'
-                rotation='0.999999999999934 0 0 0.103939419828286'
+                rotation='0.999999999999899 0 0 0.0642424299620681'
                 center='0 1.068 -0.085'>
               <HAnimJoint DEF='hanim_vl3'
                   name='vl3'
@@ -219,11 +219,11 @@
                                 center='0 1.294 -0.11'>
                               <HAnimJoint DEF='hanim_vt7'
                                   name='vt7'
-                                  rotation='0.999999999999934 0 0 0.103939419828286'
+                                  rotation='0.999999999999899 0 0 0.0642424299620681'
                                   center='0 1.323 -0.1155'>
                                 <HAnimJoint DEF='hanim_vt6'
                                     name='vt6'
-                                    rotation='0.999999999999934 0 0 0.103939419828286'
+                                    rotation='0.999999999999899 0 0 0.0642424299620681'
                                     center='0 1.352 -0.12'>
                                   <HAnimJoint DEF='hanim_vt5'
                                       name='vt5'
@@ -257,7 +257,7 @@
                                                     center='0 1.552 -0.035'>
                                                   <HAnimJoint DEF='hanim_vc4'
                                                       name='vc4'
-                                                      rotation='0.707106780574367 0 0.707106780574367 0.000545392412602519'
+                                                      rotation='0.707106781186537 0 0.707106781186537 0.0958181680910536'
                                                       center='0 1.5675 -0.0256'>
                                                     <HAnimJoint DEF='hanim_vc3'
                                                         name='vc3'
@@ -270,7 +270,7 @@
                                                             center='0 1.61 -0.015'>
                                                           <HAnimJoint DEF='hanim_skullbase'
                                                               name='skullbase'
-                                                              rotation='0 -0.999999999999918 0 0.0940908663855441'
+                                                              rotation='0 -0.999999999999971 0 0.153636352663695'
                                                               center='0 1.63 -0.01'
                                                               skinCoordIndex='0, 1, 2, 3, 4, 5, 6, 7, 8, 9'
                                                               skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
@@ -299,13 +299,13 @@
                                                     skinCoordWeight='1'>
                                                   <HAnimJoint DEF='hanim_l_shoulder'
                                                       name='l_shoulder'
-                                                      rotation='0 0 1 0.46772740084339'
+                                                      rotation='0 0 1 0.289090942008927'
                                                       center='0.2 1.44 -0.04'
                                                       skinCoordIndex='41, 42, 44, 80, 102, 103, 104, 105'
                                                       skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
                                                     <HAnimJoint DEF='hanim_l_elbow'
                                                         name='l_elbow'
-                                                        rotation='-1 0 0 2.43872711062431'
+                                                        rotation='-1 0 0 2.65309086441994'
                                                         center='0.2 1.1388 -0.04'
                                                         skinCoordIndex='45, 46, 47, 109, 110, 111, 112, 113, 115, 116, 117, 118'
                                                         skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
@@ -440,13 +440,13 @@
                                                     skinCoordWeight='1, 0.9'>
                                                   <HAnimJoint DEF='hanim_r_shoulder'
                                                       name='r_shoulder'
-                                                      rotation='0 0 -1 2.2505453824997'
+                                                      rotation='0 0 -1 2.34581816196442'
                                                       center='-0.2 1.44 -0.04'
                                                       skinCoordIndex='29, 30, 32, 78, 218, 219, 220, 221, 86, 88'
                                                       skinCoordWeight='0.1, 1, 1, 1, 1, 1, 1, 1, 0.3, 0.2'>
                                                     <HAnimJoint DEF='hanim_r_elbow'
                                                         name='r_elbow'
-                                                        rotation='-1 0 0 2.43872711062431'
+                                                        rotation='-1 0 0 2.65309086441994'
                                                         center='-0.2 1.1388 -0.04'
                                                         skinCoordIndex='33, 34, 35, 225, 226, 227, 228, 229, 231, 232, 233, 234'
                                                         skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
@@ -764,12 +764,78 @@
         <IndexedLineSet USE='Orbit1'/>
       </Shape>
     </Transform>
+    <Background DEF='Background1'
+        skyColor='0.4 0.4 0.4'
+        groundColor='0.5 0.5 0.5'/>
+    <DirectionalLight
+        global='true'/>
+    <DirectionalLight
+        global='true'
+        intensity='0.75'
+        direction='0 0.5 0'/>
+    <DirectionalLight
+        global='true'
+        direction='0 0 1'/>
+    <Group DEF='SceneViewpoints'>
+      <Viewpoint
+          description='JinLOA4'
+          position='0 1 3'
+          centerOfRotation='0 1 0'/>
+      <Viewpoint
+          description='JinLOA4 Front'
+          position='0 0.4 4'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Front Close'
+          position='0 0.8 2'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Front Closer'
+          position='0 1.2 1'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Front Face'
+          position='0 1.63 1'
+          centerOfRotation='0 1.5 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Right Side'
+          position='2.6 0.8 0'
+          orientation='0 1 0 1.57'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Right Side Close'
+          position='1 0.8 0.5'
+          orientation='0 1 0 1.2'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Left Side Close'
+          position='-1 0.8 0.5'
+          orientation='0 1 0 -1.2'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Left Side'
+          position='-2.6 0.8 0'
+          orientation='0 1 0 -1.57'
+          centerOfRotation='0 0.9 0.0016'/>
+      <Viewpoint
+          description='JinLOA4 Top'
+          position='0 3.5 0'
+          orientation='1 0 0 -1.5708'
+          centerOfRotation='0 0.9 0.0016'/>
+    </Group>
+    <Transform DEF='HostCoordSys'
+        scale='0.17 0.17 0.17'>
+      <Inline
+          url='"JointCoordinateAxes.x3dv"'/>
+      <Viewpoint DEF='HostCoordSysView'
+          description='Host 0 0 0 View'/>
+    </Transform>
     <Group DEF='AnimationSelectMenu'>
       <ProximitySensor DEF='HudProx'
           size='10000 10000 10000'/>
       <Transform DEF='HudXform'
           translation='2 1 2'
-          rotation='0 1 0 0.779999971389771'>
+          rotation='0 1 0 0.78'>
         <Transform DEF='Menu'
             translation='-0.38 0.05 -0.75'
             scale='0.02 0.02 0.02'>
@@ -1463,7 +1529,7 @@
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
     </Group>
-    <Group DEF='Pose_T_Animation_loa4'>
+    <Group DEF='PoseTAnimation_loa4'>
       <TimeSensor DEF='PoseTTimer'
           cycleInterval='5.5'
           loop='true'/>
@@ -1909,7 +1975,7 @@
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
     </Group>
-    <Group DEF='Pose_A_Animation_loa4'>
+    <Group DEF='PoseAAnimation_loa4'>
       <TimeSensor DEF='PoseATimer'
           cycleInterval='5.5'
           loop='true'/>
@@ -2355,7 +2421,7 @@
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
     </Group>
-    <Group DEF='Pose_H_Animation_loa4'>
+    <Group DEF='PoseHAnimation_loa4'>
       <TimeSensor DEF='PoseHTimer'
           cycleInterval='5.5'
           loop='true'/>

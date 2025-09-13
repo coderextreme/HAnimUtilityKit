@@ -8,4 +8,4 @@ FINAL_FILE = "JoeHAnimKick1a_Final.x3d"
 TIME_SENSORS = [ "Ex_Time" ]
 
 joe = HAnimUtility()
-joe.standard_rename(INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE)
+joe.joe_rename(INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE)

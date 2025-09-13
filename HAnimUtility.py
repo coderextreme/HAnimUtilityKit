@@ -10,6 +10,10 @@ class HAnimUtility:
         X3D = xml.etree.ElementTree.parse(INPUT_FILE)
         self.root = X3D.getroot()
 
+    def getRootFromXML(self, INPUT_FILE):
+        X3D = xml.etree.ElementTree.parse(INPUT_FILE)
+        return X3D.getroot()
+
     # animation_remove.py
     def animation_remove(self):
         for time_sensor_parent in self.root.findall('.//TimeSensor/..'):
@@ -148,7 +152,27 @@ class HAnimUtility:
                 if use_joint_name == cc_name:
                     use_joint.set("USE", prepended_joint)
 
+    def humanoid_replace(self):
+        template_root = self.getRootFromXML("JoeDemo5JoeSkin5a.x3d")
+        for humanoids_parent in self.root.findall('.//HAnimHumanoid/..'):
+            for humanoid in humanoids_parent.findall('HAnimHumanoid'):
+                for template_parent in template_root.findall('.//HAnimHumanoid/..'):
+                    for template_humanoid in template_parent.findall('HAnimHumanoid'):
+                        index = list(template_parent).index(template_humanoid)
+                        template_parent.remove(template_humanoid)
+                        template_parent.insert(index, humanoid)
+        self.root = template_root
+
     def standard_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+        self.readXML(INPUT_FILE)
+        self.animation_remove()
+        self.humanoid_replace()
+        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+        # We removed animations, above.
+        # self.rename_interpolators(TIME_SENSORS)
+        self.writeXML(FINAL_FILE)
+
+    def joe_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
         self.animation_remove()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
@@ -159,6 +183,7 @@ class HAnimUtility:
     def standard_rename_with_group(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
         self.animation_remove()
+        self.humanoid_replace()
         self.group_remove()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
         # We removed animations, above.
@@ -169,6 +194,7 @@ class HAnimUtility:
     def interpolator_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
         # animations are not removed
+        self.humanoid_replace()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
         self.rename_interpolators(TIME_SENSORS)
         self.writeXML(FINAL_FILE)
@@ -178,6 +204,7 @@ class HAnimUtility:
         self.readXML(INPUT_FILE)
         # animations were removed by hand
         # self.animation_remove()
+        self.humanoid_replace()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
         # animations were removed by hand
         # self.rename_interpolators(root, TIME_SENSORS)
@@ -190,6 +217,7 @@ class HAnimUtility:
     def tidy_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
         self.animation_remove()
+        self.humanoid_replace()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
         # We removed animations, above.
         # self.rename_interpolators(root, TIME_SENSORS)
