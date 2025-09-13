@@ -34,7 +34,7 @@ do
 	ex "${X3DV}"  < "${X3DV}".cmds
 
 	echo "Adding animations..."
-	cat Animations2.x3dv >> "${X3DV}"
+	cat Animations3.x3dv >> "${X3DV}"
 
 	echo "Validating..."
 	~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate "${X3DV}" 2>&1 | sort -u

@@ -1,4 +1,4 @@
-#X3D V4.0 utf8 X_ITE V12.0.6
+#X3D V4.0 utf8 X_ITE V12.0.7
 
 PROFILE Immersive
 
@@ -6,8 +6,8 @@ COMPONENT HAnim : 1
 
 META "title" "JoeDemo5JoeSkin5.x3d"
 META "description" "joe kick into std anims"
-META "generator" "x3d-tidy V2.1.25, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Fri, 05 Sep 2025 18:04:26 GMT"
+META "generator" "x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy"
+META "modified" "Sat, 13 Sep 2025 03:34:17 GMT"
 
 WorldInfo {
   title "JoeDemo5JoeSkin.x3d, Only Skin"
@@ -5532,345 +5532,426 @@ DEF Circle2 Transform {
     geometry USE Orbit1
   }
 }
-DEF AnimationSelectMenu Group {
-	children [
-		DEF HudProx ProximitySensor {
-			size 10000 10000 10000
-		}
-		DEF HudXform Transform {
-			rotation 0 1 0 0.779999971389771
-			translation 2 1 2
-			ROUTE HudProx.position_changed TO HudXform.set_translation
-			ROUTE HudProx.orientation_changed TO HudXform.set_rotation
-			children [
-				DEF Menu Transform {
-					scale 0.0199999995529652 0.0199999995529652 0.0199999995529652
-					translation -0.379999995231628 0.0500000007450581 -0.75
-					children [
-						DEF MenuLabel Transform {
-							translation 1.29999995231628 3 0
-							children DEF MenuLabelText Shape {
-								appearance DEF TextAppearance Appearance {
-									material DEF TextColor Material {
-										diffuseColor 1 1 1
-										emissiveColor 0.819999992847443 0.519999980926514 0.170000001788139
-										specularColor 1 1 1
-										ambientIntensity 1
-									}
-								}
-								geometry Text {
-									string [
-										"Transportable",
-										"Animations",
-									]
-									fontStyle DEF LabelTextFont FontStyle {
-										size 1.25
-										family "SANS"
-										justify [
-											"MIDDLE",
-											"MIDDLE",
-										]
-									}
-								}
-							}
-						}
-						DEF Default_Text Transform {
-							translation 0 0.400000005960464 0
-							children [
-								DEF Default_Touch TouchSensor {
-								}
-								DEF DefaultText Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Basic"
-										fontStyle DEF TextFont FontStyle {
-											family "SANS"
-										}
-									}
-								}
-								DEF TextBacking Shape {
-									appearance Appearance {
-										material DEF Clear Material {
-											diffuseColor 0 0.5 0
-											transparency 0.800000011920929
-											emissiveColor 0 0.5 0
-											ambientIntensity 1
-										}
-									}
-									geometry DEF Backing IndexedFaceSet {
-										coordIndex [
-											0, 1, 2, 3, -1,
-										]
-										coord Coordinate {
-											point [
-												-0.200000002980232 -0.25 -0.00999999977648258,
-												3 -0.25 -0.00999999977648258,
-												3 1 -0.00999999977648258,
-												-0.200000002980232 1 -0.00999999977648258,
-											]
-										}
-									}
-								}
-							]
-						}
-						DEF Pose_TextCenter Transform {
-							translation -1 0 0
-							children [
-								DEF Test_T Transform {
-									translation 0 -0.899999976158142 0
-									children [
-										DEF Test_T_Touch TouchSensor {
-										}
-										DEF TestTText Shape {
-											appearance USE TextAppearance
-											geometry Text {
-												string "T"
-												fontStyle USE TextFont
-											}
-										}
-										DEF TestTextBacking Shape {
-											appearance Appearance {
-												material DEF Clear2 Material {
-													diffuseColor 0 0.5 0
-													transparency 0.800000011920929
-													emissiveColor 0 0.5 0
-													ambientIntensity 1
-												}
-											}
-											geometry DEF Backing2 IndexedFaceSet {
-												coordIndex [
-													0, 1, 2, 3, -1,
-												]
-												coord Coordinate {
-													point [
-														-0.300000011920929 -0.25 -0.00999999977648258,
-														1 -0.25 -0.00999999977648258,
-														1 1 -0.00999999977648258,
-														-0.300000011920929 1 -0.00999999977648258,
-													]
-												}
-											}
-										}
-									]
-								}
-								DEF Test_A Transform {
-									translation 2 -0.899999976158142 0
-									children [
-										DEF Test_A_Touch TouchSensor {
-										}
-										DEF TestAText Shape {
-											appearance USE TextAppearance
-											geometry Text {
-												string "A"
-												fontStyle USE TextFont
-											}
-										}
-										USE TestTextBacking
-									]
-								}
-								DEF Test_H Transform {
-									translation 4 -0.899999976158142 0
-									children [
-										DEF Test_H_Touch TouchSensor {
-										}
-										DEF TestHText Shape {
-											appearance USE TextAppearance
-											geometry Text {
-												string "H"
-												fontStyle USE TextFont
-											}
-										}
-										USE TestTextBacking
-									]
-								}
-							]
-						}
-						DEF Pitch1_Text Transform {
-							translation -1.79999995231628 -2.40000009536743 0
-							children [
-								DEF Pitch1_Touch TouchSensor {
-								}
-								DEF Pitch1Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Pitch1"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Pitch2_Text Transform {
-							translation 1.51999998092651 -2.40000009536743 0
-							children [
-								DEF Pitch2_Touch TouchSensor {
-								}
-								DEF PitchText Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Pitch2"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Yaw1_Text Transform {
-							translation -1.79999995231628 -3.79999995231628 0
-							children [
-								DEF Yaw1_Touch TouchSensor {
-								}
-								DEF Yaw1Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Yaw1"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Yaw2_Text Transform {
-							translation 1.51999998092651 -3.79999995231628 0
-							children [
-								DEF Yaw2_Touch TouchSensor {
-								}
-								DEF Yaw2Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Yaw2"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Roll1_Text Transform {
-							translation -1.79999995231628 -5.19999980926514 0
-							children [
-								DEF Roll1_Touch TouchSensor {
-								}
-								DEF Roll1Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Roll1"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Roll2_Text Transform {
-							translation 1.51999998092651 -5.19999980926514 0
-							children [
-								DEF Roll2_Touch TouchSensor {
-								}
-								DEF Roll2Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Roll2"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Walk_Text Transform {
-							translation 0 -6.59999990463257 0
-							children [
-								DEF Walk_Touch TouchSensor {
-								}
-								DEF WalkText Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Walk"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Run_Text Transform {
-							translation 0 -8 0
-							children [
-								DEF Run_Touch TouchSensor {
-								}
-								DEF RunText Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Run"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Jump_Text Transform {
-							translation 0 -9.39999961853027 0
-							children [
-								DEF Jump_Touch TouchSensor {
-								}
-								DEF JumpText Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Jump"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Kick1_Text Transform {
-							translation -1.79999995231628 -10.8000001907349 0
-							children [
-								DEF Kick1_Touch TouchSensor {
-								}
-								DEF Kick1Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Kick1 "
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF Kick2_Text Transform {
-							translation 1.51999998092651 -10.8000001907349 0
-							children [
-								DEF Kick2_Touch TouchSensor {
-								}
-								DEF Kick2Text Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Kick2"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-						DEF StopTimer_Text Transform {
-							translation 0 -12.1999998092651 0
-							children [
-								DEF StopTimer_Touch TouchSensor {
-								}
-								DEF StopTimerText Shape {
-									appearance USE TextAppearance
-									geometry Text {
-										string "Stop"
-										fontStyle USE TextFont
-									}
-								}
-								USE TextBacking
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+DEF Background1 Background {
+  skyColor 0.4 0.4 0.4
+  groundColor 0.5 0.5 0.5
 }
+
+DirectionalLight {
+  global TRUE
+}
+
+DirectionalLight {
+  global TRUE
+  intensity 0.75
+  direction 0 0.5 0
+}
+
+DirectionalLight {
+  global TRUE
+  direction 0 0 1
+}
+
+DEF SceneViewpoints Group {
+  children [
+    Viewpoint {
+      description "JinLOA4"
+      position 0 1 3
+      centerOfRotation 0 1 0
+    }
+    Viewpoint {
+      description "JinLOA4 Front"
+      position 0 0.4 4
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Front Close"
+      position 0 0.8 2
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Front Closer"
+      position 0 1.2 1
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Front Face"
+      position 0 1.63 1
+      centerOfRotation 0 1.5 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Right Side"
+      position 2.6 0.8 0
+      orientation 0 1 0 1.57
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Right Side Close"
+      position 1 0.8 0.5
+      orientation 0 1 0 1.2
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Left Side Close"
+      position -1 0.8 0.5
+      orientation 0 1 0 -1.2
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Left Side"
+      position -2.6 0.8 0
+      orientation 0 1 0 -1.57
+      centerOfRotation 0 0.9 0.0016
+    }
+    Viewpoint {
+      description "JinLOA4 Top"
+      position 0 3.5 0
+      orientation 1 0 0 -1.5708
+      centerOfRotation 0 0.9 0.0016
+    }
+  ]
+}
+
+DEF HostCoordSys Transform {
+  scale 0.17 0.17 0.17
+  children [
+    Inline {
+      url "JointCoordinateAxes.x3dv"
+    }
+    DEF HostCoordSysView Viewpoint {
+      description "Host 0 0 0 View"
+    }
+  ]
+}
+
+DEF AnimationSelectMenu Group {
+  children [
+    DEF HudProx ProximitySensor {
+      size 10000 10000 10000
+    }
+    DEF HudXform Transform {
+      translation 2 1 2
+      rotation 0 1 0 0.78
+      children DEF Menu Transform {
+        translation -0.38 0.05 -0.75
+        scale 0.02 0.02 0.02
+        children [
+          DEF MenuLabel Transform {
+            translation 1.3 3 0
+            children DEF MenuLabelText Shape {
+              appearance DEF TextAppearance Appearance {
+                material DEF TextColor Material {
+                  ambientIntensity 1
+                  diffuseColor 1 1 1
+                  specularColor 1 1 1
+                  emissiveColor 0.82 0.52 0.17
+                }
+              }
+              geometry Text {
+                string [
+                  "Transportable",
+                  "Animations"
+                ]
+                fontStyle DEF LabelTextFont FontStyle {
+                  family "SANS"
+                  size 1.25
+                  justify [
+                    "MIDDLE",
+                    "MIDDLE"
+                  ]
+                }
+              }
+            }
+          }
+          DEF Default_Text Transform {
+            translation 0 0.4 0
+            children [
+              DEF Default_Touch TouchSensor { }
+              DEF DefaultText Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Basic"
+                  fontStyle DEF TextFont FontStyle {
+                    family "SANS"
+                  }
+                }
+              }
+              DEF TextBacking Shape {
+                appearance Appearance {
+                  material DEF Clear Material {
+                    ambientIntensity 1
+                    diffuseColor 0 0.5 0
+                    emissiveColor 0 0.5 0
+                    transparency 0.8
+                  }
+                }
+                geometry DEF Backing IndexedFaceSet {
+                  coordIndex [
+                    0,
+                    1,
+                    2,
+                    3,
+                    -1
+                  ]
+                  coord Coordinate {
+                    point [
+                      -0.2 -0.25 -0.01,
+                      3 -0.25 -0.01,
+                      3 1 -0.01,
+                      -0.2 1 -0.01
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+          DEF Pose_TextCenter Transform {
+            translation -1 0 0
+            children [
+              DEF Test_T Transform {
+                translation 0 -0.9 0
+                children [
+                  DEF Test_T_Touch TouchSensor { }
+                  DEF TestTText Shape {
+                    appearance USE TextAppearance
+                    geometry Text {
+                      string "T"
+                      fontStyle USE TextFont
+                    }
+                  }
+                  DEF TestTextBacking Shape {
+                    appearance Appearance {
+                      material DEF Clear2 Material {
+                        ambientIntensity 1
+                        diffuseColor 0 0.5 0
+                        emissiveColor 0 0.5 0
+                        transparency 0.8
+                      }
+                    }
+                    geometry DEF Backing2 IndexedFaceSet {
+                      coordIndex [
+                        0,
+                        1,
+                        2,
+                        3,
+                        -1
+                      ]
+                      coord Coordinate {
+                        point [
+                          -0.3 -0.25 -0.01,
+                          1 -0.25 -0.01,
+                          1 1 -0.01,
+                          -0.3 1 -0.01
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+              DEF Test_A Transform {
+                translation 2 -0.9 0
+                children [
+                  DEF Test_A_Touch TouchSensor { }
+                  DEF TestAText Shape {
+                    appearance USE TextAppearance
+                    geometry Text {
+                      string "A"
+                      fontStyle USE TextFont
+                    }
+                  }
+                  USE TestTextBacking
+                ]
+              }
+              DEF Test_H Transform {
+                translation 4 -0.9 0
+                children [
+                  DEF Test_H_Touch TouchSensor { }
+                  DEF TestHText Shape {
+                    appearance USE TextAppearance
+                    geometry Text {
+                      string "H"
+                      fontStyle USE TextFont
+                    }
+                  }
+                  USE TestTextBacking
+                ]
+              }
+            ]
+          }
+          DEF Pitch1_Text Transform {
+            translation -1.8 -2.4 0
+            children [
+              DEF Pitch1_Touch TouchSensor { }
+              DEF Pitch1Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Pitch1"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Pitch2_Text Transform {
+            translation 1.52 -2.4 0
+            children [
+              DEF Pitch2_Touch TouchSensor { }
+              DEF PitchText Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Pitch2"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Yaw1_Text Transform {
+            translation -1.8 -3.8 0
+            children [
+              DEF Yaw1_Touch TouchSensor { }
+              DEF Yaw1Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Yaw1"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Yaw2_Text Transform {
+            translation 1.52 -3.8 0
+            children [
+              DEF Yaw2_Touch TouchSensor { }
+              DEF Yaw2Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Yaw2"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Roll1_Text Transform {
+            translation -1.8 -5.2 0
+            children [
+              DEF Roll1_Touch TouchSensor { }
+              DEF Roll1Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Roll1"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Roll2_Text Transform {
+            translation 1.52 -5.2 0
+            children [
+              DEF Roll2_Touch TouchSensor { }
+              DEF Roll2Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Roll2"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Walk_Text Transform {
+            translation 0 -6.6 0
+            children [
+              DEF Walk_Touch TouchSensor { }
+              DEF WalkText Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Walk"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Run_Text Transform {
+            translation 0 -8 0
+            children [
+              DEF Run_Touch TouchSensor { }
+              DEF RunText Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Run"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Jump_Text Transform {
+            translation 0 -9.4 0
+            children [
+              DEF Jump_Touch TouchSensor { }
+              DEF JumpText Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Jump"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Kick1_Text Transform {
+            translation -1.8 -10.8 0
+            children [
+              DEF Kick1_Touch TouchSensor { }
+              DEF Kick1Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Kick1 "
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF Kick2_Text Transform {
+            translation 1.52 -10.8 0
+            children [
+              DEF Kick2_Touch TouchSensor { }
+              DEF Kick2Text Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Kick2"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+          DEF StopTimer_Text Transform {
+            translation 0 -12.2 0
+            children [
+              DEF StopTimer_Touch TouchSensor { }
+              DEF StopTimerText Shape {
+                appearance USE TextAppearance
+                geometry Text {
+                  string "Stop"
+                  fontStyle USE TextFont
+                }
+              }
+              USE TextBacking
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+
 DEF DefaultAnimation_loa4 Group {
   children [
     DEF DefaultTimer TimeSensor {
@@ -7644,7 +7725,7 @@ DEF DefaultAnimation_loa4 Group {
   ]
 }
 
-DEF Pose_T_Animation_loa4 Group {
+DEF PoseTAnimation_loa4 Group {
   children [
     DEF PoseTTimer TimeSensor {
       cycleInterval 5.5
@@ -9423,7 +9504,7 @@ DEF Pose_T_Animation_loa4 Group {
   ]
 }
 
-DEF Pose_A_Animation_loa4 Group {
+DEF PoseAAnimation_loa4 Group {
   children [
     DEF PoseATimer TimeSensor {
       cycleInterval 5.5
@@ -11196,7 +11277,7 @@ DEF Pose_A_Animation_loa4 Group {
   ]
 }
 
-DEF Pose_H_Animation_loa4 Group {
+DEF PoseHAnimation_loa4 Group {
   children [
     DEF PoseHTimer TimeSensor {
       cycleInterval 5.5

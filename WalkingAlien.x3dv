@@ -1,11 +1,11 @@
-#X3D V4.0 utf8 X_ITE V12.0.6
+#X3D V4.0 utf8 X_ITE V12.0.7
 
 PROFILE Interchange
 
 COMPONENT HAnim : 3
 
-META "generator" "x3d-tidy V2.1.25, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Fri, 05 Sep 2025 18:00:49 GMT"
+META "generator" "x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy"
+META "modified" "Sat, 13 Sep 2025 03:27:36 GMT"
 
 WorldInfo {
   title "WalkingAlien.gltf"
@@ -4938,7 +4938,7 @@ HAnimHumanoid {
               children DEF abdomen-05 HAnimJoint {
                 name "abdomen_05"
                 translation 0 3.9758 -0.36552
-                rotation 0.15658 -0.98361 -0.089334 0.10837
+                rotation 0.15658 -0.98362 -0.089334 0.10837
                 skinCoordIndex [
                   743,
                   744,
@@ -9669,7 +9669,7 @@ HAnimHumanoid {
                     DEF rCollar-07 HAnimJoint {
                       name "rCollar_07"
                       translation -5.3645 9.0635 -0.29553
-                      rotation 0.56909 -0.81866 -0.077103 0.13338
+                      rotation 0.56909 -0.81865 -0.077102 0.13338
                       skinCoordIndex [
                         1933,
                         1934,
@@ -11617,7 +11617,7 @@ HAnimHumanoid {
                           children DEF rHand-010 HAnimJoint {
                             name "rHand_010"
                             translation -30.236 -1.2192 2.4384
-                            rotation 0.054987 -0.82423 0.56359 0.24591
+                            rotation 0.054986 -0.82423 0.56358 0.24592
                             skinCoordIndex [
                               2753,
                               2754,
@@ -12902,7 +12902,7 @@ HAnimHumanoid {
                                 children DEF rThumb2-012 HAnimJoint {
                                   name "rThumb2_012"
                                   translation -1.545 -0.038765 3.6119
-                                  rotation 0.019646 -0.99425 -0.10515 0.062742
+                                  rotation 0.019646 -0.99426 -0.10515 0.062742
                                   skinCoordIndex [
                                     5575,
                                     5576,
@@ -15505,7 +15505,7 @@ HAnimHumanoid {
                     DEF lCollar-018 HAnimJoint {
                       name "lCollar_018"
                       translation 5.3645 9.0635 -0.29553
-                      rotation -0.97729 -0.21164 0.01051 0.18557
+                      rotation -0.97729 -0.21164 0.01051 0.18558
                       skinCoordIndex [
                         1981,
                         1983,
@@ -16601,7 +16601,7 @@ HAnimHumanoid {
                         children DEF lForeArm-020 HAnimJoint {
                           name "lForeArm_020"
                           translation 24.628 -0.48768 -0.73152
-                          rotation -0.95752 -0.26884 -0.1043 0.2143
+                          rotation -0.95752 -0.26884 -0.1043 0.21431
                           skinCoordIndex [
                             3057,
                             3058,
@@ -18732,7 +18732,7 @@ HAnimHumanoid {
                                 children DEF lThumb2-023 HAnimJoint {
                                   name "lThumb2_023"
                                   translation 1.545 -0.038765 3.6119
-                                  rotation 0.94284 -0.19677 0.26897 0.14098
+                                  rotation 0.94283 -0.19677 0.26897 0.14098
                                   skinCoordIndex [
                                     6830,
                                     6831,
@@ -19884,7 +19884,7 @@ HAnimHumanoid {
                                   children DEF lIndex3-026 HAnimJoint {
                                     name "lIndex3_026"
                                     translation 4.6732 0.068275 1.0196
-                                    rotation 0.1891 -6.9126e-17 -0.98196 0.30589
+                                    rotation 0.1891 -6.9125e-17 -0.98196 0.30589
                                     skinCoordIndex [
                                       7188,
                                       7189,
@@ -21331,7 +21331,7 @@ HAnimHumanoid {
                     DEF neck-030 HAnimJoint {
                       name "neck_030"
                       translation -8.8818e-16 10.283 -0.53937
-                      rotation 1 -2.6021e-18 -9.9371e-17 0.052359
+                      rotation 1 -2.6021e-18 -9.937e-17 0.05236
                       skinCoordIndex [
                         1937,
                         1938,
@@ -28956,7 +28956,7 @@ HAnimHumanoid {
               children DEF rShin-038 HAnimJoint {
                 name "rShin_038"
                 translation -2.1946 -38.527 1.7069
-                rotation 0.93048 -0.14513 0.33799 0.027759
+                rotation 0.92997 -0.14505 0.3378 0.027775
                 skinCoordIndex [
                   3970,
                   3971,
@@ -29892,7 +29892,7 @@ HAnimHumanoid {
                 children DEF rFoot-039 HAnimJoint {
                   name "rFoot_039"
                   translation -1.2192 -32.431 -2.6822
-                  rotation 0.54362 -0.70953 -0.44836 0.12242
+                  rotation 0.54363 -0.70954 -0.44836 0.12242
                   skinCoordIndex [
                     4093,
                     4094,
@@ -32697,7 +32697,7 @@ HAnimHumanoid {
               children DEF lShin-043 HAnimJoint {
                 name "lShin_043"
                 translation 2.1946 -38.527 1.7069
-                rotation 0.24162 -0.025636 0.97007 0.042377
+                rotation 0.24161 -0.025635 0.97004 0.042379
                 skinCoordIndex [
                   4617,
                   4618,
@@ -33633,7 +33633,7 @@ HAnimHumanoid {
                 children DEF lFoot-044 HAnimJoint {
                   name "lFoot_044"
                   translation 1.2192 -32.431 -2.6822
-                  rotation 0.21521 -0.67001 -0.71048 0.16306
+                  rotation 0.21521 -0.67001 -0.71047 0.16306
                   skinCoordIndex [
                     4737,
                     4738,
