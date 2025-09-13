@@ -2,7 +2,7 @@ from alienmap import skeleton_map_list
 from HAnimUtility import HAnimUtility
 
 INPUT_PREFIX = ""
-INPUT_FILE = "WalkingAlien.x3d"
+INPUT_FILE = "WalkingAlien.scaled.x3d"
 OUTPUT_PREFIX = "hanim_"
 FINAL_FILE = "WalkingAlien_Final.x3d"
 TIME_SENSORS = [ "Timer1" ]

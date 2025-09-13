@@ -9,9 +9,13 @@ curl https://create3000.github.io/media/glTF/Walking%20Alien/scene.bin --output 
 curl https://create3000.github.io/media/glTF/Walking%20Alien/Walking%20Alien.gltf --output WalkingAlien.gltf 
 
 echo "Converting Walking Alien from .gltf/.bin to .x3d and .x3dv..."
-npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3d
-npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3dv
+#npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3d
+#npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3dv
 npx x3d-tidy@latest -f 5 -d 5 -i JoeHAnimKick1a.x3dv -o JoeHAnimKick1a.x3d
+
+python rescale.py walking_man_cc_test.new.python.x3d walking_man_cc_test.x3d
+python rescale.py conan_23_Aug2025.x3d conan_23_Aug2025.scaled.x3d
+python rescale.py WalkingAlien.x3d WalkingAlien.scaled.x3d
 
 
 echo "Mapping joints and interpolators..."

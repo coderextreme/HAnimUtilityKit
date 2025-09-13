@@ -2,7 +2,7 @@ from manmap import skeleton_map_list
 from HAnimUtility import HAnimUtility
 
 INPUT_PREFIX = "CC_"
-INPUT_FILE = "walking_man_cc_test.new.python.x3d"
+INPUT_FILE = "walking_man_cc_test.x3d"
 OUTPUT_PREFIX = "hanim_"
 FINAL_FILE = "walking_man_cc_test_Final.x3d"
 TIME_SENSORS = [ "JohnWalkTimer" ]

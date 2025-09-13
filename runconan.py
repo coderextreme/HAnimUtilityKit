@@ -2,7 +2,7 @@ from conanmap import skeleton_map_list
 from HAnimUtility import HAnimUtility
 
 INPUT_PREFIX = "GameSkeleton_"
-INPUT_FILE = "conan_23_Aug2025.x3d"
+INPUT_FILE = "conan_23_Aug2025.scaled.x3d"
 OUTPUT_PREFIX = "hanim_"
 FINAL_FILE = "conan_23_Aug2025_Final.x3d"
 TIME_SENSORS = [ "JohnJumpTimer" ]
