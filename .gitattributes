@@ -8,9 +8,6 @@
 *.jar           binary
 walking_man_cc_test.new.python.x3d filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test_Final.x3d filter=lfs diff=lfs merge=lfs -text
-walking_man_cc_test_Final.x3dv.gz filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test_Final.x3dv filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test_x3dom.x3d filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test.x3d filter=lfs diff=lfs merge=lfs -text
-*.x3dv.gz filter=lfs diff=lfs merge=lfs -text
-*.x3d filter=lfs diff=lfs merge=lfs -text
