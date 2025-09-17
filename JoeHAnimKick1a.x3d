@@ -5,7 +5,7 @@
     <component name='HAnim' level='1'/>
     <meta name='Joe' content='No Reservations 20121221 20040109 x3d/hanim'/>
     <meta name='generator' content='x3d-tidy V2.2.3, https://www.npmjs.com/package/x3d-tidy'/>
-    <meta name='modified' content='Wed, 17 Sep 2025 06:01:25 GMT'/>
+    <meta name='modified' content='Wed, 17 Sep 2025 06:43:47 GMT'/>
   </head>
   <Scene>
     <WorldInfo
@@ -42,8 +42,8 @@
           version=''>
         <HAnimJoint DEF='Joe_HumanoidRoot' containerField='skeleton'
             name='HumanoidRoot'
-            translation='-0.18989 0.12473 0.074196'
-            rotation='-1 0 0 0.5'
+            translation='0.15315 0.019584 -0.22976'
+            rotation='-1 0 0 0.040483'
             center='0 0.875 0'>
           <HAnimSite DEF='Joe_RootView1'
               name='RootFront'>
@@ -63,19 +63,19 @@
               skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.35, 0.35, 1'>
             <HAnimJoint DEF='Joe_l_hip'
                 name='l_hip'
-                rotation='1 0 0 0.81623'
+                rotation='1 0 0 0.23414'
                 center='0.1 0.92 0'
                 skinCoordIndex='89, 90, 94, 95, 96, 97'
                 skinCoordWeight='0.65, 1, 1, 1, 1, 1'>
               <HAnimJoint DEF='Joe_l_knee'
                   name='l_knee'
-                  rotation='0.98792 0 0.15499 0.99233'
+                  rotation='0.2106 0 0.97757 0.22603'
                   center='0.115 0.466 0'
                   skinCoordIndex='334, 335, 336, 337, 338, 339, 340, 341'
                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
                 <HAnimJoint DEF='Joe_l_ankle'
                     name='l_ankle'
-                    rotation='1 0 0 0.73047'
+                    rotation='1 0 0 0.16032'
                     center='0.115 0.069 0'
                     skinCoordIndex='342, 343, 344, 345'
                     skinCoordWeight='1, 1, 1, 1'>
@@ -101,19 +101,19 @@
             </HAnimJoint>
             <HAnimJoint DEF='Joe_r_hip'
                 name='r_hip'
-                rotation='-1 0 0 1'
+                rotation='1 0 0 0.03807'
                 center='-0.1 0.92 0'
                 skinCoordIndex='91, 92, 98, 99, 100, 101, 362, 363'
                 skinCoordWeight='0.65, 1, 0.8, 1, 1, 1, 0.4, 0.8'>
               <HAnimJoint DEF='Joe_r_knee'
                   name='r_knee'
-                  rotation='1 0 0 1.0957'
+                  rotation='1 0 0 0.48097'
                   center='-0.05 0.466 0'
                   skinCoordIndex='362, 363, 364, 365, 366, 367, 368, 369, 98'
                   skinCoordWeight='0.6, 0.2, 1, 1, 1, 1, 1, 1, 0.2'>
                 <HAnimJoint DEF='Joe_r_ankle'
                     name='r_ankle'
-                    rotation='1 0 0 0.90429'
+                    rotation='1 0 0 0.48097'
                     center='-0.115 0.069 0'
                     skinCoordIndex='370, 371, 372, 373'
                     skinCoordWeight='1, 1, 1, 1'>
@@ -214,7 +214,7 @@
                                                     center='0 1.552 -0.035'>
                                                   <HAnimJoint DEF='Joe_vc4'
                                                       name='vc4'
-                                                      rotation='0.90025 0 0.43537 0.543'
+                                                      rotation='0.98593 0 -0.16716 0.46046'
                                                       center='0 1.5675 -0.0256'>
                                                     <HAnimJoint DEF='Joe_vc3'
                                                         name='vc3'
@@ -227,7 +227,6 @@
                                                             center='0 1.61 -0.015'>
                                                           <HAnimJoint DEF='Joe_skullbase'
                                                               name='skullbase'
-                                                              rotation='0 1 0 0.066997'
                                                               center='0 1.63 -0.01'
                                                               skinCoordIndex='0, 1, 2, 3, 4, 5, 6, 7, 8, 9'
                                                               skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
@@ -256,19 +255,19 @@
                                                     skinCoordWeight='1'>
                                                   <HAnimJoint DEF='Joe_l_shoulder'
                                                       name='l_shoulder'
-                                                      rotation='-0.51835 0 0.85517 1.5974'
+                                                      rotation='0 0 1 1.3884'
                                                       center='0.2 1.44 -0.04'
                                                       skinCoordIndex='41, 42, 44, 80, 102, 103, 104, 105'
                                                       skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
                                                     <HAnimJoint DEF='Joe_l_elbow'
                                                         name='l_elbow'
-                                                        rotation='-0.92443 -0.38136 0 0.55784'
+                                                        rotation='-1 0 0 1.3339'
                                                         center='0.2 1.1388 -0.04'
                                                         skinCoordIndex='45, 46, 47, 109, 110, 111, 112, 113, 115, 116, 117, 118'
                                                         skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
                                                       <HAnimJoint DEF='Joe_l_wrist'
                                                           name='l_wrist'
-                                                          rotation='0 -0.44192 0.89706 1.2909'
+                                                          rotation='0 1 0 1.2033'
                                                           center='0.2 0.87 -0.04'
                                                           skinCoordIndex='119, 120, 121, 122, 123, 124, 125, 126'
                                                           skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
@@ -398,19 +397,19 @@
                                                     skinCoordWeight='1, 0.9'>
                                                   <HAnimJoint DEF='Joe_r_shoulder'
                                                       name='r_shoulder'
-                                                      rotation='0 0 -1 1.6489'
+                                                      rotation='0 0 -1 1.7595'
                                                       center='-0.2 1.44 -0.04'
                                                       skinCoordIndex='29, 30, 32, 78, 218, 219, 220, 221, 86, 88'
                                                       skinCoordWeight='0.1, 1, 1, 1, 1, 1, 1, 1, 0.3, 0.2'>
                                                     <HAnimJoint DEF='Joe_r_elbow'
                                                         name='r_elbow'
-                                                        rotation='-0.92443 -0.38136 0 0.55784'
+                                                        rotation='-1 0 0 1.3339'
                                                         center='-0.2 1.1388 -0.04'
                                                         skinCoordIndex='33, 34, 35, 225, 226, 227, 228, 229, 231, 232, 233, 234'
                                                         skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
                                                       <HAnimJoint DEF='Joe_r_wrist'
                                                           name='r_wrist'
-                                                          rotation='0 -0.15152 -0.98845 0.68337'
+                                                          rotation='0 1 0 0.077855'
                                                           center='-0.2 0.89 -0.04'
                                                           skinCoordIndex='235, 236, 237, 238, 239, 240, 241, 242'
                                                           skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
@@ -712,8 +711,8 @@
         key='0, 0.2, 0.6, 1'
         keyValue='1 0.3 -1, 0.4 -0.04 -0.4, -0.18 0.1 0, -0.2 0.15 0.15'/>
     <Transform DEF='SBall'
-        translation='1.333 2.6524 6.5967'
-        rotation='-0.70014 0.14003 -0.70014 3'
+        translation='-0.074397 0.094551 -0.074397'
+        rotation='-0.70711 0 -0.70711 1.231'
         scale='0.23 0.23 0.23'>
       <Shape>
         <Appearance>
