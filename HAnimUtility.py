@@ -84,6 +84,9 @@ class HAnimUtility:
         for group_parent in self.root.findall(".//Group[@DEF='AnimationSelectMenu']/.."):
             for group in group_parent.findall("Group[@DEF='AnimationSelectMenu']"):
                 group_parent.remove(group)
+        for group_parent in self.root.findall(".//Group[@DEF='Interface']/.."):
+            for group in group_parent.findall("Group[@DEF='Interface']"):
+                group_parent.remove(group)
 
     # translation_to_center.py
     def swap_translation_center(self, parent_joint, parent_translation):
@@ -225,4 +228,10 @@ class HAnimUtility:
         self.joint_binding_remove()
         self.tangent_remove()
         self.translation_to_center()
+        self.writeXML(FINAL_FILE)
+
+    def jin_remove_animations(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+        self.readXML(INPUT_FILE)
+        self.animation_remove()
+        self.group_remove()
         self.writeXML(FINAL_FILE)

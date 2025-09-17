@@ -1,11 +1,11 @@
-#X3D V4.0 utf8 X_ITE V12.0.7
+#X3D V4.0 utf8 X_ITE V12.0.8
 
 PROFILE Immersive
 
 COMPONENT HAnim : 3
 
-META "generator" "x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Sat, 13 Sep 2025 21:36:02 GMT"
+META "generator" "x3d-tidy V2.2.3, https://www.npmjs.com/package/x3d-tidy"
+META "modified" "Wed, 17 Sep 2025 02:13:20 GMT"
 
 WorldInfo {
   title "WalkingAlien.gltf"
@@ -17,7 +17,7 @@ WorldInfo {
 
 HAnimHumanoid {
   skeletalConfiguration "GLTF"
-  scale 0.025 0.025 0.025
+  scale 0.01 0.01 0.01
   skeleton DEF hanim_humanoid_root HAnimJoint {
     name "humanoid_root"
     children DEF hanim_humanoid_root2 HAnimJoint {

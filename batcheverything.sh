@@ -22,6 +22,7 @@ cp WalkingAlien.x3d WalkingAlien.scaled.x3d
 
 
 echo "Mapping joints and interpolators..."
+python runjin.py
 python runwalkingalien.py
 python runwalkingman.py
 python runconan.py
@@ -29,7 +30,7 @@ python runjoe.py
 python runjoedemo5.py
 # python runjoedemo5a.py
 
-for X3D in WalkingAlien_Final.x3d conan_23_Aug2025_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
+for X3D in WalkingAlien_Final.x3d JinLOA4.scaled1_Final.x3d conan_23_Aug2025_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
 do
 	X3DV="${X3D}v"
 	X3DOM=`basename "${X3D}" Final.x3d`x3dom.x3d
