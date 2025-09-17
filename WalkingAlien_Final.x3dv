@@ -5,7 +5,7 @@ PROFILE Immersive
 COMPONENT HAnim : 3
 
 META "generator" "x3d-tidy V2.2.3, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Wed, 17 Sep 2025 05:05:27 GMT"
+META "modified" "Wed, 17 Sep 2025 06:03:40 GMT"
 
 WorldInfo {
   title "WalkingAlien.gltf"

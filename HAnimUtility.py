@@ -177,8 +177,8 @@ class HAnimUtility:
 
     def joe_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
-        # self.animation_remove()
-        self.humanoid_replace()
+        self.animation_remove()
+        # self.humanoid_replace()
         self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
         # We removed animations, above.
         # self.rename_interpolators(TIME_SENSORS)
