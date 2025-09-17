@@ -1,4 +1,4 @@
-#X3D V4.0 utf8 X_ITE V12.0.7
+#X3D V4.0 utf8 X_ITE V12.0.8
 
 PROFILE Immersive
 
@@ -6,8 +6,8 @@ COMPONENT HAnim : 2
 
 META "title" "JoeDemo5JoeSkin5.x3d"
 META "description" "joe kick into std anims"
-META "generator" "x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Sat, 13 Sep 2025 21:39:23 GMT"
+META "generator" "x3d-tidy V2.2.3, https://www.npmjs.com/package/x3d-tidy"
+META "modified" "Wed, 17 Sep 2025 05:06:58 GMT"
 
 WorldInfo {
   title "JoeDemo5JoeSkin.x3d, Only Skin"
@@ -441,8 +441,8 @@ DEF Joe_Humanoid Group {
   children DEF JoeHuman HAnimHumanoid {
     skeleton DEF hanim_humanoid_root HAnimJoint {
       name "humanoid_root"
-      translation -0.1828546 0.1071364 0.02140908
-      rotation -0.999999999999999 0 0 0.5
+      translation -0.1843455 0.1108636 0.03259092
+      rotation -0.999999999999997 0 0 0.500000000000001
       center 0 0.875 0
       children [
         DEF Joe_RootView1 HAnimSite {
@@ -495,7 +495,7 @@ DEF Joe_Humanoid Group {
           children [
             DEF hanim_l_hip HAnimJoint {
               name "l_hip"
-              rotation 1 0 0 0.68826446341895
+              rotation 1 0 0 0.715371950856729
               center 0.1 0.92 0
               skinCoordIndex [
                 89,
@@ -515,7 +515,7 @@ DEF Joe_Humanoid Group {
               ]
               children DEF hanim_l_knee HAnimJoint {
                 name "l_knee"
-                rotation 0.938529384473273 0 0.345199354692646 0.730165379927762
+                rotation 0.955173435853907 0 0.296046799406855 0.783065397594057
                 center 0.115 0.466 0
                 skinCoordIndex [
                   334,
@@ -539,7 +539,7 @@ DEF Joe_Humanoid Group {
                 ]
                 children DEF hanim_l_talocrural HAnimJoint {
                   name "l_talocrural"
-                  rotation 1 0 0 0.628363609313964
+                  rotation 1 0 0 0.747636556625366
                   center 0.115 0.069 0
                   skinCoordIndex [
                     342,
@@ -743,7 +743,7 @@ DEF Joe_Humanoid Group {
         }
         DEF hanim_vl5 HAnimJoint {
           name "vl5"
-          rotation 1.00000000000738 0 0 0.00709089608620748
+          rotation 1.00000000000049 0 0 0.036909131729222
           center 0 1.045 -0.095
           skinCoordIndex [
             28,
@@ -755,7 +755,7 @@ DEF Joe_Humanoid Group {
           ]
           children DEF hanim_vl4 HAnimJoint {
             name "vl4"
-            rotation 1.00000000000738 0 0 0.00709089608620748
+            rotation 1.00000000000049 0 0 0.036909131729222
             center 0 1.068 -0.085
             children DEF hanim_vl3 HAnimJoint {
               name "vl3"
@@ -815,11 +815,11 @@ DEF Joe_Humanoid Group {
                             center 0 1.294 -0.11
                             children DEF hanim_vt7 HAnimJoint {
                               name "vt7"
-                              rotation 1.00000000000738 0 0 0.00709089608620748
+                              rotation 1.00000000000049 0 0 0.036909131729222
                               center 0 1.323 -0.1155
                               children DEF hanim_vt6 HAnimJoint {
                                 name "vt6"
-                                rotation 1.00000000000738 0 0 0.00709089608620748
+                                rotation 1.00000000000049 0 0 0.036909131729222
                                 center 0 1.352 -0.12
                                 children DEF hanim_vt5 HAnimJoint {
                                   name "vt5"
@@ -866,7 +866,7 @@ DEF Joe_Humanoid Group {
                                                   center 0 1.552 -0.035
                                                   children DEF hanim_vc4 HAnimJoint {
                                                     name "vc4"
-                                                    rotation 0.966875457171007 0 0.25524860493322 0.60195513905432
+                                                    rotation 0.956621676692611 0 0.291333087173114 0.587846965592783
                                                     center 0 1.5675 -0.0256
                                                     children DEF hanim_vc3 HAnimJoint {
                                                       name "vc3"
@@ -933,7 +933,7 @@ DEF Joe_Humanoid Group {
                                                   skinCoordWeight 1
                                                   children DEF hanim_l_shoulder HAnimJoint {
                                                     name "l_shoulder"
-                                                    rotation -0.351671744076189 0 0.936123380980526 1.52898808942056
+                                                    rotation -0.389138531055341 0 0.921179246210037 1.5405646217014
                                                     center 0.2 1.44 -0.04
                                                     skinCoordIndex [
                                                       41,
@@ -957,7 +957,7 @@ DEF Joe_Humanoid Group {
                                                     ]
                                                     children DEF hanim_l_elbow HAnimJoint {
                                                       name "l_elbow"
-                                                      rotation -0.984156392432778 -0.177302552812136 0 0.637203793323437
+                                                      rotation -0.97615586525803 -0.217070787353683 0 0.61835090819683
                                                       center 0.2 1.1388 -0.04
                                                       skinCoordIndex [
                                                         45,
@@ -992,7 +992,7 @@ DEF Joe_Humanoid Group {
                                                       ]
                                                       children DEF Joe_l_radiocarpal HAnimJoint {
                                                         name "l_radiocarpal"
-                                                        rotation 0 0.155916238912446 0.987770280198487 0.817880429130048
+                                                        rotation 0 -0.019357622532325 0.999812623670004 0.887894020148673
                                                         center 0.2 0.87 -0.04
                                                         skinCoordIndex [
                                                           119,
@@ -1385,7 +1385,7 @@ DEF Joe_Humanoid Group {
                                                   ]
                                                   children DEF hanim_r_shoulder HAnimJoint {
                                                     name "r_shoulder"
-                                                    rotation 0 0 -1 1.57854545116425
+                                                    rotation 0 0 -1 1.59345456957817
                                                     center -0.2 1.44 -0.04
                                                     skinCoordIndex [
                                                       29,
@@ -1413,7 +1413,7 @@ DEF Joe_Humanoid Group {
                                                     ]
                                                     children DEF hanim_r_elbow HAnimJoint {
                                                       name "r_elbow"
-                                                      rotation -0.984156392432778 -0.177302552812136 0 0.637203793323437
+                                                      rotation -0.97615586525803 -0.217070787353683 0 0.61835090819683
                                                       center -0.2 1.1388 -0.04
                                                       skinCoordIndex [
                                                         33,
@@ -1445,7 +1445,7 @@ DEF Joe_Humanoid Group {
                                                       ]
                                                       children DEF Joe_r_radiocarpal HAnimJoint {
                                                         name "r_radiocarpal"
-                                                        rotation 0 0 -1 0.785454558459196
+                                                        rotation 0 0 -1 0.934545751484975
                                                         center -0.2 0.89 -0.04
                                                         skinCoordIndex [
                                                           235,
@@ -1470,7 +1470,7 @@ DEF Joe_Humanoid Group {
                                                         children [
                                                           DEF Joe_r_carpometacarpal_1 HAnimJoint {
                                                             name "r_carpometacarpal_1"
-                                                            rotation 0 0 1 0.942545413970947
+                                                            rotation 0 0 1 1.12145483493805
                                                             center -0.2 0.85 0
                                                             skinCoordIndex [
                                                               243,
@@ -1482,7 +1482,7 @@ DEF Joe_Humanoid Group {
                                                             ]
                                                             children DEF Joe_r_metacarpophalangeal_1 HAnimJoint {
                                                               name "r_metacarpophalangeal_1"
-                                                              rotation 0 0 1 0.942545413970947
+                                                              rotation 0 0 1 1.12145483493805
                                                               center -0.2 0.82 0.03
                                                               skinCoordIndex [
                                                                 254,
@@ -1502,7 +1502,7 @@ DEF Joe_Humanoid Group {
                                                               ]
                                                               children DEF Joe_r_carpal_interphalangeal_1 HAnimJoint {
                                                                 name "r_carpal_interphalangeal_1"
-                                                                rotation 0 0 1 0.942545413970947
+                                                                rotation 0 0 1 1.12145483493805
                                                                 center -0.2 0.8 0.05
                                                                 skinCoordIndex [
                                                                   260,
@@ -1531,7 +1531,7 @@ DEF Joe_Humanoid Group {
                                                           }
                                                           DEF Joe_r_carpometacarpal_2 HAnimJoint {
                                                             name "r_carpometacarpal_2"
-                                                            rotation 0 0 1 0.942545413970947
+                                                            rotation 0 0 1 1.12145483493805
                                                             center -0.2 0.84 -0.015
                                                             skinCoordIndex [
                                                               245,
@@ -1543,7 +1543,7 @@ DEF Joe_Humanoid Group {
                                                             ]
                                                             children DEF Joe_r_metacarpophalangeal_2 HAnimJoint {
                                                               name "r_metacarpophalangeal_2"
-                                                              rotation 0 0 1 0.942545413970947
+                                                              rotation 0 0 1 1.12145483493805
                                                               center -0.2 0.793 -0.015
                                                               skinCoordIndex [
                                                                 254,
@@ -1565,7 +1565,7 @@ DEF Joe_Humanoid Group {
                                                               ]
                                                               children DEF Joe_r_carpal_proximal_interphalangeal_2 HAnimJoint {
                                                                 name "r_carpal_proximal_interphalangeal_2"
-                                                                rotation 0 0 1 0.942545413970947
+                                                                rotation 0 0 1 1.12145483493805
                                                                 center -0.2 0.745 -0.015
                                                                 skinCoordIndex [
                                                                   282,
@@ -1581,7 +1581,7 @@ DEF Joe_Humanoid Group {
                                                                 ]
                                                                 children DEF Joe_r_carpal_distal_interphalangeal_2 HAnimJoint {
                                                                   name "r_carpal_distal_interphalangeal_2"
-                                                                  rotation 0 0 1 0.942545413970947
+                                                                  rotation 0 0 1 1.12145483493805
                                                                   center -0.2 0.72 -0.015
                                                                   skinCoordIndex [
                                                                     286,
@@ -1611,7 +1611,7 @@ DEF Joe_Humanoid Group {
                                                           }
                                                           DEF Joe_r_carpometacarpal_3 HAnimJoint {
                                                             name "r_carpometacarpal_3"
-                                                            rotation 0 0 1 0.628363609313964
+                                                            rotation 0 0 1 0.747636556625366
                                                             center -0.2 0.835 -0.04
                                                             skinCoordIndex [
                                                               247,
@@ -1623,7 +1623,7 @@ DEF Joe_Humanoid Group {
                                                             ]
                                                             children DEF Joe_r_metacarpophalangeal_3 HAnimJoint {
                                                               name "r_metacarpophalangeal_3"
-                                                              rotation 0 0 1 0.942545413970947
+                                                              rotation 0 0 1 1.12145483493805
                                                               center -0.2 0.788 -0.04
                                                               skinCoordIndex [
                                                                 272,
@@ -1639,7 +1639,7 @@ DEF Joe_Humanoid Group {
                                                               ]
                                                               children DEF Joe_r_carpal_proximal_interphalangeal_3 HAnimJoint {
                                                                 name "r_carpal_proximal_interphalangeal_3"
-                                                                rotation 0 0 1 0.942545413970947
+                                                                rotation 0 0 1 1.12145483493805
                                                                 center -0.2 0.74 -0.04
                                                                 skinCoordIndex [
                                                                   295,
@@ -1655,7 +1655,7 @@ DEF Joe_Humanoid Group {
                                                                 ]
                                                                 children DEF Joe_r_carpal_distal_interphalangeal_3 HAnimJoint {
                                                                   name "r_carpal_distal_interphalangeal_3"
-                                                                  rotation 0 0 1 0.942545413970947
+                                                                  rotation 0 0 1 1.12145483493805
                                                                   center -0.2 0.7142 -0.04
                                                                   skinCoordIndex [
                                                                     299,
@@ -1685,7 +1685,7 @@ DEF Joe_Humanoid Group {
                                                           }
                                                           DEF Joe_r_carpometacarpal_4 HAnimJoint {
                                                             name "r_carpometacarpal_4"
-                                                            rotation 0 0 1 0.628363609313964
+                                                            rotation 0 0 1 0.747636556625366
                                                             center -0.2 0.835 -0.065
                                                             skinCoordIndex [
                                                               249,
@@ -1697,7 +1697,7 @@ DEF Joe_Humanoid Group {
                                                             ]
                                                             children DEF Joe_r_metacarpophalangeal_4 HAnimJoint {
                                                               name "r_metacarpophalangeal_4"
-                                                              rotation 0 0 1 0.942545413970947
+                                                              rotation 0 0 1 1.12145483493805
                                                               center -0.2 0.793 -0.065
                                                               skinCoordIndex [
                                                                 274,
@@ -1713,7 +1713,7 @@ DEF Joe_Humanoid Group {
                                                               ]
                                                               children DEF Joe_r_carpal_proximal_interphalangeal_4 HAnimJoint {
                                                                 name "r_carpal_proximal_interphalangeal_4"
-                                                                rotation 0 0 1 0.942545413970947
+                                                                rotation 0 0 1 1.12145483493805
                                                                 center -0.2 0.74 -0.065
                                                                 skinCoordIndex [
                                                                   308,
@@ -1729,7 +1729,7 @@ DEF Joe_Humanoid Group {
                                                                 ]
                                                                 children DEF Joe_r_carpal_distal_interphalangeal_4 HAnimJoint {
                                                                   name "r_carpal_distal_interphalangeal_4"
-                                                                  rotation 0 0 1 0.942545413970947
+                                                                  rotation 0 0 1 1.12145483493805
                                                                   center -0.2 0.7177 -0.065
                                                                   skinCoordIndex [
                                                                     312,
@@ -1759,7 +1759,7 @@ DEF Joe_Humanoid Group {
                                                           }
                                                           DEF Joe_r_carpometacarpal_5 HAnimJoint {
                                                             name "r_carpometacarpal_5"
-                                                            rotation 0 0 1 0.628363609313964
+                                                            rotation 0 0 1 0.747636556625366
                                                             center -0.2 0.84 -0.085
                                                             skinCoordIndex [
                                                               251,
@@ -1775,7 +1775,7 @@ DEF Joe_Humanoid Group {
                                                             ]
                                                             children DEF Joe_r_metacarpophalangeal_5 HAnimJoint {
                                                               name "r_metacarpophalangeal_5"
-                                                              rotation 0 0 1 0.942545413970947
+                                                              rotation 0 0 1 1.12145483493805
                                                               center -0.2 0.79 -0.085
                                                               skinCoordIndex [
                                                                 276,
@@ -1789,7 +1789,7 @@ DEF Joe_Humanoid Group {
                                                               ]
                                                               children DEF Joe_r_carpal_proximal_interphalangeal_5 HAnimJoint {
                                                                 name "r_carpal_proximal_interphalangeal_5"
-                                                                rotation 0 0 1 0.942545413970947
+                                                                rotation 0 0 1 1.12145483493805
                                                                 center -0.2 0.755 -0.085
                                                                 skinCoordIndex [
                                                                   321,
@@ -1805,7 +1805,7 @@ DEF Joe_Humanoid Group {
                                                                 ]
                                                                 children DEF Joe_r_carpal_distal_interphalangeal_5 HAnimJoint {
                                                                   name "r_carpal_distal_interphalangeal_5"
-                                                                  rotation 0 0 1 0.942545413970947
+                                                                  rotation 0 0 1 1.12145483493805
                                                                   center -0.2 0.735 -0.09
                                                                   skinCoordIndex [
                                                                     325,

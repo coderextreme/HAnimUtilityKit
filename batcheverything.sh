@@ -13,12 +13,12 @@ echo "Converting Walking Alien from .gltf/.bin to .x3d and .x3dv..."
 #npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3dv
 npx x3d-tidy@latest -f 5 -d 5 -i JoeHAnimKick1a.x3dv -o JoeHAnimKick1a.x3d
 
-cp walking_man_cc_test.new.python.x3d walking_man_cc_test.x3d
-cp conan_23_Aug2025.x3d conan_23_Aug2025.scaled.x3d
-cp WalkingAlien.x3d WalkingAlien.scaled.x3d
-#python rescale.py walking_man_cc_test.new.python.x3d walking_man_cc_test.x3d
-#python rescale.py conan_23_Aug2025.x3d conan_23_Aug2025.scaled.x3d
-#python rescale.py WalkingAlien.x3d WalkingAlien.scaled.x3d
+#cp walking_man_cc_test.new.python.x3d walking_man_cc_test.x3d
+#cp conan_23_Aug2025.x3d conan_23_Aug2025.scaled.x3d
+#cp WalkingAlien.x3d WalkingAlien.scaled.x3d
+python rescale6.py walking_man_cc_test.new.python.x3d walking_man_cc_test.x3d
+python rescale6.py conan_23_Aug2025.x3d conan_23_Aug2025.scaled.x3d
+python rescale6.py WalkingAlien.x3d WalkingAlien.scaled.x3d
 
 
 echo "Mapping joints and interpolators..."
@@ -30,7 +30,7 @@ python runjoe.py
 python runjoedemo5.py
 # python runjoedemo5a.py
 
-for X3D in WalkingAlien_Final.x3d JinLOA4.scaled1_Final.x3d conan_23_Aug2025_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
+for X3D in walking_man_cc_test_Final.x3d conan_23_Aug2025_Final.x3d WalkingAlien_Final.x3d JinLOA4.scaled1_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
 do
 	X3DV="${X3D}v"
 	X3DOM=`basename "${X3D}" Final.x3d`x3dom.x3d

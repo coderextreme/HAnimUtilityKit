@@ -5,8 +5,8 @@
     <component name='HAnim' level='2'/>
     <meta name='title' content='JoeDemo5JoeSkin5.x3d'/>
     <meta name='description' content='joe kick into std anims'/>
-    <meta name='generator' content='x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy'/>
-    <meta name='modified' content='Sat, 13 Sep 2025 21:39:57 GMT'/>
+    <meta name='generator' content='x3d-tidy V2.2.3, https://www.npmjs.com/package/x3d-tidy'/>
+    <meta name='modified' content='Wed, 17 Sep 2025 05:07:31 GMT'/>
   </head>
   <Scene>
     <WorldInfo
@@ -336,8 +336,8 @@
       <HAnimHumanoid DEF='JoeHuman'>
         <HAnimJoint DEF='hanim_humanoid_root' containerField='skeleton'
             name='humanoid_root'
-            translation='-0.1947546 0.1368864 0.1106591'
-            rotation='-1 0 0 0.5'
+            translation='-0.1849546 0.1123864 0.03715908'
+            rotation='-0.999999999999999 0 0 0.5'
             center='0 0.875 0'>
           <HAnimSite DEF='Joe_RootView1'
               name='RootFront'>
@@ -356,19 +356,19 @@
               skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.35, 0.35, 1'>
             <HAnimJoint DEF='hanim_l_hip'
                 name='l_hip'
-                rotation='1 0 0 0.904628127171167'
+                rotation='1 0 0 0.726446276871804'
                 center='0.1 0.92 0'
                 skinCoordIndex='89, 90, 94, 95, 96, 97'
                 skinCoordWeight='0.65, 1, 1, 1, 1, 1'>
               <HAnimJoint DEF='hanim_l_knee'
                   name='l_knee'
-                  rotation='0.997620267941736 0 0.0689478135393686 1.18565797060323'
+                  rotation='0.960713446522181 0 0.277542201604506 0.805176222126736'
                   center='0.115 0.466 0'
                   skinCoordIndex='334, 335, 336, 337, 338, 339, 340, 341'
                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
                 <HAnimJoint DEF='hanim_l_talocrural'
                     name='l_talocrural'
-                    rotation='0.999999999999998 0 0 0.419636249542237'
+                    rotation='1 0 0 0.796363592147827'
                     center='0.115 0.069 0'
                     skinCoordIndex='342, 343, 344, 345'
                     skinCoordWeight='1, 1, 1, 1'>
@@ -400,13 +400,13 @@
                 skinCoordWeight='0.65, 1, 0.8, 1, 1, 1, 0.4, 0.8'>
               <HAnimJoint DEF='hanim_r_knee'
                   name='r_knee'
-                  rotation='1 0 0 1.29018187522888'
+                  rotation='1 0 0 1'
                   center='-0.05 0.466 0'
                   skinCoordIndex='362, 363, 364, 365, 366, 367, 368, 369, 98'
                   skinCoordWeight='0.6, 0.2, 1, 1, 1, 1, 1, 1, 0.2'>
                 <HAnimJoint DEF='hanim_r_talocrural'
                     name='r_talocrural'
-                    rotation='1 0 0 0.709818124771118'
+                    rotation='1 0 0 1'
                     center='-0.115 0.069 0'
                     skinCoordIndex='370, 371, 372, 373'
                     skinCoordWeight='1, 1, 1, 1'>
@@ -433,13 +433,13 @@
           </HAnimJoint>
           <HAnimJoint DEF='hanim_vl5'
               name='vl5'
-              rotation='1.00000000000001 0 0 0.0786818014789695'
+              rotation='1.00000000000017 0 0 0.0490908901257875'
               center='0 1.045 -0.095'
               skinCoordIndex='28, 76'
               skinCoordWeight='1, 1'>
             <HAnimJoint DEF='hanim_vl4'
                 name='vl4'
-                rotation='1.00000000000001 0 0 0.0786818014789695'
+                rotation='1.00000000000017 0 0 0.0490908901257875'
                 center='0 1.068 -0.085'>
               <HAnimJoint DEF='hanim_vl3'
                   name='vl3'
@@ -473,11 +473,11 @@
                                 center='0 1.294 -0.11'>
                               <HAnimJoint DEF='hanim_vt7'
                                   name='vt7'
-                                  rotation='1.00000000000001 0 0 0.0786818014789695'
+                                  rotation='1.00000000000017 0 0 0.0490908901257875'
                                   center='0 1.323 -0.1155'>
                                 <HAnimJoint DEF='hanim_vt6'
                                     name='vt6'
-                                    rotation='1.00000000000001 0 0 0.0786818014789695'
+                                    rotation='1.00000000000017 0 0 0.0490908901257875'
                                     center='0 1.352 -0.12'>
                                   <HAnimJoint DEF='hanim_vt5'
                                       name='vt5'
@@ -511,7 +511,7 @@
                                                     center='0 1.552 -0.035'>
                                                   <HAnimJoint DEF='hanim_vc4'
                                                       name='vc4'
-                                                      rotation='0.822660830865147 0 0.568532459372603 0.515369925963363'
+                                                      rotation='0.951891724719357 0 0.306434567911008 0.582315134986985'
                                                       center='0 1.5675 -0.0256'>
                                                     <HAnimJoint DEF='hanim_vc3'
                                                         name='vc3'
@@ -524,7 +524,6 @@
                                                             center='0 1.61 -0.015'>
                                                           <HAnimJoint DEF='hanim_skullbase'
                                                               name='skullbase'
-                                                              rotation='0 0.999999999999984 0 0.145090937614443'
                                                               center='0 1.63 -0.01'
                                                               skinCoordIndex='0, 1, 2, 3, 4, 5, 6, 7, 8, 9'
                                                               skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
@@ -553,19 +552,19 @@
                                                     skinCoordWeight='1'>
                                                   <HAnimJoint DEF='hanim_l_shoulder'
                                                       name='l_shoulder'
-                                                      rotation='-0.61686028851045 0 0.787072667838749 1.66359795945086'
+                                                      rotation='-0.404134410433736 0 0.914699610967107 1.5457585282738'
                                                       center='0.2 1.44 -0.04'
                                                       skinCoordIndex='41, 42, 44, 80, 102, 103, 104, 105'
                                                       skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
                                                     <HAnimJoint DEF='hanim_l_elbow'
                                                         name='l_elbow'
-                                                        rotation='-0.841827903050792 -0.539746034394974 0 0.520300633238396'
+                                                        rotation='-0.972264267615186 -0.233885001483012 0 0.610934629961237'
                                                         center='0.2 1.1388 -0.04'
                                                         skinCoordIndex='45, 46, 47, 109, 110, 111, 112, 113, 115, 116, 117, 118'
                                                         skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
                                                       <HAnimJoint DEF='Joe_l_radiocarpal'
                                                           name='l_radiocarpal'
-                                                          rotation='0 -0.447213595499958 0.894427190999917 0.681908946151074'
+                                                          rotation='0 -0.0832284904817173 0.996530490437766 0.922695140425666'
                                                           center='0.2 0.87 -0.04'
                                                           skinCoordIndex='119, 120, 121, 122, 123, 124, 125, 126'
                                                           skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
@@ -695,37 +694,37 @@
                                                     skinCoordWeight='1, 0.9'>
                                                   <HAnimJoint DEF='hanim_r_shoulder'
                                                       name='r_shoulder'
-                                                      rotation='0 0 -1 1.69754546880722'
+                                                      rotation='0 0 -1 1.59954544901848'
                                                       center='-0.2 1.44 -0.04'
                                                       skinCoordIndex='29, 30, 32, 78, 218, 219, 220, 221, 86, 88'
                                                       skinCoordWeight='0.1, 1, 1, 1, 1, 1, 1, 1, 0.3, 0.2'>
                                                     <HAnimJoint DEF='hanim_r_elbow'
                                                         name='r_elbow'
-                                                        rotation='-0.841827903050792 -0.539746034394974 0 0.520300633238396'
+                                                        rotation='-0.972264267615186 -0.233885001483012 0 0.610934629961237'
                                                         center='-0.2 1.1388 -0.04'
                                                         skinCoordIndex='33, 34, 35, 225, 226, 227, 228, 229, 231, 232, 233, 234'
                                                         skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'>
                                                       <HAnimJoint DEF='Joe_r_radiocarpal'
                                                           name='r_radiocarpal'
-                                                          rotation='0 -0.496384904857298 -0.868102543614412 0.404770311481419'
+                                                          rotation='0 0 -1 0.995454549518499'
                                                           center='-0.2 0.89 -0.04'
                                                           skinCoordIndex='235, 236, 237, 238, 239, 240, 241, 242'
                                                           skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1'>
                                                         <HAnimJoint DEF='Joe_r_carpometacarpal_1'
                                                             name='r_carpometacarpal_1'
-                                                            rotation='0 0 1 0.629454374313354'
+                                                            rotation='0 0 1 1.19454538822174'
                                                             center='-0.2 0.85 0'
                                                             skinCoordIndex='243, 244'
                                                             skinCoordWeight='1, 1'>
                                                           <HAnimJoint DEF='Joe_r_metacarpophalangeal_1'
                                                               name='r_metacarpophalangeal_1'
-                                                              rotation='0 0 1 0.629454374313354'
+                                                              rotation='0 0 1 1.19454538822174'
                                                               center='-0.2 0.82 0.03'
                                                               skinCoordIndex='254, 255, 256, 257, 258, 259'
                                                               skinCoordWeight='0.5, 0.5, 0.5, 1, 1, 1'>
                                                             <HAnimJoint DEF='Joe_r_carpal_interphalangeal_1'
                                                                 name='r_carpal_interphalangeal_1'
-                                                                rotation='0 0 1 0.629454374313354'
+                                                                rotation='0 0 1 1.19454538822174'
                                                                 center='-0.2 0.8 0.05'
                                                                 skinCoordIndex='260, 261, 262, 263, 264, 265, 266, 267, 268'
                                                                 skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1'/>
@@ -733,25 +732,25 @@
                                                         </HAnimJoint>
                                                         <HAnimJoint DEF='Joe_r_carpometacarpal_2'
                                                             name='r_carpometacarpal_2'
-                                                            rotation='0 0 1 0.629454374313354'
+                                                            rotation='0 0 1 1.19454538822174'
                                                             center='-0.2 0.84 -0.015'
                                                             skinCoordIndex='245, 246'
                                                             skinCoordWeight='1, 1'>
                                                           <HAnimJoint DEF='Joe_r_metacarpophalangeal_2'
                                                               name='r_metacarpophalangeal_2'
-                                                              rotation='0 0 1 0.629454374313354'
+                                                              rotation='0 0 1 1.19454538822174'
                                                               center='-0.2 0.793 -0.015'
                                                               skinCoordIndex='254, 255, 256, 269, 270, 271, 279'
                                                               skinCoordWeight='0.5, 0.5, 0.5, 1, 1, 1, 0.5'>
                                                             <HAnimJoint DEF='Joe_r_carpal_proximal_interphalangeal_2'
                                                                 name='r_carpal_proximal_interphalangeal_2'
-                                                                rotation='0 0 1 0.629454374313354'
+                                                                rotation='0 0 1 1.19454538822174'
                                                                 center='-0.2 0.745 -0.015'
                                                                 skinCoordIndex='282, 283, 284, 285'
                                                                 skinCoordWeight='1, 1, 1, 1'>
                                                               <HAnimJoint DEF='Joe_r_carpal_distal_interphalangeal_2'
                                                                   name='r_carpal_distal_interphalangeal_2'
-                                                                  rotation='0 0 1 0.629454374313354'
+                                                                  rotation='0 0 1 1.19454538822174'
                                                                   center='-0.2 0.72 -0.015'
                                                                   skinCoordIndex='286, 287, 288, 289, 290, 291, 292, 293, 294'
                                                                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1'/>
@@ -760,25 +759,25 @@
                                                         </HAnimJoint>
                                                         <HAnimJoint DEF='Joe_r_carpometacarpal_3'
                                                             name='r_carpometacarpal_3'
-                                                            rotation='0 0 0.999999999999998 0.419636249542237'
+                                                            rotation='0 0 1 0.796363592147827'
                                                             center='-0.2 0.835 -0.04'
                                                             skinCoordIndex='247, 248'
                                                             skinCoordWeight='1, 1'>
                                                           <HAnimJoint DEF='Joe_r_metacarpophalangeal_3'
                                                               name='r_metacarpophalangeal_3'
-                                                              rotation='0 0 1 0.629454374313354'
+                                                              rotation='0 0 1 1.19454538822174'
                                                               center='-0.2 0.788 -0.04'
                                                               skinCoordIndex='272, 273, 279, 280'
                                                               skinCoordWeight='1, 1, 0.5, 0.5'>
                                                             <HAnimJoint DEF='Joe_r_carpal_proximal_interphalangeal_3'
                                                                 name='r_carpal_proximal_interphalangeal_3'
-                                                                rotation='0 0 1 0.629454374313354'
+                                                                rotation='0 0 1 1.19454538822174'
                                                                 center='-0.2 0.74 -0.04'
                                                                 skinCoordIndex='295, 296, 297, 298'
                                                                 skinCoordWeight='1, 1, 1, 1'>
                                                               <HAnimJoint DEF='Joe_r_carpal_distal_interphalangeal_3'
                                                                   name='r_carpal_distal_interphalangeal_3'
-                                                                  rotation='0 0 1 0.629454374313354'
+                                                                  rotation='0 0 1 1.19454538822174'
                                                                   center='-0.2 0.7142 -0.04'
                                                                   skinCoordIndex='299, 300, 301, 302, 303, 304, 305, 306, 307'
                                                                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1'/>
@@ -787,25 +786,25 @@
                                                         </HAnimJoint>
                                                         <HAnimJoint DEF='Joe_r_carpometacarpal_4'
                                                             name='r_carpometacarpal_4'
-                                                            rotation='0 0 0.999999999999998 0.419636249542237'
+                                                            rotation='0 0 1 0.796363592147827'
                                                             center='-0.2 0.835 -0.065'
                                                             skinCoordIndex='249, 250'
                                                             skinCoordWeight='1, 1'>
                                                           <HAnimJoint DEF='Joe_r_metacarpophalangeal_4'
                                                               name='r_metacarpophalangeal_4'
-                                                              rotation='0 0 1 0.629454374313354'
+                                                              rotation='0 0 1 1.19454538822174'
                                                               center='-0.2 0.793 -0.065'
                                                               skinCoordIndex='274, 275, 280, 281'
                                                               skinCoordWeight='1, 1, 0.5, 0.5'>
                                                             <HAnimJoint DEF='Joe_r_carpal_proximal_interphalangeal_4'
                                                                 name='r_carpal_proximal_interphalangeal_4'
-                                                                rotation='0 0 1 0.629454374313354'
+                                                                rotation='0 0 1 1.19454538822174'
                                                                 center='-0.2 0.74 -0.065'
                                                                 skinCoordIndex='308, 309, 310, 311'
                                                                 skinCoordWeight='1, 1, 1, 1'>
                                                               <HAnimJoint DEF='Joe_r_carpal_distal_interphalangeal_4'
                                                                   name='r_carpal_distal_interphalangeal_4'
-                                                                  rotation='0 0 1 0.629454374313354'
+                                                                  rotation='0 0 1 1.19454538822174'
                                                                   center='-0.2 0.7177 -0.065'
                                                                   skinCoordIndex='312, 313, 314, 315, 316, 317, 318, 319, 320'
                                                                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1'/>
@@ -814,25 +813,25 @@
                                                         </HAnimJoint>
                                                         <HAnimJoint DEF='Joe_r_carpometacarpal_5'
                                                             name='r_carpometacarpal_5'
-                                                            rotation='0 0 0.999999999999998 0.419636249542237'
+                                                            rotation='0 0 1 0.796363592147827'
                                                             center='-0.2 0.84 -0.085'
                                                             skinCoordIndex='251, 252, 253, 281'
                                                             skinCoordWeight='1, 1, 1, 0.5'>
                                                           <HAnimJoint DEF='Joe_r_metacarpophalangeal_5'
                                                               name='r_metacarpophalangeal_5'
-                                                              rotation='0 0 1 0.629454374313354'
+                                                              rotation='0 0 1 1.19454538822174'
                                                               center='-0.2 0.79 -0.085'
                                                               skinCoordIndex='276, 277, 278'
                                                               skinCoordWeight='1, 1, 1'>
                                                             <HAnimJoint DEF='Joe_r_carpal_proximal_interphalangeal_5'
                                                                 name='r_carpal_proximal_interphalangeal_5'
-                                                                rotation='0 0 1 0.629454374313354'
+                                                                rotation='0 0 1 1.19454538822174'
                                                                 center='-0.2 0.755 -0.085'
                                                                 skinCoordIndex='321, 322, 323, 324'
                                                                 skinCoordWeight='1, 1, 1, 1'>
                                                               <HAnimJoint DEF='Joe_r_carpal_distal_interphalangeal_5'
                                                                   name='r_carpal_distal_interphalangeal_5'
-                                                                  rotation='0 0 1 0.629454374313354'
+                                                                  rotation='0 0 1 1.19454538822174'
                                                                   center='-0.2 0.735 -0.09'
                                                                   skinCoordIndex='325, 326, 327, 328, 329, 330, 331, 332, 333'
                                                                   skinCoordWeight='1, 1, 1, 1, 1, 1, 1, 1, 1'/>
