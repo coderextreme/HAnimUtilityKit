@@ -146,7 +146,7 @@ def process_x3d_file(input_path: str, output_path: str):
             node.set('translation', '0 0 0')
 
     scene_node = root.find('Scene')
-    if scene_node:
+    if scene_node is not None:
         flatten_translations_recursive(scene_node, [0.0, 0.0, 0.0])
         print("Flattening pass completed.")
     else:
