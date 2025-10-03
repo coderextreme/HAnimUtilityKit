@@ -8,7 +8,7 @@
     <meta name='translator' content='Chul Hee Jung and Myeong Won Lee'/>
     <meta name='created' content='31 March 2011'/>
     <meta name='translated' content='1 November 2014'/>
-    <meta name='modified' content='Wed, 17 Sep 2025 06:48:49 GMT'/>
+    <meta name='modified' content='Fri, 03 Oct 2025 09:26:45 GMT'/>
     <meta name='description' content='Articulated 3D game character designed with a general graphics tool'/>
     <meta name='reference' content='KoreanCharacter00ReadMe.txt'/>
     <meta name='reference' content='KoreanCharacterHumanMotion_Infotech2014_140706.pdf'/>
@@ -18,7 +18,7 @@
     <meta name='generator' content='Suwon HAnim Converter'/>
     <meta name='generator' content='Gnu Image Manipulation Program, http://www.gimp.org'/>
     <meta name='generator' content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit'/>
-    <meta name='generator' content='x3d-tidy V2.2.3, https://www.npmjs.com/package/x3d-tidy'/>
+    <meta name='generator' content='x3d-tidy V2.2.5, https://www.npmjs.com/package/x3d-tidy'/>
     <meta name='license' content='license.html'/>
   </head>
   <Scene>
@@ -57,8 +57,8 @@
       </MetadataSet>
       <HAnimJoint DEF='hanim_humanoid_root' containerField='skeleton'
           name='humanoid_root'
-          translation='-0.1850182 0.1125455 0.03763636'
-          rotation='-1 0 0 0.5'
+          translation='0.5332751 0.03488338 -0.5332751'
+          rotation='1 0 0 0.387999968409538'
           center='0 0.825975 -0.015921'>
         <HAnimSegment DEF='hanim_sacrum'
             name='sacrum'>
@@ -104,7 +104,7 @@
           </HAnimSegment>
           <HAnimJoint DEF='hanim_l_hip'
               name='l_hip'
-              rotation='1 0 0 0.727603311373899'
+              rotation='-1 0 0 0.719999931454661'
               center='0.0946575 0.8266501 -0.01834875'>
             <HAnimSegment DEF='hanim_l_thigh'
                 name='l_thigh'>
@@ -127,7 +127,7 @@
             </HAnimSegment>
             <HAnimJoint DEF='hanim_l_knee'
                 name='l_knee'
-                rotation='0.961255646765772 0 0.275658450915112 0.807501436076068'
+                rotation='0.999999999999989 0 0 0.219999921023849'
                 center='0.09261001 0.408825 -0.01943775'>
               <HAnimSegment DEF='hanim_l_calf'
                   name='l_calf'>
@@ -150,7 +150,6 @@
               </HAnimSegment>
               <HAnimJoint DEF='hanim_l_talocrural'
                   name='l_talocrural'
-                  rotation='1 0 0 0.801454544067383'
                   center='0.08883 0.09544501 -0.01045125'>
                 <HAnimSegment DEF='hanim_l_talus'
                     name='l_talus'>
@@ -751,7 +750,7 @@
           </HAnimJoint>
           <HAnimJoint DEF='hanim_r_hip'
               name='r_hip'
-              rotation='-1 0 0 1'
+              rotation='1 0 0 1'
               center='-0.0946575 0.8266501 -0.01834875'>
             <HAnimSegment DEF='hanim_r_thigh'
                 name='r_thigh'>
@@ -774,7 +773,7 @@
             </HAnimSegment>
             <HAnimJoint DEF='hanim_r_knee'
                 name='r_knee'
-                rotation='1 0 0 1'
+                rotation='1.00000000000024 0 0 0.0375999927520661'
                 center='-0.09261001 0.408825 -0.01943775'>
               <HAnimSegment DEF='hanim_r_calf'
                   name='r_calf'>
@@ -797,7 +796,7 @@
               </HAnimSegment>
               <HAnimJoint DEF='hanim_r_talocrural'
                   name='r_talocrural'
-                  rotation='1 0 0 1'
+                  rotation='-1 0 0 0.375999927520752'
                   center='-0.0884475 0.09544501 -0.01045125'>
                 <HAnimSegment DEF='hanim_r_talus'
                     name='r_talus'>
@@ -1398,7 +1397,7 @@
           </HAnimJoint>
           <HAnimJoint DEF='hanim_vl5'
               name='vl5'
-              rotation='1.00000000000021 0 0 0.0503636280550998'
+              rotation='0.999999999999991 0 0 0.130000009934108'
               center='0 0.9254251 -0.01376325'>
             <HAnimSegment DEF='hanim_l5'
                 name='l5'>
@@ -1421,7 +1420,7 @@
             </HAnimSegment>
             <HAnimJoint DEF='hanim_vl4'
                 name='vl4'
-                rotation='1.00000000000021 0 0 0.0503636280550998'
+                rotation='0.999999999999991 0 0 0.130000009934108'
                 center='0 0.949725 -0.01376325'>
               <HAnimSegment DEF='hanim_l4'
                   name='l4'>
@@ -1620,7 +1619,7 @@
                               </HAnimSegment>
                               <HAnimJoint DEF='hanim_vt7'
                                   name='vt7'
-                                  rotation='1.00000000000021 0 0 0.0503636280550998'
+                                  rotation='0.999999999999991 0 0 0.130000009934108'
                                   center='0 1.1088 -0.01376325'>
                                 <HAnimSegment DEF='hanim_t7'
                                     name='t7'>
@@ -1643,7 +1642,7 @@
                                 </HAnimSegment>
                                 <HAnimJoint DEF='hanim_vt6'
                                     name='vt6'
-                                    rotation='1.00000000000021 0 0 0.0503636280550998'
+                                    rotation='0.999999999999991 0 0 0.130000009934108'
                                     center='0 1.121625 -0.01376325'>
                                   <HAnimSegment DEF='hanim_t6'
                                       name='t6'>
@@ -1842,7 +1841,7 @@
                                                   </HAnimSegment>
                                                   <HAnimJoint DEF='hanim_vc4'
                                                       name='vc4'
-                                                      rotation='0.951378600351887 0 0.3080239581469 0.581745200269713'
+                                                      rotation='-0.707106781186545 0 -0.707106781186545 0.0620000238418572'
                                                       center='0 1.282275 -0.01506375'>
                                                     <HAnimSegment DEF='hanim_c4'
                                                         name='c4'>
@@ -1931,6 +1930,7 @@
                                                           </HAnimSegment>
                                                           <HAnimJoint DEF='hanim_skullbase'
                                                               name='skullbase'
+                                                              rotation='0 -1.00000000000002 0 0.0549999802559609'
                                                               center='0 1.31265 -0.01544175'>
                                                             <HAnimSegment DEF='hanim_skull'
                                                                 name='skull'>
@@ -2166,7 +2166,7 @@
                                                 </HAnimSegment>
                                                 <HAnimJoint DEF='hanim_l_shoulder'
                                                     name='l_shoulder'
-                                                    rotation='-0.405690373405713 0 0.914010569373206 1.54631654143046'
+                                                    rotation='0 0 1 0.585000059232115'
                                                     center='0.16506 1.17855 -0.003267'>
                                                   <HAnimSegment DEF='hanim_l_upperarm'
                                                       name='l_upperarm'>
@@ -2189,7 +2189,7 @@
                                                   </HAnimSegment>
                                                   <HAnimJoint DEF='hanim_l_elbow'
                                                       name='l_elbow'
-                                                      rotation='-0.971835449744208 -0.235660473182236 0 0.61016976766061'
+                                                      rotation='-1 0 0 2.29799991846085'
                                                       center='0.1820925 0.9288 -0.0056295'>
                                                     <HAnimSegment DEF='hanim_l_forearm'
                                                         name='l_forearm'>
@@ -2212,7 +2212,7 @@
                                                     </HAnimSegment>
                                                     <HAnimJoint DEF='hanim_l_radiocarpal'
                                                         name='l_radiocarpal'
-                                                        rotation='0 -0.0896248030929211 0.995975599435325 0.92651247846588'
+                                                        rotation='0 1 0 0.507000051334499'
                                                         center='0.181935 0.724275 -0.00502425'>
                                                       <HAnimSegment DEF='hanim_l_carpal'
                                                           name='l_carpal'>
@@ -2813,7 +2813,7 @@
                                                 </HAnimSegment>
                                                 <HAnimJoint DEF='hanim_r_shoulder'
                                                     name='r_shoulder'
-                                                    rotation='0 0 -1 1.60018181800842'
+                                                    rotation='0 0 -1 2.18799996376038'
                                                     center='-0.1647 1.17855 -0.003267'>
                                                   <HAnimSegment DEF='hanim_r_upperarm'
                                                       name='r_upperarm'>
@@ -2836,7 +2836,7 @@
                                                   </HAnimSegment>
                                                   <HAnimJoint DEF='hanim_r_elbow'
                                                       name='r_elbow'
-                                                      rotation='-0.971835449744208 -0.235660473182236 0 0.61016976766061'
+                                                      rotation='-1 0 0 2.29799991846085'
                                                       center='-0.1817325 0.9288 -0.0056295'>
                                                     <HAnimSegment DEF='hanim_r_forearm'
                                                         name='r_forearm'>
@@ -2859,7 +2859,7 @@
                                                     </HAnimSegment>
                                                     <HAnimJoint DEF='hanim_r_radiocarpal'
                                                         name='r_radiocarpal'
-                                                        rotation='0 -0.000395862369856943 -0.999999921646489 0.998797323776974'
+                                                        rotation='0 0.999999999999981 0 0.206399989128117'
                                                         center='-0.181575 0.724275 -0.005022'>
                                                       <HAnimSegment DEF='hanim_r_carpal'
                                                           name='r_carpal'>
@@ -2904,7 +2904,6 @@
                                                         </HAnimSegment>
                                                         <HAnimJoint DEF='hanim_r_carpometacarpal_1'
                                                             name='r_carpometacarpal_1'
-                                                            rotation='0 0 1 1.20218181610107'
                                                             center='-0.180135 0.6925501 0.0259875'>
                                                           <HAnimSegment DEF='hanim_r_metacarpal_1'
                                                               name='r_metacarpal_1'>
@@ -2927,7 +2926,6 @@
                                                           </HAnimSegment>
                                                           <HAnimJoint DEF='hanim_r_metacarpophalangeal_1'
                                                               name='r_metacarpophalangeal_1'
-                                                              rotation='0 0 1 1.20218181610107'
                                                               center='-0.1806525 0.67275 0.035775'>
                                                             <HAnimSegment DEF='hanim_r_carpal_proximal_phalanx_1'
                                                                 name='r_carpal_proximal_phalanx_1'>
@@ -2950,7 +2948,6 @@
                                                             </HAnimSegment>
                                                             <HAnimJoint DEF='hanim_r_carpal_interphalangeal_1'
                                                                 name='r_carpal_interphalangeal_1'
-                                                                rotation='0 0 1 1.20218181610107'
                                                                 center='-0.1822725 0.654075 0.0496575'>
                                                               <HAnimSegment DEF='hanim_r_carpal_distal_phalanx_1'
                                                                   name='r_carpal_distal_phalanx_1'>
@@ -2999,7 +2996,6 @@
                                                         </HAnimSegment>
                                                         <HAnimJoint DEF='hanim_r_carpometacarpal_2'
                                                             name='r_carpometacarpal_2'
-                                                            rotation='0 0 1 1.20218181610107'
                                                             center='-0.1809 0.6876 0.009729'>
                                                           <HAnimSegment DEF='hanim_r_metacarpal_2'
                                                               name='r_metacarpal_2'>
@@ -3022,7 +3018,6 @@
                                                           </HAnimSegment>
                                                           <HAnimJoint DEF='hanim_r_metacarpophalangeal_2'
                                                               name='r_metacarpophalangeal_2'
-                                                              rotation='0 0 1 1.20218181610107'
                                                               center='-0.1833525 0.6372 0.015075'>
                                                             <HAnimSegment DEF='hanim_r_carpal_proximal_phalanx_2'
                                                                 name='r_carpal_proximal_phalanx_2'>
@@ -3045,7 +3040,6 @@
                                                             </HAnimSegment>
                                                             <HAnimJoint DEF='hanim_r_carpal_proximal_interphalangeal_2'
                                                                 name='r_carpal_proximal_interphalangeal_2'
-                                                                rotation='0 0 1 1.20218181610107'
                                                                 center='-0.1813275 0.606825 0.014184'>
                                                               <HAnimSegment DEF='hanim_r_carpal_middle_phalanx_2'
                                                                   name='r_carpal_middle_phalanx_2'>
@@ -3068,7 +3062,6 @@
                                                               </HAnimSegment>
                                                               <HAnimJoint DEF='hanim_r_carpal_distal_interphalangeal_2'
                                                                   name='r_carpal_distal_interphalangeal_2'
-                                                                  rotation='0 0 1 1.20218181610107'
                                                                   center='-0.1802925 0.581625 0.01338525'>
                                                                 <HAnimSegment DEF='hanim_r_carpal_distal_phalanx_2'
                                                                     name='r_carpal_distal_phalanx_2'>
@@ -3118,7 +3111,6 @@
                                                         </HAnimSegment>
                                                         <HAnimJoint DEF='hanim_r_carpometacarpal_3'
                                                             name='r_carpometacarpal_3'
-                                                            rotation='0 0 1 0.801454544067383'
                                                             center='-0.18072 0.6858 -0.00625275'>
                                                           <HAnimSegment DEF='hanim_r_metacarpal_3'
                                                               name='r_metacarpal_3'>
@@ -3141,7 +3133,6 @@
                                                           </HAnimSegment>
                                                           <HAnimJoint DEF='hanim_r_metacarpophalangeal_3'
                                                               name='r_metacarpophalangeal_3'
-                                                              rotation='0 0 1 1.20218181610107'
                                                               center='-0.1833075 0.63495 -0.00391725'>
                                                             <HAnimSegment DEF='hanim_r_carpal_proximal_phalanx_3'
                                                                 name='r_carpal_proximal_phalanx_3'>
@@ -3164,7 +3155,6 @@
                                                             </HAnimSegment>
                                                             <HAnimJoint DEF='hanim_r_carpal_proximal_interphalangeal_3'
                                                                 name='r_carpal_proximal_interphalangeal_3'
-                                                                rotation='0 0 1 1.20218181610107'
                                                                 center='-0.1813275 0.603225 -0.003537'>
                                                               <HAnimSegment DEF='hanim_r_carpal_middle_phalanx_3'
                                                                   name='r_carpal_middle_phalanx_3'>
@@ -3187,7 +3177,6 @@
                                                               </HAnimSegment>
                                                               <HAnimJoint DEF='hanim_r_carpal_distal_interphalangeal_3'
                                                                   name='r_carpal_distal_interphalangeal_3'
-                                                                  rotation='0 0 1 1.20218181610107'
                                                                   center='-0.1802925 0.575325 -0.00375975'>
                                                                 <HAnimSegment DEF='hanim_r_carpal_distal_phalanx_3'
                                                                     name='r_carpal_distal_phalanx_3'>
@@ -3237,7 +3226,6 @@
                                                         </HAnimSegment>
                                                         <HAnimJoint DEF='hanim_r_carpometacarpal_4'
                                                             name='r_carpometacarpal_4'
-                                                            rotation='0 0 1 0.801454544067383'
                                                             center='-0.18072 0.68625 -0.01991925'>
                                                           <HAnimSegment DEF='hanim_r_metacarpal_4'
                                                               name='r_metacarpal_4'>
@@ -3260,7 +3248,6 @@
                                                           </HAnimSegment>
                                                           <HAnimJoint DEF='hanim_r_metacarpophalangeal_4'
                                                               name='r_metacarpophalangeal_4'
-                                                              rotation='0 0 1 1.20218181610107'
                                                               center='-0.1833075 0.63405 -0.02144025'>
                                                             <HAnimSegment DEF='hanim_r_carpal_proximal_phalanx_4'
                                                                 name='r_carpal_proximal_phalanx_4'>
@@ -3283,7 +3270,6 @@
                                                             </HAnimSegment>
                                                             <HAnimJoint DEF='hanim_r_carpal_proximal_interphalangeal_4'
                                                                 name='r_carpal_proximal_interphalangeal_4'
-                                                                rotation='0 0 1 1.20218181610107'
                                                                 center='-0.1813275 0.6066 -0.020646'>
                                                               <HAnimSegment DEF='hanim_r_carpal_middle_phalanx_4'
                                                                   name='r_carpal_middle_phalanx_4'>
@@ -3306,7 +3292,6 @@
                                                               </HAnimSegment>
                                                               <HAnimJoint DEF='hanim_r_carpal_distal_interphalangeal_4'
                                                                   name='r_carpal_distal_interphalangeal_4'
-                                                                  rotation='0 0 1 1.20218181610107'
                                                                   center='-0.1802925 0.580725 -0.0197775'>
                                                                 <HAnimSegment DEF='hanim_r_carpal_distal_phalanx_4'
                                                                     name='r_carpal_distal_phalanx_4'>
@@ -3334,7 +3319,6 @@
                                                       </HAnimJoint>
                                                       <HAnimJoint DEF='hanim_r_carpometacarpal_5'
                                                           name='r_carpometacarpal_5'
-                                                          rotation='0 0 1 0.801454544067383'
                                                           center='-0.18126 0.688275 -0.0327825'>
                                                         <HAnimSegment DEF='hanim_r_metacarpal_5'
                                                             name='r_metacarpal_5'>
@@ -3357,7 +3341,6 @@
                                                         </HAnimSegment>
                                                         <HAnimJoint DEF='hanim_r_metacarpophalangeal_5'
                                                             name='r_metacarpophalangeal_5'
-                                                            rotation='0 0 1 1.20218181610107'
                                                             center='-0.18297 0.6381 -0.0370575'>
                                                           <HAnimSegment DEF='hanim_r_carpal_proximal_phalanx_5'
                                                               name='r_carpal_proximal_phalanx_5'>
@@ -3380,7 +3363,6 @@
                                                           </HAnimSegment>
                                                           <HAnimJoint DEF='hanim_r_carpal_proximal_interphalangeal_5'
                                                               name='r_carpal_proximal_interphalangeal_5'
-                                                              rotation='0 0 1 1.20218181610107'
                                                               center='-0.181305 0.6210001 -0.0371475'>
                                                             <HAnimSegment DEF='hanim_r_carpal_middle_phalanx_5'
                                                                 name='r_carpal_middle_phalanx_5'>
@@ -3403,7 +3385,6 @@
                                                             </HAnimSegment>
                                                             <HAnimJoint DEF='hanim_r_carpal_distal_interphalangeal_5'
                                                                 name='r_carpal_distal_interphalangeal_5'
-                                                                rotation='0 0 1 1.20218181610107'
                                                                 center='-0.18045 0.602325 -0.0369675'>
                                                               <HAnimSegment DEF='hanim_r_carpal_distal_phalanx_5'
                                                                   name='r_carpal_distal_phalanx_5'>
@@ -4525,7 +4506,7 @@
           loop='true'/>
       <PositionInterpolator DEF='PoseT_humanoid_root_TranslationInterpolator'
           key='0, 0.5, 1'
-          keyValue='0 0 0, 0 -0.025 0, 0 0 0'/>
+          keyValue='0 0 0, 0 -0.02505992 0, 0 0 0'/>
       <OrientationInterpolator DEF='PoseT_humanoid_root_RotationInterpolator'
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
@@ -4971,7 +4952,7 @@
           loop='true'/>
       <PositionInterpolator DEF='PoseA_humanoid_root_TranslationInterpolator'
           key='0, 0.5, 1'
-          keyValue='0 -0.02 0, 0 -0.02 0, 0 -0.02 0'/>
+          keyValue='0 -0.02004794 0, 0 -0.02004794 0, 0 -0.02004794 0'/>
       <OrientationInterpolator DEF='PoseA_humanoid_root_RotationInterpolator'
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
@@ -5863,7 +5844,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Pitch1_humanoid_root_TranslationInterpolator'
           key='0, 0.02, 0.04, 0.06, 0.08, 0.1, 1'
-          keyValue='0 0 0, 0 0 0, 0.15 0 0, 0 0 0, -0.15 0 0, 0 0 0, 0 0 0'/>
+          keyValue='0 0 0, 0 0 0, 0.1503595 0 0, 0 0 0, -0.1503595 0 0, 0 0 0, 0 0 0'/>
       <OrientationInterpolator DEF='Pitch1_humanoid_root_RotationInterpolator'
           key='0, 0.08, 0.12, 0.15, 0.18, 0.2, 1'
           keyValue='0 0 1 0, 0 0 1 0, 1 0 0 0.5, 0 0 1 0, 1 0 0 -0.5, 0 0 1 0, 0 0 1 0'/>
@@ -6309,7 +6290,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Pitch2_humanoid_root_TranslationInterpolator'
           key='0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1'
-          keyValue='0 0 0, 0 -0.15 0, 0 -0.7 0, 0 -0.15 0, 0 0 0, 0 -0.15 0, 0 -0.7 0, 0 -0.15 0, 0 0 0'/>
+          keyValue='0 0 0, 0 -0.1503595 0, 0 -0.7016778 0, 0 -0.1503595 0, 0 0 0, 0 -0.1503595 0, 0 -0.7016778 0, 0 -0.1503595 0, 0 0 0'/>
       <OrientationInterpolator DEF='Pitch2_humanoid_root_RotationInterpolator'
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
@@ -6755,7 +6736,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Yaw1_humanoid_root_TranslationInterpolator'
           key='0, 0.02, 0.04, 0.06, 0.08, 0.1, 1'
-          keyValue='0 0 0, 0 0 0, 0 0.15 0, 0 0 0, 0 -0.15 0, 0 0 0, 0 0 0'/>
+          keyValue='0 0 0, 0 0 0, 0 0.1503595 0, 0 0 0, 0 -0.1503595 0, 0 0 0, 0 0 0'/>
       <OrientationInterpolator DEF='Yaw1_humanoid_root_RotationInterpolator'
           key='0, 0.08, 0.12, 0.15, 0.18, 0.2, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 1 0 0.5, 0 0 1 0, 0 1 0 -0.5, 0 0 1 0, 0 0 1 0'/>
@@ -7201,7 +7182,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Yaw2_humanoid_root_TranslationInterpolator'
           key='0, 0.02, 0.04, 0.06, 0.08, 0.1, 1'
-          keyValue='0 0 0, 0 0 0, 0 0.15 0, 0 0 0, 0 -0.15 0, 0 0 0, 0 0 0'/>
+          keyValue='0 0 0, 0 0 0, 0 0.1503595 0, 0 0 0, 0 -0.1503595 0, 0 0 0, 0 0 0'/>
       <OrientationInterpolator DEF='Yaw2_humanoid_root_RotationInterpolator'
           key='0, 0.08, 0.12, 0.15, 0.18, 0.2, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 1 0 0.5, 0 0 1 0, 0 1 0 -0.5, 0 0 1 0, 0 0 1 0'/>
@@ -7647,7 +7628,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Roll1_humanoid_root_TranslationInterpolator'
           key='0, 0.02, 0.04, 0.06, 0.08, 0.1, 1'
-          keyValue='0 0 0, 0 0 0, 0 0 0.15, 0 0 0, 0 0 -0.15, 0 0 0, 0 0 0'/>
+          keyValue='0 0 0, 0 0 0, 0 0 0.1503595, 0 0 0, 0 0 -0.1503595, 0 0 0, 0 0 0'/>
       <OrientationInterpolator DEF='Roll1_humanoid_root_RotationInterpolator'
           key='0, 0.08, 0.12, 0.15, 0.18, 0.2, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0.5, 0 0 1 0, 0 0 1 -0.5, 0 0 1 0, 0 0 1 0'/>
@@ -8093,7 +8074,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Roll2_humanoid_root_TranslationInterpolator'
           key='0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1'
-          keyValue='0 0 0, 0 -0.2 0, 0 -0.65 0, 0 -0.2 0, 0 0 0, 0 -0.2 0, 0 -0.65 0, 0 -0.2 0, 0 0 0'/>
+          keyValue='0 0 0, 0 -0.2004794 0, 0 -0.6515579 0, 0 -0.2004794 0, 0 0 0, 0 -0.2004794 0, 0 -0.6515579 0, 0 -0.2004794 0, 0 0 0'/>
       <OrientationInterpolator DEF='Roll2_humanoid_root_RotationInterpolator'
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
@@ -8539,7 +8520,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Walk_humanoid_root_TranslationInterpolator'
           key='0, 0.0416, 0.125, 0.1667, 0.2083, 0.25, 0.2917, 0.375, 0.4583, 0.5, 0.5417, 0.5833, 0.625, 0.7083, 0.75, 0.7917, 0.875, 0.9167, 1'
-          keyValue='0 -0.0093 0, 0 -0.0038 0, 0 -0.0088 0, 0 -0.01486 0, 0 -0.02641 0, 0 -0.03934 0, 0 -0.0502 0, 0 -0.07469 0, 0 -0.02732 0, 0 -0.01608 0, 0 -0.0113 0, 0 -0.0058 0, 0 -0.002 0, 0 -0.003 0, 0 -0.014 0, 0 -0.038 0, 0 -0.0565 0, 0 -0.045 0, 0 -0.0093 0'/>
+          keyValue='0 -0.00932229 0, 0 -0.003809108 0, 0 -0.008821093 0, 0 -0.01489562 0, 0 -0.0264733 0, 0 -0.03943429 0, 0 -0.05032032 0, 0 -0.07486902 0, 0 -0.02738548 0, 0 -0.01611854 0, 0 -0.01132708 0, 0 -0.005813902 0, 0 -0.002004794 0, 0 -0.003007191 0, 0 -0.01403356 0, 0 -0.03809108 0, 0 -0.05663542 0, 0 -0.04510786 0, 0 -0.00932229 0'/>
       <OrientationInterpolator DEF='Walk_humanoid_root_RotationInterpolator'
           key='0, 0.5, 1'
           keyValue='0 0 1 0, 0 0 1 0, 0 0 1 0'/>
@@ -8984,7 +8965,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Run_humanoid_root_TranslationInterpolator'
           key='0, 0.22, 0.3, 0.31, 0.5, 0.69, 0.7, 0.78, 1'
-          keyValue='0 -0.01 0, 0 -0.037 0, 0 -0.049 0, 0 -0.037 0, 0 -0.01 0, 0 -0.037 0, 0 -0.049 0, 0 -0.037 0, 0 -0.01 0'/>
+          keyValue='0 -0.01002397 0, 0 -0.03708868 0, 0 -0.04911745 0, 0 -0.03708868 0, 0 -0.01002397 0, 0 -0.03708868 0, 0 -0.04911745 0, 0 -0.03708868 0, 0 -0.01002397 0'/>
       <OrientationInterpolator DEF='Run_humanoid_root_RotationInterpolator'
           key='0, 0.25, 0.5, 0.75, 1'
           keyValue='1 0 0 0.06, 1 0 0 0.167, 1 0 0 0.06, 1 0 0 0.168, 1 0 0 0.06'/>
@@ -9430,7 +9411,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Jump_humanoid_root_TranslationInterpolator'
           key='0, 0.04, 0.07, 0.11, 0.15, 0.19, 0.22, 0.25, 0.27, 0.31, 0.33, 0.35, 0.38, 0.53, 0.544, 0.76, 0.8, 0.84, 0.88, 0.92, 0.96, 1'
-          keyValue='0 0 0, 0 -0.0126 -0.0129, 0 -0.0471 -0.0374, -0.0003 -0.1049 -0.0535, -0.0006 -0.1892 -0.0656, -0.0008 -0.286 -0.0627, -0.0009 -0.3795 -0.0515, -0.001 -0.4484 -0.03656, -0.00106 -0.4484 -0.03656, -0.001122 -0.25 -0.1499, -0.0008616 -0.05 -0.06358, -0.0005128 0.15 -0.05488, 0.0004779 0.55 0.02732, 0.0001728 1.385 0.006873, 0.00017 1.395 0.0069, 0 0.35 0.02148, 0 -0.01299 -0.01057, 0 -0.06932 -0.01064, 1e-4 -0.1037 -0.0051, 1e-4 -0.07198 -0.0076, 1e-4 -0.0163 -0.0049, 0 0 0'/>
+          keyValue='0 0 0, 0 -0.0126302 -0.01293092, 0 -0.04721289 -0.03748964, -0.0003007191 -0.1051514 -0.05362823, -0.0006014381 -0.1896535 -0.06575723, -0.0008019175 -0.2866855 -0.06285028, -0.0009021572 -0.3804096 -0.05162344, -0.001002397 -0.4494748 -0.03664763, -0.001062541 -0.4494748 -0.03664763, -0.001124689 -0.2505992 -0.1502593, -0.0008636651 -0.05011984 -0.06373239, -0.0005140291 0.1503595 -0.05501154, 0.0004790454 0.5513183 0.02738548, 0.0001732142 1.38832 0.006889474, 0.0001704075 1.398344 0.006916538, 0 0.3508389 0.02153149, 0 -0.01302113 -0.01059533, 0 -0.06948615 -0.0106655, 0.0001002397 -0.1039486 -0.005112224, 0.0001002397 -0.07215253 -0.007618216, 0.0001002397 -0.01633907 -0.004911745, 0 0 0'/>
       <OrientationInterpolator DEF='Jump_humanoid_root_RotationInterpolator'
           key='0, 0.28, 0.32, 0.48, 0.64, 0.76, 1'
           keyValue='0 0 1 0, 1 0 0 0.3273, 1 0 0 0.3273, 0 0 1 0, 0 0 1 0, 0 0 1 0, 0 0 1 0'/>
@@ -10322,7 +10303,7 @@
           loop='true'/>
       <PositionInterpolator DEF='Kick2_humanoid_root_TranslationInterpolator'
           key='0, 0.2, 0.6, 1'
-          keyValue='1 0.3 -1, 0.4 -0.04 -0.4, -0.18 0.1 0, -0.2 0.15 0.15'/>
+          keyValue='1.002397 0.3007191 -1.002397, 0.4009587 -0.04009587 -0.4009587, -0.1804314 0.1002397 0, -0.2004794 0.1503595 0.1503595'/>
       <OrientationInterpolator DEF='Kick2_humanoid_root_RotationInterpolator'
           key='0, 0.1, 0.4, 0.6, 1'
           keyValue='1 0 0 0.5, 1 0 0 0.5, -1 0 0 0.1, -1 0 0 0.5, -1 0 0 0.5'/>
