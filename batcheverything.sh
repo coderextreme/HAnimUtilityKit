@@ -12,6 +12,8 @@ echo "Converting Walking Alien from .gltf/.bin to .x3d and .x3dv..."
 #npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3d
 #npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3dv
 npx x3d-tidy@latest -f 5 -d 5 -i JoeHAnimKick1a.x3dv -o JoeHAnimKick1a.x3d
+npx x3d-tidy@latest -f 5 -d 5 -i walking_man_cc_test.x3dj -o walking_man_cc_test.new.python.x3d
+
 
 #cp walking_man_cc_test.new.python.x3d walking_man_cc_test.x3d
 #cp conan_23_Aug2025.x3d conan_23_Aug2025.scaled.x3d
@@ -30,7 +32,7 @@ python runjoe.py
 python runjoedemo5.py
 # python runjoedemo5a.py
 
-for X3D in conan_23_Aug2025_Final.x3d WalkingAlien_Final.x3d walking_man_cc_test_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d JinLOA4.scaled1_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
+for X3D in walking_man_cc_test_Final.x3d conan_23_Aug2025_Final.x3d WalkingAlien_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d JinLOA4.scaled1_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
 do
 	X3DV="${X3D}v"
 	X3DOM=`basename "${X3D}" Final.x3d`x3dom.x3d
