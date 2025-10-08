@@ -1,11 +1,11 @@
-#X3D V4.0 utf8 X_ITE V12.1.0
+#X3D V4.0 utf8 X_ITE V12.1.1
 
 PROFILE Immersive
 
 COMPONENT HAnim : 3
 
-META "generator" "x3d-tidy V2.2.5, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Fri, 03 Oct 2025 09:23:35 GMT"
+META "generator" "x3d-tidy V2.2.6, https://www.npmjs.com/package/x3d-tidy"
+META "modified" "Wed, 08 Oct 2025 13:52:04 GMT"
 
 WorldInfo {
   title "WalkingAlien.gltf"

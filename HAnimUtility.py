@@ -184,38 +184,38 @@ class HAnimUtility:
         # self.rename_interpolators(TIME_SENSORS)
         self.writeXML(FINAL_FILE)
 
-    def standard_rename_with_group(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
-        self.readXML(INPUT_FILE)
-        self.animation_remove()
-        # self.humanoid_replace()
-        self.group_remove()
-        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
-        # We removed animations, above.
-        # self.rename_interpolators(TIME_SENSORS)
-        self.writeXML(FINAL_FILE)
+#    def standard_rename_with_group(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+#        self.readXML(INPUT_FILE)
+#        self.animation_remove()
+#        # self.humanoid_replace()
+#        self.group_remove()
+#        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+#        # We removed animations, above.
+#        # self.rename_interpolators(TIME_SENSORS)
+#        self.writeXML(FINAL_FILE)
 
-    # called if you want to maintain existing animations
-    def interpolator_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
-        self.readXML(INPUT_FILE)
-        # animations are not removed
-        # self.humanoid_replace()
-        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
-        self.rename_interpolators(TIME_SENSORS)
-        self.writeXML(FINAL_FILE)
+#    # called if you want to maintain existing animations
+#    def interpolator_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+#        self.readXML(INPUT_FILE)
+#        # animations are not removed
+#        # self.humanoid_replace()
+#        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+#        self.rename_interpolators(TIME_SENSORS)
+#        self.writeXML(FINAL_FILE)
 
-    # called after tidy conversion from .gltf and animations truncated
-    def truncated_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
-        self.readXML(INPUT_FILE)
-        # animations were removed by hand
-        # self.animation_remove()
-        # self.humanoid_replace()
-        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
-        # animations were removed by hand
-        # self.rename_interpolators(root, TIME_SENSORS)
-        self.joint_binding_remove()
-        self.tangent_remove()
-        self.translation_to_center()
-        self.writeXML(FINAL_FILE)
+#    # called after tidy conversion from .gltf and animations truncated
+#    def truncated_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+#        self.readXML(INPUT_FILE)
+#        # animations were removed by hand
+#        # self.animation_remove()
+#        # self.humanoid_replace()
+#        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+#        # animations were removed by hand
+#        # self.rename_interpolators(root, TIME_SENSORS)
+#        self.joint_binding_remove()
+#        self.tangent_remove()
+#        self.translation_to_center()
+#        self.writeXML(FINAL_FILE)
 
     # called after tidy conversion from .gltf.
     def tidy_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):

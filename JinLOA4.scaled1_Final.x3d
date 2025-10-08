@@ -7,7 +7,7 @@
     <meta name="translator" content="Chul Hee Jung and Myeong Won Lee" />
     <meta name="created" content="31 March 2011" />
     <meta name="translated" content="1 November 2014" />
-    <meta name="modified" content="Fri, 03 Oct 2025 09:26:12 GMT" />
+    <meta name="modified" content="Wed, 08 Oct 2025 13:54:19 GMT" />
     <meta name="description" content="Articulated 3D game character designed with a general graphics tool" />
     <meta name="reference" content="KoreanCharacter00ReadMe.txt" />
     <meta name="reference" content="KoreanCharacterHumanMotion_Infotech2014_140706.pdf" />
@@ -17,7 +17,7 @@
     <meta name="generator" content="Suwon HAnim Converter" />
     <meta name="generator" content="Gnu Image Manipulation Program, http://www.gimp.org" />
     <meta name="generator" content="X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" />
-    <meta name="generator" content="x3d-tidy V2.2.5, https://www.npmjs.com/package/x3d-tidy" />
+    <meta name="generator" content="x3d-tidy V2.2.6, https://www.npmjs.com/package/x3d-tidy" />
     <meta name="license" content="license.html" />
   </head>
   <Scene>
@@ -33,7 +33,7 @@
         <MetadataFloat name="height" value="1.5" />
         <MetadataString name="humanoidVersion" value="&quot;2.0&quot;" />
       </MetadataSet>
-      <HAnimJoint DEF="hanim_humanoid_root" containerField="skeleton" name="humanoid_root" translation="0.8980001 0.2422 -0.8980001" rotation="1 0 0 0.5" center="0 0.825975 -0.015921">
+      <HAnimJoint DEF="hanim_humanoid_root" containerField="skeleton" name="humanoid_root" translation="0.05990911 0.04209091 -0.1654546" rotation="-1.00000000000002 0 0 0.169090896628118" center="0 0.825975 -0.015921">
         <HAnimSegment DEF="hanim_sacrum" name="sacrum">
           <Shape>
             <Appearance>
@@ -59,7 +59,7 @@
               </IndexedFaceSet>
             </Shape>
           </HAnimSegment>
-          <HAnimJoint DEF="hanim_l_hip" name="l_hip" rotation="-1 0 0 1.33000010505318" center="0.0946575 0.8266501 -0.01834875">
+          <HAnimJoint DEF="hanim_l_hip" name="l_hip" rotation="1 0 0 0.448484889425417" center="0.0946575 0.8266501 -0.01834875">
             <HAnimSegment DEF="hanim_l_thigh" name="l_thigh">
               <Shape>
                 <Appearance>
@@ -72,7 +72,7 @@
                 </IndexedFaceSet>
               </Shape>
             </HAnimSegment>
-            <HAnimJoint DEF="hanim_l_knee" name="l_knee" rotation="1 0 0 0.830000105053185" center="0.09261001 0.408825 -0.01943775">
+            <HAnimJoint DEF="hanim_l_knee" name="l_knee" rotation="0.569820178747413 0 0.821769410414057 0.349321687980683" center="0.09261001 0.408825 -0.01943775">
               <HAnimSegment DEF="hanim_l_calf" name="l_calf">
                 <Shape>
                   <Appearance>
@@ -451,7 +451,7 @@
               </HAnimJoint>
             </HAnimJoint>
           </HAnimJoint>
-          <HAnimJoint DEF="hanim_r_hip" name="r_hip" rotation="1 0 0 1" center="-0.0946575 0.8266501 -0.01834875">
+          <HAnimJoint DEF="hanim_r_hip" name="r_hip" rotation="-1 0 0 0.476363658905029" center="-0.0946575 0.8266501 -0.01834875">
             <HAnimSegment DEF="hanim_r_thigh" name="r_thigh">
               <Shape>
                 <Appearance>
@@ -464,7 +464,7 @@
                 </IndexedFaceSet>
               </Shape>
             </HAnimSegment>
-            <HAnimJoint DEF="hanim_r_knee" name="r_knee" rotation="1.00000000000001 0 0 0.0864000082015979" center="-0.09261001 0.408825 -0.01943775">
+            <HAnimJoint DEF="hanim_r_knee" name="r_knee" rotation="1 0 0 0.738181829452514" center="-0.09261001 0.408825 -0.01943775">
               <HAnimSegment DEF="hanim_r_calf" name="r_calf">
                 <Shape>
                   <Appearance>
@@ -477,7 +477,7 @@
                   </IndexedFaceSet>
                 </Shape>
               </HAnimSegment>
-              <HAnimJoint DEF="hanim_r_talocrural" name="r_talocrural" rotation="-1 0 0 0.864000082015992" center="-0.0884475 0.09544501 -0.01045125">
+              <HAnimJoint DEF="hanim_r_talocrural" name="r_talocrural" rotation="1 0 0 0.738181829452514" center="-0.0884475 0.09544501 -0.01045125">
                 <HAnimSegment DEF="hanim_r_talus" name="r_talus">
                   <Shape>
                     <Appearance>
@@ -843,7 +843,7 @@
               </HAnimJoint>
             </HAnimJoint>
           </HAnimJoint>
-          <HAnimJoint DEF="hanim_vl5" name="vl5" rotation="1.00000000000025 0 0 0.0283333151207967" center="0 0.9254251 -0.01376325">
+          <HAnimJoint DEF="hanim_vl5" name="vl5" rotation="-0.999999999999281 0 0 0.0190909069234811" center="0 0.9254251 -0.01376325">
             <HAnimSegment DEF="hanim_l5" name="l5">
               <Shape>
                 <Appearance>
@@ -856,7 +856,7 @@
                 </IndexedFaceSet>
               </Shape>
             </HAnimSegment>
-            <HAnimJoint DEF="hanim_vl4" name="vl4" rotation="1.00000000000025 0 0 0.0283333151207967" center="0 0.949725 -0.01376325">
+            <HAnimJoint DEF="hanim_vl4" name="vl4" rotation="-0.999999999999281 0 0 0.0190909069234811" center="0 0.949725 -0.01376325">
               <HAnimSegment DEF="hanim_l4" name="l4">
                 <Shape>
                   <Appearance>
@@ -973,7 +973,7 @@
                                   </IndexedFaceSet>
                                 </Shape>
                               </HAnimSegment>
-                              <HAnimJoint DEF="hanim_vt7" name="vt7" rotation="1.00000000000025 0 0 0.0283333151207967" center="0 1.1088 -0.01376325">
+                              <HAnimJoint DEF="hanim_vt7" name="vt7" rotation="-0.999999999999281 0 0 0.0190909069234811" center="0 1.1088 -0.01376325">
                                 <HAnimSegment DEF="hanim_t7" name="t7">
                                   <Shape>
                                     <Appearance>
@@ -986,7 +986,7 @@
                                     </IndexedFaceSet>
                                   </Shape>
                                 </HAnimSegment>
-                                <HAnimJoint DEF="hanim_vt6" name="vt6" rotation="1.00000000000025 0 0 0.0283333151207967" center="0 1.121625 -0.01376325">
+                                <HAnimJoint DEF="hanim_vt6" name="vt6" rotation="-0.999999999999281 0 0 0.0190909069234811" center="0 1.121625 -0.01376325">
                                   <HAnimSegment DEF="hanim_t6" name="t6">
                                     <Shape>
                                       <Appearance>
@@ -1103,7 +1103,7 @@
                                                       </IndexedFaceSet>
                                                     </Shape>
                                                   </HAnimSegment>
-                                                  <HAnimJoint DEF="hanim_vc4" name="vc4" rotation="0.70710678118654 0 0.70710678118654 0.182000043710073" center="0 1.282275 -0.01506375">
+                                                  <HAnimJoint DEF="hanim_vc4" name="vc4" rotation="0.999590271254439 0 0.0286232355521575 0.727894224507524" center="0 1.282275 -0.01506375">
                                                     <HAnimSegment DEF="hanim_c4" name="c4">
                                                       <Shape>
                                                         <Appearance>
@@ -1155,7 +1155,7 @@
                                                               </IndexedFaceSet>
                                                             </Shape>
                                                           </HAnimSegment>
-                                                          <HAnimJoint DEF="hanim_skullbase" name="skullbase" rotation="0 -0.999999999999991 0 0.207500026263298" center="0 1.31265 -0.01544175">
+                                                          <HAnimJoint DEF="hanim_skullbase" name="skullbase" center="0 1.31265 -0.01544175">
                                                             <HAnimSegment DEF="hanim_skull" name="skull">
                                                               <Shape>
                                                                 <Appearance>
@@ -1300,7 +1300,7 @@
                                                     </IndexedFaceSet>
                                                   </Shape>
                                                 </HAnimSegment>
-                                                <HAnimJoint DEF="hanim_l_shoulder" name="l_shoulder" rotation="0 0 1.00000000000001 0.127499921210109" center="0.16506 1.17855 -0.003267">
+                                                <HAnimJoint DEF="hanim_l_shoulder" name="l_shoulder" rotation="-0.0485611304369005 0 0.998820212355903 1.49632749720011" center="0.16506 1.17855 -0.003267">
                                                   <HAnimSegment DEF="hanim_l_upperarm" name="l_upperarm">
                                                     <Shape>
                                                       <Appearance>
@@ -1313,7 +1313,7 @@
                                                       </IndexedFaceSet>
                                                     </Shape>
                                                   </HAnimSegment>
-                                                  <HAnimJoint DEF="hanim_l_elbow" name="l_elbow" rotation="-1 0 0 2.84700009226799" center="0.1820925 0.9288 -0.0056295">
+                                                  <HAnimJoint DEF="hanim_l_elbow" name="l_elbow" rotation="-1 0 0 1.04454544186592" center="0.1820925 0.9288 -0.0056295">
                                                     <HAnimSegment DEF="hanim_l_forearm" name="l_forearm">
                                                       <Shape>
                                                         <Appearance>
@@ -1326,7 +1326,7 @@
                                                         </IndexedFaceSet>
                                                       </Shape>
                                                     </HAnimSegment>
-                                                    <HAnimJoint DEF="hanim_l_radiocarpal" name="l_radiocarpal" rotation="0 1 0 0.11049993171543" center="0.181935 0.724275 -0.00502425">
+                                                    <HAnimJoint DEF="hanim_l_radiocarpal" name="l_radiocarpal" rotation="0 0.99451596124473 0.104584907273804 1.1573041860963" center="0.181935 0.724275 -0.00502425">
                                                       <HAnimSegment DEF="hanim_l_carpal" name="l_carpal">
                                                         <Shape>
                                                           <Appearance>
@@ -1692,7 +1692,7 @@
                                                     </IndexedFaceSet>
                                                   </Shape>
                                                 </HAnimSegment>
-                                                <HAnimJoint DEF="hanim_r_shoulder" name="r_shoulder" rotation="0 0 -1 2.432000041008" center="-0.1647 1.17855 -0.003267">
+                                                <HAnimJoint DEF="hanim_r_shoulder" name="r_shoulder" rotation="0 0 -1 1.63090908527374" center="-0.1647 1.17855 -0.003267">
                                                   <HAnimSegment DEF="hanim_r_upperarm" name="r_upperarm">
                                                     <Shape>
                                                       <Appearance>
@@ -1705,7 +1705,7 @@
                                                       </IndexedFaceSet>
                                                     </Shape>
                                                   </HAnimSegment>
-                                                  <HAnimJoint DEF="hanim_r_elbow" name="r_elbow" rotation="-1 0 0 2.84700009226799" center="-0.1817325 0.9288 -0.0056295">
+                                                  <HAnimJoint DEF="hanim_r_elbow" name="r_elbow" rotation="-1 0 0 1.04454544186592" center="-0.1817325 0.9288 -0.0056295">
                                                     <HAnimSegment DEF="hanim_r_forearm" name="r_forearm">
                                                       <Shape>
                                                         <Appearance>
@@ -1718,7 +1718,7 @@
                                                         </IndexedFaceSet>
                                                       </Shape>
                                                     </HAnimSegment>
-                                                    <HAnimJoint DEF="hanim_r_radiocarpal" name="r_radiocarpal" rotation="0 0.999999999999997 0 0.2796000123024" center="-0.181575 0.724275 -0.005022">
+                                                    <HAnimJoint DEF="hanim_r_radiocarpal" name="r_radiocarpal" rotation="0 1.00000000000009 0 0.0392727255821193" center="-0.181575 0.724275 -0.005022">
                                                       <HAnimSegment DEF="hanim_r_carpal" name="r_carpal">
                                                         <Shape>
                                                           <Appearance>
