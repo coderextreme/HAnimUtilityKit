@@ -11,8 +11,8 @@ class HAnimUtility:
         self.root = X3D.getroot()
 
     def getRootFromXML(self, INPUT_FILE):
-        X3D = xml.etree.ElementTree.parse(INPUT_FILE)
-        return X3D.getroot()
+        eX3D = xml.etree.ElementTree.parse(INPUT_FILE)
+        return eX3D.getroot()
 
     # animation_remove.py
     def animation_remove(self):
@@ -34,7 +34,7 @@ class HAnimUtility:
 
     #joint_binding_remove.py
     def joint_binding_remove(self):
-        humanoids = self.root.findall(".//HAnimHumanoid")
+        humanoids = self.root.findall("HAnimHumanoid")
         for humanoid in humanoids:
             humanoid.attrib.pop("jointBindingPositions")
             humanoid.attrib.pop("jointBindingRotations")
@@ -118,6 +118,8 @@ class HAnimUtility:
                 self.swap_translation_center(parent_joint, joint_translation)
     # writeXML.py
     def writeXML(self, OUTPUT_FILE):
+        # TODO remove to use Animations3.x3dv
+        self.merge_animations_and_menu("Animations4.x3d", "menu.x3d")
         header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">'
         xmlstr = xml.etree.ElementTree.tostring(self.root, encoding='unicode')
         xmlString = f"{header}{xmlstr}"
@@ -165,6 +167,81 @@ class HAnimUtility:
                         template_parent.remove(template_humanoid)
                         template_parent.insert(index, humanoid)
         self.root = template_root
+
+
+    def merge_animations_and_menu(self, ANIMATIONS_FILE, MENU_FILE):
+        self.menu = self.getRootFromXML(MENU_FILE)
+        self.animations = self.getRootFromXML(ANIMATIONS_FILE)
+        scene = self.root.find(".//Scene")
+        animations_scene = self.animations.find(".//Scene")
+
+        layer_set = xml.etree.ElementTree.Element('LayerSet')
+        layer_set.text = "\n"
+        layer_set.tail = "\n"
+        layer_set.set("activeLayer", "1")
+        layer_set.set("order", "1, 2")
+
+        # MODEL LAYER
+        model_layer = xml.etree.ElementTree.Element('Layer')
+        model_layer.text = "\n"
+        model_layer.tail = "\n"
+        model_layer.set("DEF", "Model")
+
+        # Extract Humanoid from the Scene and add to Model layer
+        humanoid_parents = list(self.root.findall('.//HAnimHumanoid/..'))
+        for humanoid_parent in humanoid_parents:
+            for humanoid in humanoid_parent.findall('HAnimHumanoid'):
+                humanoid_parent.remove(humanoid)
+                model_layer.append(humanoid)
+
+        layer_set.append(model_layer)
+
+        # MENU LAYER
+        menu_layer = xml.etree.ElementTree.Element('Layer')
+        menu_layer.text = "\n"
+        menu_layer.tail = "\n"
+        menu_layer.set("DEF", "Menu")
+
+        viewpoint = xml.etree.ElementTree.Element('Viewpoint')
+        viewpoint.text = "\n"
+        viewpoint.tail = "\n"
+        viewpoint.set("position", "0 20 110")
+        menu_layer.append(viewpoint)
+
+        # Add the MenuItem ProtoDeclare (defines the prototype structure)
+        menu_layer.append(self.menu.find(".//ProtoDeclare[@name='MenuItem']"))
+
+        # Add the animations group
+        menu_layer.append(self.animations.find(".//Group[@DEF='AllAnimations']"))
+
+        # Add all ProtoInstances and their associated routes from the menu
+        proto_instances = self.menu.findall(".//ProtoInstance[@name='MenuItem']")
+        for proto_instance in proto_instances:
+            menu_layer.append(proto_instance)
+            proto_def = proto_instance.get("DEF")
+            routes = self.menu.findall(f".//Layer/ROUTE[@fromNode='{proto_def}']")
+            for route in routes:
+                menu_layer.append(route)
+
+        time_sensors = self.animations.findall(".//TimeSensor")
+        for time_sensor in time_sensors:
+            time_sensor_def = time_sensor.get("DEF")
+            routes = animations_scene.findall(f".//ROUTE[@fromNode='{time_sensor_def}']")
+            for route in routes:
+                animations_scene.remove(route)
+                menu_layer.append(route)
+
+        layer_set.append(menu_layer)
+        scene.append(layer_set)
+
+    def mix_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
+        self.readXML(INPUT_FILE)
+        self.animation_remove()
+        self.map_joints(skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX)
+        #self.joint_binding_remove()
+        #self.tangent_remove()
+        self.translation_to_center()
+        self.writeXML(FINAL_FILE)
 
     def standard_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)

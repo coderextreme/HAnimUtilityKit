@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">
+<X3D profile='Immersive' version='4.0' xmlns:xsd='https://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='https://www.web3d.org/specifications/x3d-4.0.xsd'>
+  <head>
+    <component name="HAnim" level="3" />
+    <component name="Core" level="1" />
+    <component name="Grouping" level="1" />
+    <component name="Layering" level="1" />
+    <component name="Text" level="1" />
+    <meta name='generator' content='x3d-tidy V2.2.7, https://www.npmjs.com/package/x3d-tidy'/>
+    <meta name='modified' content='Mon, 20 Oct 2025 05:55:19 GMT'/>
+  </head>
+  <Scene>
+    <LayerSet activeLayer="1" order="1, 2">
+	  <Layer DEF="Model">
+		  <Viewpoint description="Initial View" position="0 20 110" />
+    </Layer>
+    <Layer DEF="Menu">
+    <Viewpoint position="0 20 110" />
+        <ProtoDeclare name="MenuItem">
+        <ProtoInterface>
+        <field name="translation" accessType="inputOutput" type="SFVec3f" />
+        <field name="textTranslation" accessType="inputOutput" type="SFVec3f" />
+        <field name="description" accessType="inputOutput" type="SFString" />
+        <field name="menuItemString" accessType="inputOutput" type="MFString" />
+        <field name="startTime" accessType="outputOnly" type="SFTime" value="-1" />
+        <field name="stopTime" accessType="outputOnly" type="SFTime" value="-1" />
+        <field name="enabled" accessType="outputOnly" type="SFBool" value="false" />
+        <field name="untoggle" accessType="inputOnly" type="SFBool" value="false" />
+        <field name="size" accessType="initializeOnly" type="SFVec2f" value="15.0 4.0" />
+        <field name="fontSize" accessType="inputOutput" type="SFFloat" value="2.4" />
+        <field name="spacing" accessType="initializeOnly" type="SFFloat" value="1.2" />
+        </ProtoInterface>
+        <ProtoBody>
+        <Group>
+        <Transform>
+          <IS>
+              <connect nodeField="translation" protoField="translation" />
+          </IS>
+          <TouchSensor DEF="StartStopAnimationUnit_Sensor">
+            <IS>
+              <connect nodeField="description" protoField="description" />
+            </IS>
+          </TouchSensor>
+        <Transform translation="0 0 0">
+          <IS>
+              <connect nodeField="translation" protoField="textTranslation" />
+          </IS>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="1 1 1" />
+            </Appearance>
+            <Text>
+                <IS>
+                    <connect nodeField="string" protoField="menuItemString" />
+                </IS>
+              <FontStyle justify="&quot;MIDDLE&quot; &quot;MIDDLE&quot;">
+                <IS>
+                    <connect nodeField="size" protoField="fontSize" />
+                    <connect nodeField="spacing" protoField="spacing" />
+                </IS>
+              </FontStyle>
+            </Text>
+          </Shape>
+        </Transform>
+        <Transform translation="0 0 -0.01">
+          <Switch DEF="itemMaterial" whichChoice="0">
+          <Shape>
+            <Appearance>
+                <Material diffuseColor="0 0 1" />
+            </Appearance>
+            <Rectangle2D size="15.0 4.0">
+                <IS>
+                    <connect nodeField="size" protoField="size" />
+                </IS>
+            </Rectangle2D>
+          </Shape>
+          <Shape>
+            <Appearance>
+                <Material diffuseColor="0 1 0" />
+            </Appearance>
+            <Rectangle2D size="15.0 4.0">
+                <IS>
+                    <connect nodeField="size" protoField="size" />
+                </IS>
+            </Rectangle2D>
+          </Shape>
+          </Switch>
+        </Transform>
+        </Transform>
+      <TimeTrigger DEF="startTime">
+            <IS>
+            <connect nodeField="triggerTime" protoField="startTime" />
+            </IS>
+      </TimeTrigger>
+      <TimeTrigger DEF="stopTime">
+            <IS>
+            <connect nodeField="triggerTime" protoField="stopTime" />
+            </IS>
+      </TimeTrigger>
+      <BooleanFilter DEF="veryTrue">
+            <IS>
+            <connect nodeField="inputTrue" protoField="enabled" />
+            </IS>
+      </BooleanFilter>
+      <BooleanFilter DEF="veryFalse" />
+      <BooleanSequencer DEF="clickBetweenStates" key="0 1" keyValue="true false" />
+      <IntegerSequencer DEF="toggler" key="0 1" keyValue="1 0" />
+      <IntegerSequencer DEF="untoggler" key="0 1" keyValue="0 0">
+            <IS>
+            <connect nodeField="next" protoField="untoggle" />
+            </IS>
+      </IntegerSequencer>
+
+      <ROUTE fromNode="clickBetweenStates" fromField="value_changed" toNode="veryTrue" toField="set_boolean" />
+      <ROUTE fromNode="veryTrue" fromField="inputTrue" toNode="startTime" toField="set_boolean" />
+      <ROUTE fromNode="clickBetweenStates" fromField="value_changed" toNode="veryFalse" toField="set_boolean" />
+      <ROUTE fromNode="veryFalse" fromField="inputFalse" toNode="stopTime" toField="set_boolean" />
+      <ROUTE fromNode="StartStopAnimationUnit_Sensor" fromField="isActive" toNode="toggler" toField="next" />
+      <ROUTE fromNode="toggler" fromField="value_changed" toNode="itemMaterial" toField="whichChoice" />
+      <ROUTE fromNode="untoggler" fromField="value_changed" toNode="itemMaterial" toField="whichChoice" />
+
+      <ROUTE fromNode="StartStopAnimationUnit_Sensor" fromField="isActive" toNode="clickBetweenStates" toField="next" />
+      </Group>
+      </ProtoBody>
+      </ProtoDeclare>
+      <ProximitySensor DEF="HudProx" size="50 50 50" />
+
+<ProtoInstance DEF="Default_PI" name="MenuItem">
+<fieldValue name="translation" value="35 60 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Basic" />
+<fieldValue name="menuItemString" value="&quot;Basic&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Default_PI" fromField="startTime" toNode="DefaultTimer" toField="startTime" />
+<ROUTE fromNode="Default_PI" fromField="stopTime" toNode="DefaultTimer" toField="stopTime" />
+<ROUTE fromNode="Default_PI" fromField="enabled" toNode="DefaultTimer" toField="enabled" />
+
+<ProtoInstance DEF="PoseT_PI" name="MenuItem">
+<fieldValue name="translation" value="35 56 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="T Pose" />
+<fieldValue name="menuItemString" value="&quot;T Pose&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="PoseT_PI" fromField="startTime" toNode="PoseTTimer" toField="startTime" />
+<ROUTE fromNode="PoseT_PI" fromField="stopTime" toNode="PoseTTimer" toField="stopTime" />
+<ROUTE fromNode="PoseT_PI" fromField="enabled" toNode="PoseTTimer" toField="enabled" />
+
+<ProtoInstance DEF="PoseA_PI" name="MenuItem">
+<fieldValue name="translation" value="35 52 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="A Pose" />
+<fieldValue name="menuItemString" value="&quot;A Pose&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="PoseA_PI" fromField="startTime" toNode="PoseATimer" toField="startTime" />
+<ROUTE fromNode="PoseA_PI" fromField="stopTime" toNode="PoseATimer" toField="stopTime" />
+<ROUTE fromNode="PoseA_PI" fromField="enabled" toNode="PoseATimer" toField="enabled" />
+
+<ProtoInstance DEF="PoseH_PI" name="MenuItem">
+<fieldValue name="translation" value="35 48 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="H Pose" />
+<fieldValue name="menuItemString" value="&quot;H Pose&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="PoseH_PI" fromField="startTime" toNode="PoseHTimer" toField="startTime" />
+<ROUTE fromNode="PoseH_PI" fromField="stopTime" toNode="PoseHTimer" toField="stopTime" />
+<ROUTE fromNode="PoseH_PI" fromField="enabled" toNode="PoseHTimer" toField="enabled" />
+
+<ProtoInstance DEF="Pitch1_PI" name="MenuItem">
+<fieldValue name="translation" value="35 44 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Pitch 1" />
+<fieldValue name="menuItemString" value="&quot;Pitch1&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Pitch1_PI" fromField="startTime" toNode="Pitch1Timer" toField="startTime" />
+<ROUTE fromNode="Pitch1_PI" fromField="stopTime" toNode="Pitch1Timer" toField="stopTime" />
+<ROUTE fromNode="Pitch1_PI" fromField="enabled" toNode="Pitch1Timer" toField="enabled" />
+
+<ProtoInstance DEF="Pitch2_PI" name="MenuItem">
+<fieldValue name="translation" value="35 40 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Pitch 2" />
+<fieldValue name="menuItemString" value="&quot;Pitch2&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Pitch2_PI" fromField="startTime" toNode="Pitch2Timer" toField="startTime" />
+<ROUTE fromNode="Pitch2_PI" fromField="stopTime" toNode="Pitch2Timer" toField="stopTime" />
+<ROUTE fromNode="Pitch2_PI" fromField="enabled" toNode="Pitch2Timer" toField="enabled" />
+
+<ProtoInstance DEF="Yaw1_PI" name="MenuItem">
+<fieldValue name="translation" value="35 36 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Yaw 1" />
+<fieldValue name="menuItemString" value="&quot;Yaw1&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Yaw1_PI" fromField="startTime" toNode="Yaw1Timer" toField="startTime" />
+<ROUTE fromNode="Yaw1_PI" fromField="stopTime" toNode="Yaw1Timer" toField="stopTime" />
+<ROUTE fromNode="Yaw1_PI" fromField="enabled" toNode="Yaw1Timer" toField="enabled" />
+
+<ProtoInstance DEF="Yaw2_PI" name="MenuItem">
+<fieldValue name="translation" value="35 32 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Yaw 2" />
+<fieldValue name="menuItemString" value="&quot;Yaw2&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Yaw2_PI" fromField="startTime" toNode="Yaw2Timer" toField="startTime" />
+<ROUTE fromNode="Yaw2_PI" fromField="stopTime" toNode="Yaw2Timer" toField="stopTime" />
+<ROUTE fromNode="Yaw2_PI" fromField="enabled" toNode="Yaw2Timer" toField="enabled" />
+
+<ProtoInstance DEF="Roll1_PI" name="MenuItem">
+<fieldValue name="translation" value="35 28 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Roll 1" />
+<fieldValue name="menuItemString" value="&quot;Roll1&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Roll1_PI" fromField="startTime" toNode="Roll1Timer" toField="startTime" />
+<ROUTE fromNode="Roll1_PI" fromField="stopTime" toNode="Roll1Timer" toField="stopTime" />
+<ROUTE fromNode="Roll1_PI" fromField="enabled" toNode="Roll1Timer" toField="enabled" />
+
+<ProtoInstance DEF="Roll2_PI" name="MenuItem">
+<fieldValue name="translation" value="35 24 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Roll 2" />
+<fieldValue name="menuItemString" value="&quot;Roll2&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Roll2_PI" fromField="startTime" toNode="Roll2Timer" toField="startTime" />
+<ROUTE fromNode="Roll2_PI" fromField="stopTime" toNode="Roll2Timer" toField="stopTime" />
+<ROUTE fromNode="Roll2_PI" fromField="enabled" toNode="Roll2Timer" toField="enabled" />
+
+<ProtoInstance DEF="Walk_PI" name="MenuItem">
+<fieldValue name="translation" value="35 20 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Walk" />
+<fieldValue name="menuItemString" value="&quot;Walk&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Walk_PI" fromField="startTime" toNode="WalkTimer" toField="startTime" />
+<ROUTE fromNode="Walk_PI" fromField="stopTime" toNode="WalkTimer" toField="stopTime" />
+<ROUTE fromNode="Walk_PI" fromField="enabled" toNode="WalkTimer" toField="enabled" />
+
+<ProtoInstance DEF="Run_PI" name="MenuItem">
+<fieldValue name="translation" value="35 16 0" />
+i
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Run" />
+<fieldValue name="menuItemString" value="&quot;Run&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Run_PI" fromField="startTime" toNode="RunTimer" toField="startTime" />
+<ROUTE fromNode="Run_PI" fromField="stopTime" toNode="RunTimer" toField="stopTime" />
+<ROUTE fromNode="Run_PI" fromField="enabled" toNode="RunTimer" toField="enabled" />
+
+<ProtoInstance DEF="Jump_PI" name="MenuItem">
+<fieldValue name="translation" value="35 12 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Jump" />
+<fieldValue name="menuItemString" value="&quot;Jump&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Jump_PI" fromField="startTime" toNode="JumpTimer" toField="startTime" />
+<ROUTE fromNode="Jump_PI" fromField="stopTime" toNode="JumpTimer" toField="stopTime" />
+<ROUTE fromNode="Jump_PI" fromField="enabled" toNode="JumpTimer" toField="enabled" />
+
+<ProtoInstance DEF="Kick1_PI" name="MenuItem">
+<fieldValue name="translation" value="35 8 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Kick 1" />
+<fieldValue name="menuItemString" value="&quot;Kick1&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Kick1_PI" fromField="startTime" toNode="Kick1Timer" toField="startTime" />
+<ROUTE fromNode="Kick1_PI" fromField="stopTime" toNode="Kick1Timer" toField="stopTime" />
+<ROUTE fromNode="Kick1_PI" fromField="enabled" toNode="Kick1Timer" toField="enabled" />
+
+<ProtoInstance DEF="Kick2_PI" name="MenuItem">
+<fieldValue name="translation" value="35 4 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Kick 2" />
+<fieldValue name="menuItemString" value="&quot;Kick2&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Kick2_PI" fromField="startTime" toNode="Kick2Timer" toField="startTime" />
+<ROUTE fromNode="Kick2_PI" fromField="stopTime" toNode="Kick2Timer" toField="stopTime" />
+<ROUTE fromNode="Kick2_PI" fromField="enabled" toNode="Kick2Timer" toField="enabled" />
+
+<ProtoInstance DEF="Stop_PI" name="MenuItem">
+<fieldValue name="translation" value="35 0 0" />
+<fieldValue name="textTranslation" value="0 0 0" />
+<fieldValue name="description" value="Stop" />
+<fieldValue name="menuItemString" value="&quot;Stop&quot;" />
+<fieldValue name="size" value="15.0 4.0" />
+<fieldValue name="fontSize" value="2.4" />
+<fieldValue name="spacing" value="1.2" />
+</ProtoInstance>
+<ROUTE fromNode="Stop_PI" fromField="startTime" toNode="StopTimer" toField="startTime" />
+<ROUTE fromNode="Stop_PI" fromField="stopTime" toNode="StopTimer" toField="stopTime" />
+<ROUTE fromNode="Stop_PI" fromField="enabled" toNode="StopTimer" toField="enabled" />
+    </Layer>
+    </LayerSet>
+  </Scene>
+</X3D>

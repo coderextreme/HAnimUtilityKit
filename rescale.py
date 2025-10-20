@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Python conversion of rescale.js - H-Anim humanoid rescaling for X3D files
+Python conversion of rescale.js - HAnim humanoid rescaling for X3D files
 Converts GraalJS X3D manipulation to Python using ElementTree
 """
 
@@ -24,7 +24,7 @@ maxy = 0
 z = 0
 yscale = 1
 
-# H-Anim joint name constants
+# HAnim joint name constants
 class HAnimJointNames:
     HUMANOID_ROOT = "humanoid_root"
     L_TARSAL_DISTAL_INTERPHALANGEAL_5 = "l_tarsal_distal_interphalangeal_5"
