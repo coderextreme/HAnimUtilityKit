@@ -1,9 +1,9 @@
-#X3D V4.0 utf8 X_ITE V12.1.1
+#X3D V4.0 utf8 X_ITE V12.1.9
 
 PROFILE Full
 
-META "generator" "x3d-tidy V2.2.6, https://www.npmjs.com/package/x3d-tidy"
-META "modified" "Wed, 08 Oct 2025 13:48:56 GMT"
+META "generator" "x3d-tidy V2.2.15, https://www.npmjs.com/package/x3d-tidy"
+META "modified" "Fri, 28 Nov 2025 17:45:23 GMT"
 
 DEF camera1 Viewpoint {
   position 0 120.3427 278.0727

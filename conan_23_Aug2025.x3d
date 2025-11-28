@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">
 <X3D profile='Full' version='4.0' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='https://www.web3d.org/specifications/x3d-4.0.xsd'>
+  <head>
+    <component name="HAnim" level="3" />
+    <component name="Core" level="1" />
+    <component name="Grouping" level="1" />
+    <component name="Layering" level="1" />
+    <component name="Text" level="1" />
+  </head>
 	<Scene>
 		<Viewpoint DEF='camera1' farDistance='10000.0' fieldOfView='0.950021528091287' nearDistance='0.10000000149011612' position='0.0 120.34268528440475 278.07272895651806' containerField='children'/>
 		<HAnimHumanoid DEF='HAnimHumanoid_01' scale='1 1 1' bboxSize='2.0 2.0 2.0' loa='0' containerField='children'>

@@ -1,6 +1,7 @@
 ﻿#X3D V3.0 utf8
 PROFILE Immersive
-COMPONENT H-Anim:1
+COMPONENT HAnim:1
+COMPONENT Layering : 1
 
 META "Joe" "No Reservations 20121221 20040109 x3d/hanim"
 

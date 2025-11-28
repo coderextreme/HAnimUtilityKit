@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">
+<X3D profile='Immersive' version='4.0' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='https://www.web3d.org/specifications/x3d-4.0.xsd'>
+  <head>
+    <component name="HAnim" level="3" />
+    <component name="Core" level="1" />
+    <component name="Grouping" level="1" />
+    <component name="Layering" level="1" />
+    <component name="Text" level="1" />
+  </head>
+  <Scene>
+	<Inline url='"JinLOA4.scaled1_Final.x3d"'/>
+	<Inline url='"JoeDemo5JoeSkin5_Final.x3d"'/>
+	<Inline url='"JoeHAnimKick1a_Final.x3d"'/>
+	<Inline url='"WalkingAlien_Final.x3d"'/>
+	<Inline url='"conan_23_Aug2025_Final.x3d"'/>
+	<Inline url='"walking_man_cc_test_Final.x3d"'/>
+  </Scene>
+</X3D>

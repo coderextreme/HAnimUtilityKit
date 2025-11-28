@@ -1,7 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<X3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" profile="Interchange" version="4.0" xsi:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.0.xsd">
+<X3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" profile="Immersive" version="4.0" xsi:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.0.xsd">
   <head>
     <component name="HAnim" level="3" />
+    <component name="Core" level="1" />
+    <component name="Grouping" level="1" />
+    <component name="Layering" level="1" />
+    <component name="Text" level="1" />
     <meta name="generator" content="x3d-tidy V2.2.2, https://www.npmjs.com/package/x3d-tidy" />
     <meta name="modified" content="Sat, 13 Sep 2025 05:58:49 GMT" />
   </head>

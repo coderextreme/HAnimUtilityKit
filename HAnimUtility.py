@@ -119,7 +119,7 @@ class HAnimUtility:
     # writeXML.py
     def writeXML(self, OUTPUT_FILE):
         # TODO remove to use Animations3.x3dv
-        self.merge_animations_and_menu("Animations4.x3d", "menu.x3d")
+        # self.merge_animations_and_menu("Animations4.x3d", "menu.x3d")
         header = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">'
         xmlstr = xml.etree.ElementTree.tostring(self.root, encoding='unicode')
         xmlString = f"{header}{xmlstr}"

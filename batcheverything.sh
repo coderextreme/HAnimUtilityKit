@@ -46,11 +46,11 @@ do
 	ex "${X3DV}"  < "${X3DV}".cmds
 
 	# Now done in HAnimUtility.py, Animations4.x3d and menu.x3d
-	#if [[ $a != Joe* ]]
-	#then
-	#	echo "Adding animations..."
-	#	cat Animations3.x3dv >> "${X3DV}"
-	#fi
+	if [[ $a != Joe* ]]
+	then
+		echo "Adding animations..."
+		cat Animations3.x3dv >> "${X3DV}"
+	fi
 
 	echo "Validating..."
 	~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate "${X3DV}" 2>&1 | sort -u
