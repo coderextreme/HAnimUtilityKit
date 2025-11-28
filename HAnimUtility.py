@@ -228,11 +228,21 @@ class HAnimUtility:
             time_sensor_def = time_sensor.get("DEF")
             routes = animations_scene.findall(f".//ROUTE[@fromNode='{time_sensor_def}']")
             for route in routes:
-                animations_scene.remove(route)
-                menu_layer.append(route)
+                if route is not None:
+                    route_parent = self.find_parent(route)
+                    if route_parent is not None:
+                        route_parent.remove(route)
+                    menu_layer.append(route)
 
         layer_set.append(menu_layer)
         scene.append(layer_set)
+
+    def find_parent(self, child):
+        for parent in self.root.iter():
+            if child in parent:
+                return parent
+        return None
+
 
     def mix_rename(self, INPUT_FILE, skeleton_map_list, INPUT_PREFIX, OUTPUT_PREFIX, TIME_SENSORS, FINAL_FILE):
         self.readXML(INPUT_FILE)
