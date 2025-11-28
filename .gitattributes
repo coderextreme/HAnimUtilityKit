@@ -12,3 +12,8 @@ walking_man_cc_test_Final.x3dv filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test_x3dom.x3d filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test.x3d filter=lfs diff=lfs merge=lfs -text
 walking_man_cc_test.x3dj filter=lfs diff=lfs merge=lfs -text
+BodySkinIndexedFaceSetNIST.output.x3d filter=lfs diff=lfs merge=lfs -text
+BodySkinIndexedFaceSetNIST.scaled.x3d filter=lfs diff=lfs merge=lfs -text
+BodySkinIndexedFaceSetNIST_Final.x3d filter=lfs diff=lfs merge=lfs -text
+BodySkinIndexedFaceSetNIST_Final.x3dv filter=lfs diff=lfs merge=lfs -text
+BodySkinIndexedFaceSetNIST_x3dom.x3d filter=lfs diff=lfs merge=lfs -text
