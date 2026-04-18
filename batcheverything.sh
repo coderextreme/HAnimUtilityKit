@@ -12,6 +12,7 @@ echo "Converting Walking Alien from .gltf/.bin to .x3d and .x3dv..."
 #npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3d
 #npx x3d-tidy@latest -f 5 -d 5 -i WalkingAlien.gltf -o WalkingAlien.x3dv
 npx x3d-tidy@latest -f 5 -d 5 -i JoeHAnimKick1a.x3dv -o JoeHAnimKick1a.x3d
+npx x3d-tidy@latest -f 5 -d 5 -i AnimatedAssembledHumanSkeleton.x3d -o AnimatedAssembledHumanSkeleton.x3dv
 npx x3d-tidy@latest -f 5 -d 5 -i walking_man_cc_test.x3dj -o walking_man_cc_test.new.python.x3d
 
 
@@ -30,11 +31,13 @@ python runwalkingalien.py
 python runwalkingman.py
 python runconan.py
 python runjoe.py
+python runass.py
 python runjoedemo5.py
-python runmix.py
+# python runmix.py
 # python runjoedemo5a.py
 
-for X3D in conan_23_Aug2025_Final.x3d WalkingAlien_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d JinLOA4.scaled1_Final.x3d BodySkinIndexedFaceSetNIST_Final.x3d walking_man_cc_test_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
+
+for X3D in AnimatedAssembledHumanSkeleton.x3d # conan_23_Aug2025_Final.x3d WalkingAlien_Final.x3d JoeHAnimKick1a_Final.x3d JoeDemo5JoeSkin5_Final.x3d JinLOA4.scaled1_Final.x3d BodySkinIndexedFaceSetNIST_Final.x3d walking_man_cc_test_Final.x3d # JoeDemo5JoeSkin5a_Final.x3d
 do
 	X3DV="${X3D}v"
 	X3DOM=`basename "${X3D}" Final.x3d`x3dom.x3d
@@ -53,17 +56,17 @@ do
 	fi
 
 	echo "Validating..."
-	~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate "${X3DV}" 2>&1 | sort -u
+	/c/Users/jcarl/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate "${X3DV}" 2>&1 | sort -u
 
 	echo "Commenting out excess ROUTES (no joints present)..."
-	(~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate "${X3DV}" 2>&1 | grep "castle-model-converter: Warning: X3D: Route destination node name .* not found" |sed 's/" not found//'| sed 's/.*Route destination node name "//'| sort -u | sed 's/\(.*\)/%s\/^\\(.*ROUTE.*\1.*\\)\/# \\1\//'; echo wq) > "${X3DV}".cmds
+	(/c/Users/jcarl/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-converter.exe --validate "${X3DV}" 2>&1 | grep "castle-model-converter: Warning: X3D: Route destination node name .* not found" |sed 's/" not found//'| sed 's/.*Route destination node name "//'| sort -u | sed 's/\(.*\)/%s\/^\\(.*ROUTE.*\1.*\\)\/# \\1\//'; echo wq) > "${X3DV}".cmds
 	ex "${X3DV}" < "${X3DV}".cmds
 	# do this after animations are added
 	npx x3d-tidy@latest -i "${X3DV}" -o "${X3D}"
 	python scalePositionInterpolators.py "${X3D}" "${X3D}"
 
 	npx sunrize@latest "${X3D}"
-	~/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-viewer.exe "${X3D}"
+	/c/Users/jcarl/Downloads/castle-model-viewer-5.3.0-win64-x86_64/castle-model-viewer/castle-model-viewer.exe "${X3D}"
 	echo npx x3d-tidy@latest -i "${X3D}" -o "${X3DOM}"
 	npx x3d-tidy@latest -i "${X3D}" -o "${X3DOM}"
 	rm -f ."${X3DV}".swp
