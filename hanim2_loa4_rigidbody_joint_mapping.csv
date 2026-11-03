@@ -1,0 +1,150 @@
+hanim_joint_name,loa,x3d_rbp_joint_node,dof,rationale
+humanoid_root,LOA-0,"SingleAxisHingeJoint",-,Root segment; anchor to world or leave kinematic
+sacroiliac,LOA-1,BallJoint,2 (limited),Minimal gliding motion; near-fixed in most rigs
+vl5,LOA-1/2/3,BallJoint,2,Lumbar vertebra: flexion/extension + lateral bend per segment
+vl4,LOA-1/2/3,BallJoint,2,Lumbar vertebra: flexion/extension + lateral bend per segment
+vl3,LOA-1/2/3,BallJoint,2,Lumbar vertebra: flexion/extension + lateral bend per segment
+vl2,LOA-1/2/3,BallJoint,2,Lumbar vertebra: flexion/extension + lateral bend per segment
+vl1,LOA-1/2/3,BallJoint,2,Lumbar vertebra: flexion/extension + lateral bend per segment
+vt12,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt11,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt10,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt9,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt8,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt7,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt6,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt5,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt4,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt3,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt2,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vt1,LOA-2/3,BallJoint,2,"Thoracic vertebra: same pattern, more rib-constrained"
+vc7,LOA-2/3,BallJoint,2,"Cervical vertebra: same pattern, more mobile"
+vc6,LOA-2/3,BallJoint,2,"Cervical vertebra: same pattern, more mobile"
+vc5,LOA-2/3,BallJoint,2,"Cervical vertebra: same pattern, more mobile"
+vc4,LOA-2/3,BallJoint,2,"Cervical vertebra: same pattern, more mobile"
+vc3,LOA-2/3,BallJoint,2,"Cervical vertebra: same pattern, more mobile"
+vc2,LOA-2/3,BallJoint,2,"Cervical vertebra: same pattern, more mobile"
+vc1,LOA-3,SingleAxisHingeJoint,1,Atlas: predominantly axial rotation (atlanto-axial)
+skullbase,LOA-1,BallJoint,3,Composite atlanto-occipital motion
+l_eyeball_joint,LOA-3,BallJoint,3,Free rotation in socket
+l_eyelid_joint,LOA-3,SingleAxisHingeJoint,1,Open/close rotation
+l_eyebrow_joint,LOA-3,SliderJoint,1 (translation),Skin-deformation joint; often skipped in physics rigs
+r_eyeball_joint,LOA-3,BallJoint,3,Free rotation in socket
+r_eyelid_joint,LOA-3,SingleAxisHingeJoint,1,Open/close rotation
+r_eyebrow_joint,LOA-3,SliderJoint,1 (translation),Skin-deformation joint; often skipped in physics rigs
+temporomandibular,LOA-3,DoubleAxisHingeJoint,2,Hinge (open/close) plus protrusion/lateral glide
+l_sternoclavicular,LOA-2,BallJoint,2,Gliding joint
+l_acromioclavicular,LOA-2,BallJoint,2,Gliding joint
+l_shoulder,LOA-1,BallJoint,3,True ball-and-socket
+l_elbow,LOA-1,SingleAxisHingeJoint,1,Pure flexion/extension
+l_radiocarpal,LOA-1,BallJoint,2,Wrist: flex/extend + radial/ulnar deviation
+l_midcarpal_1,LOA-4,BallJoint,2 (small),Trapezium; small intercarpal gliding
+l_midcarpal_2,LOA-4,SliderJoint,1 (minimal),Trapezoid; near-rigid gliding
+l_midcarpal_3,LOA-4,SliderJoint,1 (minimal),Capitate; near-rigid gliding
+l_midcarpal_4_5,LOA-4,SliderJoint,1 (minimal),Hamate; near-rigid gliding
+l_carpometacarpal_1,LOA-2,BallJoint,2,True saddle joint; gives thumb opposition
+l_metacarpophalangeal_1,LOA-2,SingleAxisHingeJoint,1,Thumb MCP: predominantly flexion
+l_carpal_interphalangeal_1,LOA-2,SingleAxisHingeJoint,1,Thumb IP: pure hinge
+l_carpometacarpal_2,LOA-2,SliderJoint,1 (minimal),Index/middle CMC are nearly rigid
+l_metacarpophalangeal_2,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_carpal_proximal_interphalangeal_2,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+l_carpal_distal_interphalangeal_2,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+l_carpometacarpal_3,LOA-2,SliderJoint,1 (minimal),Index/middle CMC are nearly rigid
+l_metacarpophalangeal_3,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_carpal_proximal_interphalangeal_3,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+l_carpal_distal_interphalangeal_3,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+l_carpometacarpal_4,LOA-2,BallJoint,2,Ring/pinky CMC have real mobility
+l_metacarpophalangeal_4,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_carpal_proximal_interphalangeal_4,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+l_carpal_distal_interphalangeal_4,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+l_carpometacarpal_5,LOA-2,BallJoint,2,Ring/pinky CMC have real mobility
+l_metacarpophalangeal_5,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_carpal_proximal_interphalangeal_5,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+l_carpal_distal_interphalangeal_5,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+r_sternoclavicular,LOA-2,BallJoint,2,Gliding joint
+r_acromioclavicular,LOA-2,BallJoint,2,Gliding joint
+r_shoulder,LOA-1,BallJoint,3,True ball-and-socket
+r_elbow,LOA-1,SingleAxisHingeJoint,1,Pure flexion/extension
+r_radiocarpal,LOA-1,BallJoint,2,Wrist: flex/extend + radial/ulnar deviation
+r_midcarpal_1,LOA-4,BallJoint,2 (small),Trapezium; small intercarpal gliding
+r_midcarpal_2,LOA-4,SliderJoint,1 (minimal),Trapezoid; near-rigid gliding
+r_midcarpal_3,LOA-4,SliderJoint,1 (minimal),Capitate; near-rigid gliding
+r_midcarpal_4_5,LOA-4,SliderJoint,1 (minimal),Hamate; near-rigid gliding
+r_carpometacarpal_1,LOA-2,BallJoint,2,True saddle joint; gives thumb opposition
+r_metacarpophalangeal_1,LOA-2,SingleAxisHingeJoint,1,Thumb MCP: predominantly flexion
+r_carpal_interphalangeal_1,LOA-2,SingleAxisHingeJoint,1,Thumb IP: pure hinge
+r_carpometacarpal_2,LOA-2,SliderJoint,1 (minimal),Index/middle CMC are nearly rigid
+r_metacarpophalangeal_2,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_carpal_proximal_interphalangeal_2,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+r_carpal_distal_interphalangeal_2,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+r_carpometacarpal_3,LOA-2,SliderJoint,1 (minimal),Index/middle CMC are nearly rigid
+r_metacarpophalangeal_3,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_carpal_proximal_interphalangeal_3,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+r_carpal_distal_interphalangeal_3,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+r_carpometacarpal_4,LOA-2,BallJoint,2,Ring/pinky CMC have real mobility
+r_metacarpophalangeal_4,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_carpal_proximal_interphalangeal_4,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+r_carpal_distal_interphalangeal_4,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+r_carpometacarpal_5,LOA-2,BallJoint,2,Ring/pinky CMC have real mobility
+r_metacarpophalangeal_5,LOA-2,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_carpal_proximal_interphalangeal_5,LOA-2,SingleAxisHingeJoint,1,PIP: pure hinge
+r_carpal_distal_interphalangeal_5,LOA-2,SingleAxisHingeJoint,1,DIP: pure hinge
+l_hip,LOA-1,BallJoint,3,True ball-and-socket
+l_knee,LOA-1,SingleAxisHingeJoint,1,Predominantly flexion/extension (DoubleAxisHingeJoint if adding internal/external rotation)
+l_talocrural,LOA-1,SingleAxisHingeJoint,1,Dorsiflexion/plantarflexion
+l_talocalcaneonavicular,LOA-4,SingleAxisHingeJoint,1,Subtalar complex: oblique-axis inversion/eversion
+l_calcaneocuboid,LOA-4,BallJoint,2 (small),Gliding; part of midtarsal locking mechanism
+l_transversetarsal,LOA-4,BallJoint,2 (small),Gliding
+l_cuneonavicular_1,LOA-4,SliderJoint,1 (minimal),Near-rigid intertarsal joint
+l_cuneonavicular_2,LOA-4,SliderJoint,1 (minimal),Near-rigid intertarsal joint
+l_cuneonavicular_3,LOA-4,SliderJoint,1 (minimal),Near-rigid intertarsal joint
+l_tarsometatarsal_1,LOA-2,BallJoint,2,Most mobile TMT column (big-toe ray)
+l_metatarsophalangeal_1,LOA-4,BallJoint,2,Condyloid
+l_tarsal_interphalangeal_1,LOA-2,SingleAxisHingeJoint,1,Great toe IP: pure hinge
+l_tarsal_distal_interphalangeal_1,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+l_tarsometatarsal_2,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+l_metatarsophalangeal_2,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_tarsal_proximal_interphalangeal_2,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+l_tarsal_distal_interphalangeal_2,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+l_tarsometatarsal_3,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+l_metatarsophalangeal_3,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_tarsal_proximal_interphalangeal_3,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+l_tarsal_distal_interphalangeal_3,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+l_tarsometatarsal_4,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+l_metatarsophalangeal_4,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_tarsal_proximal_interphalangeal_4,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+l_tarsal_distal_interphalangeal_4,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+l_tarsometatarsal_5,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+l_metatarsophalangeal_5,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+l_tarsal_proximal_interphalangeal_5,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+l_tarsal_distal_interphalangeal_5,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+r_hip,LOA-1,BallJoint,3,True ball-and-socket
+r_knee,LOA-1,SingleAxisHingeJoint,1,Predominantly flexion/extension (DoubleAxisHingeJoint if adding internal/external rotation)
+r_talocrural,LOA-1,SingleAxisHingeJoint,1,Dorsiflexion/plantarflexion
+r_talocalcaneonavicular,LOA-4,SingleAxisHingeJoint,1,Subtalar complex: oblique-axis inversion/eversion
+r_calcaneocuboid,LOA-4,BallJoint,2 (small),Gliding; part of midtarsal locking mechanism
+r_transversetarsal,LOA-4,BallJoint,2 (small),Gliding
+r_cuneonavicular_1,LOA-4,SliderJoint,1 (minimal),Near-rigid intertarsal joint
+r_cuneonavicular_2,LOA-4,SliderJoint,1 (minimal),Near-rigid intertarsal joint
+r_cuneonavicular_3,LOA-4,SliderJoint,1 (minimal),Near-rigid intertarsal joint
+r_tarsometatarsal_1,LOA-2,BallJoint,2,Most mobile TMT column (big-toe ray)
+r_metatarsophalangeal_1,LOA-4,BallJoint,2,Condyloid
+r_tarsal_interphalangeal_1,LOA-2,SingleAxisHingeJoint,1,Great toe IP: pure hinge
+r_tarsal_proximal_interphalangeal_1,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+r_tarsal_distal_interphalangeal_1,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+r_tarsometatarsal_2,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+r_metatarsophalangeal_2,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_tarsal_proximal_interphalangeal_2,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+r_tarsal_distal_interphalangeal_2,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+r_tarsometatarsal_3,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+r_metatarsophalangeal_3,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_tarsal_proximal_interphalangeal_3,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+r_tarsal_distal_interphalangeal_3,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+r_tarsometatarsal_4,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+r_metatarsophalangeal_4,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_tarsal_proximal_interphalangeal_4,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+r_tarsal_distal_interphalangeal_4,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
+r_tarsometatarsal_5,LOA-4,SliderJoint,1 (minimal),Near-rigid lateral TMT joint
+r_metatarsophalangeal_5,LOA-4,BallJoint,2,Condyloid: flex/extend + ab/adduction
+r_tarsal_proximal_interphalangeal_5,LOA-4,SingleAxisHingeJoint,1,PIP: pure hinge
+r_tarsal_distal_interphalangeal_5,LOA-4,SingleAxisHingeJoint,1,DIP: pure hinge
